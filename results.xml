@@ -1,0 +1,232 @@
+<testsuites id="" name="" tests="12" failures="2" skipped="0" errors="0" time="44.704639">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="chromium" tests="2" failures="2" skipped="0" time="45.499" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="22.721">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
+</property>
+</properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:18
+
+      16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      17 |         await this.page.goto(dashboardPage);
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 20000 });
+         |                                           ^
+      19 |     }
+      20 |
+      21 | }
+
+        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:18:43)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="22.778">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
+</property>
+</properties>
+<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
+
+    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:18
+
+      16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      17 |         await this.page.goto(dashboardPage);
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 20000 });
+         |                                           ^
+      19 |     }
+      20 |
+      21 | }
+
+        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:18:43)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:21:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.683" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.683">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.04" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.04">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="firefox" tests="2" failures="0" skipped="0" time="26.806" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="21.018">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: Collection,Config">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.788">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:Collection,Security,Config">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.313" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.313">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.957" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.957">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="webkit" tests="2" failures="0" skipped="0" time="25.328" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="12.517">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: Collection,Config">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="12.811">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:Collection,Security,Config">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.28" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="5.28">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T05:10:54.593Z" hostname="webkit" tests="1" failures="0" skipped="0" time="4.413" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="4.413">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+</testsuites>
