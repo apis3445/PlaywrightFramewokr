@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="12" failures="6" skipped="0" errors="0" time="30.40538">
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="chromium" tests="2" failures="2" skipped="0" time="15.638" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="7.748">
+<testsuites id="" name="" tests="12" failures="6" skipped="0" errors="0" time="39.804038999999996">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="chromium" tests="2" failures="2" skipped="0" time="26.532" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="13.223">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -8,7 +8,7 @@
 <failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
 <![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
 
-    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -53,7 +53,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="7.89">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="13.309">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -61,7 +61,7 @@
 <failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
 <![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
 
-    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -107,8 +107,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.897" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.897">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.359" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.359">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -117,8 +117,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.971" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.971">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.235" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.235">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -133,8 +133,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="firefox" tests="2" failures="2" skipped="0" time="18.165" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="9.19">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="firefox" tests="2" failures="2" skipped="0" time="29.665" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="15.091">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -142,7 +142,7 @@
 <failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
 <![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
 
-    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -187,7 +187,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="8.975">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="14.574">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -195,7 +195,7 @@
 <failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
 <![CDATA[  [firefox] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ────────────────
 
-    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -241,8 +241,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.916" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.916">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.712" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.712">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -251,8 +251,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.481" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.481">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.573" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.573">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -267,8 +267,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="webkit" tests="2" failures="2" skipped="0" time="25.156" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="12.318">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="webkit" tests="2" failures="2" skipped="0" time="34.187" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="16.897">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -276,7 +276,7 @@
 <failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
 <![CDATA[  [webkit] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────────
 
-    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -321,7 +321,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="12.838">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="17.29">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -329,7 +329,7 @@
 <failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
 <![CDATA[  [webkit] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ─────────────────
 
-    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -375,8 +375,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.061" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="5.061">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.402" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.402">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -385,8 +385,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:52:40.044Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.332" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="3.332">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.186" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="3.186">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
