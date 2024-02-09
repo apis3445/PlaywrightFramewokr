@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="12" failures="7" skipped="0" errors="0" time="39.155199">
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="chromium" tests="2" failures="2" skipped="0" time="14.992" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="7.48">
+<testsuites id="" name="" tests="12" failures="6" skipped="0" errors="0" time="26.62252">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="chromium" tests="2" failures="2" skipped="0" time="14.969" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="7.283">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -53,7 +53,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="7.512">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="7.686">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -107,67 +107,18 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="chromium" tests="1" failures="1" skipped="0" time="12.649" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="12.649">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.947" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.947">
 <properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
 <property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
 </property>
 </properties>
-<failure message="searchLocale.spec.ts:15:9 Translations with locale and time zone id" type="FAILURE">
-<![CDATA[  [chromium] › Google/searchLocale.spec.ts:15:9 › Locale translations › Translations with locale and time zone id 
-
-    Error: Timed out 10000ms waiting for expect(locator).toHaveText(expected)
-
-    Locator: getByRole('button', { name: 'Buscar con Google' })
-    Expected string: "Buscar con Google"
-    Received string: ""
-    Call log:
-      - expect.toHaveText with timeout 10000ms
-      - waiting for getByRole('button', { name: 'Buscar con Google' })
-
-
-      20 |         //ASSERT
-      21 |         homePage.addAnnotation(AnnotationType.Assert, `Search button text is equal to: "${localeInfo.googleSearch}"`);
-    > 22 |         await expect(homePage.googleSearch.locator).toHaveText(localeInfo.googleSearch);
-         |                                                     ^
-      23 |     });
-      24 | });
-      25 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Google/searchLocale.spec.ts:22:53
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-chromium/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.879" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.879">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.804" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.804">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -182,18 +133,61 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="firefox" tests="2" failures="1" skipped="0" time="13.446" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.074">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="firefox" tests="2" failures="2" skipped="0" time="18" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="8.501">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to: Collection,Config">
-</property>
 </properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:18
+
+      16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      17 |         await this.page.goto(dashboardPage);
+    > 18 |         await this.page.locator('#title').waitFor();
+         |                                           ^
+      19 |     }
+      20 |
+      21 | }
+
+        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:18:43)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip]]
+]]>
+</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="9.372">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="9.499">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -247,67 +241,18 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="firefox" tests="1" failures="1" skipped="0" time="11.52" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="11.52">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.234" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.234">
 <properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
 <property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
 </property>
 </properties>
-<failure message="searchLocale.spec.ts:15:9 Translations with locale and time zone id" type="FAILURE">
-<![CDATA[  [firefox] › Google/searchLocale.spec.ts:15:9 › Locale translations › Translations with locale and time zone id 
-
-    Error: Timed out 10000ms waiting for expect(locator).toHaveText(expected)
-
-    Locator: getByRole('button', { name: 'Buscar con Google' })
-    Expected string: "Buscar con Google"
-    Received string: ""
-    Call log:
-      - expect.toHaveText with timeout 10000ms
-      - waiting for getByRole('button', { name: 'Buscar con Google' })
-
-
-      20 |         //ASSERT
-      21 |         homePage.addAnnotation(AnnotationType.Assert, `Search button text is equal to: "${localeInfo.googleSearch}"`);
-    > 22 |         await expect(homePage.googleSearch.locator).toHaveText(localeInfo.googleSearch);
-         |                                                     ^
-      23 |     });
-      24 | });
-      25 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Google/searchLocale.spec.ts:22:53
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-firefox/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.792" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.792">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.339" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.339">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -322,18 +267,61 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="webkit" tests="2" failures="1" skipped="0" time="18.159" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="8.74">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="webkit" tests="2" failures="2" skipped="0" time="19.852" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="10.208">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to: Collection,Config">
-</property>
 </properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [webkit] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────────
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:18
+
+      16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      17 |         await this.page.goto(dashboardPage);
+    > 18 |         await this.page.locator('#title').waitFor();
+         |                                           ^
+      19 |     }
+      20 |
+      21 | }
+
+        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:18:43)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip]]
+]]>
+</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="9.419">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="9.644">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -387,67 +375,18 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="webkit" tests="1" failures="1" skipped="0" time="11.803" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="11.803">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.545" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.545">
 <properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
 <property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
 </property>
 </properties>
-<failure message="searchLocale.spec.ts:15:9 Translations with locale and time zone id" type="FAILURE">
-<![CDATA[  [webkit] › Google/searchLocale.spec.ts:15:9 › Locale translations › Translations with locale and time zone id 
-
-    Error: Timed out 10000ms waiting for expect(locator).toHaveText(expected)
-
-    Locator: getByRole('button', { name: 'Buscar con Google' })
-    Expected string: "Buscar con Google"
-    Received string: ""
-    Call log:
-      - expect.toHaveText with timeout 10000ms
-      - waiting for getByRole('button', { name: 'Buscar con Google' })
-
-
-      20 |         //ASSERT
-      21 |         homePage.addAnnotation(AnnotationType.Assert, `Search button text is equal to: "${localeInfo.googleSearch}"`);
-    > 22 |         await expect(homePage.googleSearch.locator).toHaveText(localeInfo.googleSearch);
-         |                                                     ^
-      23 |     });
-      24 | });
-      25 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Google/searchLocale.spec.ts:22:53
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Google-searchLocale-Locale-translations-Translations-with-locale-and-time-zone-id-webkit/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:31:44.981Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.557" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.557">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:44:30.985Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.84" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.84">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
