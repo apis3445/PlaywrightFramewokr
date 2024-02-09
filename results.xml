@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="12" failures="6" skipped="0" errors="0" time="39.804038999999996">
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="chromium" tests="2" failures="2" skipped="0" time="26.532" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="13.223">
+<testsuites id="" name="" tests="12" failures="6" skipped="0" errors="0" time="40.306942">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="chromium" tests="2" failures="2" skipped="0" time="24.503" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="12.222">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -17,7 +17,7 @@
 
       16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       17 |         await this.page.goto(dashboardPage);
-    > 18 |         await this.page.locator('#title').waitFor();
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 10000 });
          |                                           ^
       19 |     }
       20 |
@@ -53,7 +53,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="13.309">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="12.281">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -70,7 +70,7 @@
 
       16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       17 |         await this.page.goto(dashboardPage);
-    > 18 |         await this.page.locator('#title').waitFor();
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 10000 });
          |                                           ^
       19 |     }
       20 |
@@ -107,8 +107,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.359" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.359">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.626" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.626">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -117,8 +117,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.235" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.235">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.929" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.929">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -133,8 +133,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="firefox" tests="2" failures="2" skipped="0" time="29.665" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="15.091">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="firefox" tests="2" failures="2" skipped="0" time="29.231" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="14.115">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -151,7 +151,7 @@
 
       16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       17 |         await this.page.goto(dashboardPage);
-    > 18 |         await this.page.locator('#title').waitFor();
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 10000 });
          |                                           ^
       19 |     }
       20 |
@@ -187,7 +187,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="14.574">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="15.116">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -204,7 +204,7 @@
 
       16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       17 |         await this.page.goto(dashboardPage);
-    > 18 |         await this.page.locator('#title').waitFor();
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 10000 });
          |                                           ^
       19 |     }
       20 |
@@ -241,8 +241,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.712" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.712">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.87" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.87">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -251,8 +251,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.573" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.573">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.47" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.47">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -267,8 +267,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="webkit" tests="2" failures="2" skipped="0" time="34.187" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="16.897">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="webkit" tests="2" failures="2" skipped="0" time="37.035" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="18.525">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -285,7 +285,7 @@
 
       16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       17 |         await this.page.goto(dashboardPage);
-    > 18 |         await this.page.locator('#title').waitFor();
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 10000 });
          |                                           ^
       19 |     }
       20 |
@@ -321,7 +321,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="17.29">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="18.51">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Collection/dashboard&quot;">
 </property>
@@ -338,7 +338,7 @@
 
       16 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       17 |         await this.page.goto(dashboardPage);
-    > 18 |         await this.page.locator('#title').waitFor();
+    > 18 |         await this.page.locator('#title').waitFor({ timeout: 10000 });
          |                                           ^
       19 |     }
       20 |
@@ -375,8 +375,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.402" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.402">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.331" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.331">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -385,8 +385,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T04:53:43.230Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.186" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="3.186">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-09T05:02:08.420Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.308" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="3.308">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
