@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="15" failures="3" skipped="0" errors="0" time="32.062579">
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="chromium" tests="1" failures="1" skipped="0" time="7.384" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="7.384">
+<testsuites id="" name="" tests="15" failures="3" skipped="0" errors="0" time="30.793736">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="chromium" tests="1" failures="1" skipped="0" time="8.419" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="8.419">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -32,7 +32,7 @@
 
     Screenshot comparison failed:
 
-      254448 pixels (ratio 0.14 of all image pixels) are different.
+      251501 pixels (ratio 0.14 of all image pixels) are different.
 
     Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-chromium-linux.png
     Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/dashboard-actual.png
@@ -45,20 +45,20 @@
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - 50259 pixels (ratio 0.03 of all image pixels) are different.
+      - 23251 pixels (ratio 0.02 of all image pixels) are different.
       - waiting 100ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - 230008 pixels (ratio 0.13 of all image pixels) are different.
+      - 234276 pixels (ratio 0.13 of all image pixels) are different.
       - waiting 250ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
       - captured a stable screenshot
-      - 254448 pixels (ratio 0.14 of all image pixels) are different.
+      - 251501 pixels (ratio 0.14 of all image pixels) are different.
 
 
        at ../utils/VisualHelper.ts:24
@@ -122,8 +122,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="chromium" tests="2" failures="0" skipped="0" time="10.185" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.987">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="chromium" tests="2" failures="0" skipped="0" time="7.602" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.471">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -133,7 +133,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.198">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="4.131">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -144,8 +144,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.993" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.993">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.96" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.96">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -154,8 +154,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.251" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.251">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.167" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.167">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -170,8 +170,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="firefox" tests="1" failures="1" skipped="0" time="8.98" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="8.98">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="firefox" tests="1" failures="1" skipped="0" time="9.531" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="9.531">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -197,38 +197,77 @@
 </property>
 </properties>
 <failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard ───────────
+<![CDATA[  [firefox] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard › Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 
 
-    Error: A snapshot doesn't exist at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png, writing actual.
+    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
+
+    Screenshot comparison failed:
+
+      6639 pixels (ratio 0.01 of all image pixels) are different.
+
+    Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png
+    Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-actual.png
+        Diff: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-diff.png
+
+    Call log:
+      - page._expectScreenshot with timeout 20000ms
+      -   verifying given screenshot expectation
+      - taking page screenshot
+      -   disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - 113987 pixels (ratio 0.07 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - taking page screenshot
+      -   disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - 107499 pixels (ratio 0.06 of all image pixels) are different.
+      - waiting 250ms before taking screenshot
+      - taking page screenshot
+      -   disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - captured a stable screenshot
+      - 6639 pixels (ratio 0.01 of all image pixels) are different.
+
 
        at ../utils/VisualHelper.ts:24
 
       22 |         // eslint-disable-next-line playwright/valid-title
       23 |         await test.step(stepDescription, async () => {
     > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |             ^
+         |                                                      ^
       25 |                 {
       26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
       27 |                     timeout: timeout,
 
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:13
-        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:54
+        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:20)
         at DashboardPage.checkSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:51:9)
         at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts:14:9
 
-    attachment #1: dashboard-actual.png (image/png) ────────────────────────────────────────────────
+    attachment #1: dashboard-expected.png (image/png) ──────────────────────────────────────────────
+    tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: dashboard-actual.png (image/png) ────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-actual.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    attachment #3: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
+    test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    attachment #5: video (video/webm) ──────────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/trace.zip
     Usage:
 
@@ -239,7 +278,11 @@
 </failure>
 <system-out>
 <![CDATA[
+[[ATTACHMENT|../tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png]]
+
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-actual.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-diff.png]]
 
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/test-failed-1.png]]
 
@@ -250,8 +293,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="firefox" tests="2" failures="0" skipped="0" time="12.504" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.909">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="firefox" tests="2" failures="0" skipped="0" time="11.766" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.108">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -261,7 +304,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.595">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.658">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -272,8 +315,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.91" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.91">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.195" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.195">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -282,8 +325,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.454" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.454">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.381" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.381">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -298,8 +341,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="webkit" tests="1" failures="1" skipped="0" time="10.98" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="10.98">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="webkit" tests="1" failures="1" skipped="0" time="10.889" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="10.889">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -325,38 +368,71 @@
 </property>
 </properties>
 <failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard ────────────
+<![CDATA[  [webkit] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard › Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 
 
-    Error: A snapshot doesn't exist at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-webkit-linux.png, writing actual.
+    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
+
+    Screenshot comparison failed:
+
+      17196 pixels (ratio 0.01 of all image pixels) are different.
+
+    Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-webkit-linux.png
+    Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-actual.png
+        Diff: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-diff.png
+
+    Call log:
+      - page._expectScreenshot with timeout 20000ms
+      -   verifying given screenshot expectation
+      - taking page screenshot
+      -   disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - 17196 pixels (ratio 0.01 of all image pixels) are different.
+      - waiting 100ms before taking screenshot
+      - taking page screenshot
+      -   disabled all CSS animations
+      - waiting for fonts to load...
+      - fonts loaded
+      - captured a stable screenshot
+      - 17196 pixels (ratio 0.01 of all image pixels) are different.
+
 
        at ../utils/VisualHelper.ts:24
 
       22 |         // eslint-disable-next-line playwright/valid-title
       23 |         await test.step(stepDescription, async () => {
     > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |             ^
+         |                                                      ^
       25 |                 {
       26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
       27 |                     timeout: timeout,
 
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:13
-        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:54
+        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:20)
         at DashboardPage.checkSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:51:9)
         at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts:14:9
 
-    attachment #1: dashboard-actual.png (image/png) ────────────────────────────────────────────────
+    attachment #1: dashboard-expected.png (image/png) ──────────────────────────────────────────────
+    tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-webkit-linux.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: dashboard-actual.png (image/png) ────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-actual.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    attachment #3: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
+    test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-diff.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    attachment #5: video (video/webm) ──────────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/trace.zip
     Usage:
 
@@ -367,7 +443,11 @@
 </failure>
 <system-out>
 <![CDATA[
+[[ATTACHMENT|../tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-webkit-linux.png]]
+
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-actual.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-diff.png]]
 
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/test-failed-1.png]]
 
@@ -378,8 +458,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="webkit" tests="2" failures="0" skipped="0" time="16.972" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="7.487">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="webkit" tests="2" failures="0" skipped="0" time="13.671" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="7.213">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -389,7 +469,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="9.485">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.458">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -400,8 +480,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.886" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.886">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.775" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.775">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -410,8 +490,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:05:27.288Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.909" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.909">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:10:52.280Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.922" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.922">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
