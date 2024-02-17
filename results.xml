@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="15" failures="3" skipped="0" errors="0" time="55.480515999999994">
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.459" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.459">
+<testsuites id="" name="" tests="15" failures="0" skipped="0" errors="0" time="57.082822">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.033" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.033">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -27,295 +27,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="chromium" tests="2" failures="2" skipped="0" time="59.998" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="29.999">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-</properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.waitFor: Test timeout of 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="29.999">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-</properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.waitFor: Test timeout of 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:21:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.478" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.478">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
-</property>
-<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.065" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.065">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.674" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.674">
-<properties>
-<property name="Mock" value="Modify the summary with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
-</property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="firefox" tests="2" failures="1" skipped="0" time="45.314" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="29.998">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-</properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
-
-    Test timeout of 30000ms exceeded.
-
-    Error: locator.waitFor: Test timeout of 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="15.316">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.308" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.308">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
-</property>
-<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.437" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.437">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.141" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="7.141">
-<properties>
-<property name="Mock" value="Modify the summary with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
-</property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="webkit" tests="2" failures="0" skipped="0" time="14.131" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="7.63">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="chromium" tests="2" failures="0" skipped="0" time="48.699" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="27.23">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -325,7 +38,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.501">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="21.469">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -336,8 +49,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.449" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.449">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.989" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="0.989">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -346,8 +59,160 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T19:02:56.560Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.919" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.919">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.811" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.811">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.759" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.759">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="firefox" tests="2" failures="0" skipped="0" time="8.355" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.85">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.505">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.849" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.849">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.373" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.373">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="webkit" tests="1" failures="0" skipped="0" time="11.85" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="11.85">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="webkit" tests="2" failures="0" skipped="0" time="15.633" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="9.858">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.775">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.515" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.515">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T19:09:23.620Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.924" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.924">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
