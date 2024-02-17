@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="15" failures="5" skipped="0" errors="0" time="62.381174">
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.283" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.283">
+<testsuites id="" name="" tests="15" failures="4" skipped="0" errors="0" time="69.511111">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.655" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.655">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -27,26 +27,18 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="chromium" tests="2" failures="1" skipped="0" time="27.449" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.646">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
-</property>
-</properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="22.803">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="chromium" tests="2" failures="2" skipped="0" time="59.998" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="29.999">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
 
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -55,7 +47,62 @@
 
       32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="29.999">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+</properties>
+<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
+
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
          |                                  ^
       35 |     }
       36 |
@@ -92,8 +139,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.472" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.472">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.218" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.218">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -102,8 +149,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.063" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.063">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.976" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.976">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -118,8 +165,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.489" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="5.489">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.525" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.525">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -146,8 +193,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="firefox" tests="2" failures="2" skipped="0" time="47.969" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="24.947">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="firefox" tests="2" failures="2" skipped="0" time="60.002" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="30.002">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -155,7 +202,9 @@
 <failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
 <![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
 
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -164,7 +213,7 @@
 
       32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
          |                                  ^
       35 |     }
       36 |
@@ -200,7 +249,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="23.022">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="30">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -208,7 +257,9 @@
 <failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
 <![CDATA[  [firefox] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ────────────────
 
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
+    Test timeout of 30000ms exceeded.
+
+    Error: locator.waitFor: Test timeout of 30000ms exceeded.
     Call log:
       - waiting for locator('#title') to be visible
 
@@ -217,7 +268,7 @@
 
       32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
       33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
          |                                  ^
       35 |     }
       36 |
@@ -254,8 +305,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.52" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.52">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.531" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.531">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -264,8 +315,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.48" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.48">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.743" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.743">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -280,8 +331,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.306" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="7.306">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="webkit" tests="1" failures="0" skipped="0" time="8.469" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="8.469">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -308,116 +359,30 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="webkit" tests="2" failures="2" skipped="0" time="48.67" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="24.806">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="webkit" tests="2" failures="0" skipped="0" time="36.925" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="19.797">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="23.864">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="17.128">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ─────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:21:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.783" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.783">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.138" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.138">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -426,8 +391,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T18:39:13.497Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.393" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="3.393">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T18:43:47.504Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.212" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.212">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
