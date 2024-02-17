@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="15" failures="9" skipped="0" errors="0" time="79.025724">
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="chromium" tests="1" failures="1" skipped="0" time="12.71" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="12.71">
+<testsuites id="" name="" tests="15" failures="3" skipped="0" errors="0" time="31.688614">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="chromium" tests="1" failures="1" skipped="0" time="8.525" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="8.525">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -22,43 +22,42 @@
 </property>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
 </properties>
 <failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
 <![CDATA[  [chromium] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard ──────────
 
-    Error: route.fetch: Request timed out after 10000ms
-    Call log:
-      - → GET https://effizienteauthdemo.azurewebsites.net/api/Cobranza/Resumen
-      -   user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.6167.57 Safari/537.36
-      -   accept: application/json, text/plain, */*
-      -   accept-encoding: gzip,deflate,br
-      -   accept-language: en-US
-      -   authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIxIiwiRW1wcmVzYUlkIjoiMSIsIkF1eCI6IlVmeGhWT29RbDA4TEUxUzFaUSt2dXc9PSIsIlVSTCI6Imh0dHBzOi8vZWZmaXppZW50ZXJlc3QuYXp1cmV3ZWJzaXRlcy5uZXQvYXBpLyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJTYWxpZGFzIiwiQ29icmFuemEiXSwiZXhwIjoxNzA5NDM3OTEzLCJpc3MiOiJodHRwczovL2VmZml6aWVudGVhdXRoZGVtby5henVyZXdlYnNpdGVzLm5ldCIsImF1ZCI6Imh0dHBzOi8vZWZmaXppZW50ZWF1dGhkZW1vLmF6dXJld2Vic2l0ZXMubmV0In0.s_veQJNv5X0Sm2ximqc9hpJ8EsHq-P1ae-J96oF2mL4
-      -   origin: https://effizientedemo.azurewebsites.net
-      -   referer: https://effizientedemo.azurewebsites.net/
+    Error: A snapshot doesn't exist at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-chromium-linux.png, writing actual.
 
+       at ../utils/VisualHelper.ts:24
 
-       at ../utils/ApiHelper.ts:74
+      22 |         // eslint-disable-next-line playwright/valid-title
+      23 |         await test.step(stepDescription, async () => {
+    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
+         |             ^
+      25 |                 {
+      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
+      27 |                     timeout: timeout,
 
-      72 |     async mockApi(url: string, jsonData: any) {
-      73 |         await this.page.route(url, async route => {
-    > 74 |             const response = await route.fetch();
-         |                                          ^
-      75 |             await route.fulfill({
-      76 |                 status: 200,
-      77 |                 contentType: 'application/json',
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:13
+        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:9)
+        at DashboardPage.checkSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:51:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts:14:9
 
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/ApiHelper.ts:74:42
+    attachment #1: dashboard-actual.png (image/png) ────────────────────────────────────────────────
+    test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/dashboard-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/trace.zip
     Usage:
 
@@ -69,6 +68,8 @@
 </failure>
 <system-out>
 <![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/dashboard-actual.png]]
+
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/test-failed-1.png]]
 
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/video.webm]]
@@ -78,116 +79,30 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="chromium" tests="2" failures="2" skipped="0" time="46.195" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="23.158">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="chromium" tests="2" failures="0" skipped="0" time="6.944" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.515">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="23.037">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.429">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:21:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.845" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.845">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.74" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.74">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -196,8 +111,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.055" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.055">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.336" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.336">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -212,8 +127,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="firefox" tests="1" failures="1" skipped="0" time="15.907" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="15.907">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="firefox" tests="1" failures="1" skipped="0" time="10.264" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="10.264">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -235,48 +150,42 @@
 </property>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
 </properties>
 <failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
 <![CDATA[  [firefox] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard ───────────
 
-    Error: route.fetch: Request timed out after 10000ms
-    Call log:
-      - → GET https://effizienteauthdemo.azurewebsites.net/api/Cobranza/Resumen
-      -   user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0
-      -   accept: application/json, text/plain, */*
-      -   accept-encoding: gzip, deflate, br
-      -   host: effizienteauthdemo.azurewebsites.net
-      -   accept-language: en-US
-      -   referer: https://effizientedemo.azurewebsites.net/
-      -   origin: https://effizientedemo.azurewebsites.net
-      -   sec-fetch-dest: empty
-      -   sec-fetch-mode: cors
-      -   sec-fetch-site: cross-site
-      -   authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIxIiwiRW1wcmVzYUlkIjoiMSIsIkF1eCI6IlVmeGhWT29RbDA4TEUxUzFaUSt2dXc9PSIsIlVSTCI6Imh0dHBzOi8vZWZmaXppZW50ZXJlc3QuYXp1cmV3ZWJzaXRlcy5uZXQvYXBpLyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJTYWxpZGFzIiwiQ29icmFuemEiXSwiZXhwIjoxNzA5NDM3OTEzLCJpc3MiOiJodHRwczovL2VmZml6aWVudGVhdXRoZGVtby5henVyZXdlYnNpdGVzLm5ldCIsImF1ZCI6Imh0dHBzOi8vZWZmaXppZW50ZWF1dGhkZW1vLmF6dXJld2Vic2l0ZXMubmV0In0.s_veQJNv5X0Sm2ximqc9hpJ8EsHq-P1ae-J96oF2mL4
-      -   connection: keep-alive
+    Error: A snapshot doesn't exist at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png, writing actual.
 
+       at ../utils/VisualHelper.ts:24
 
-       at ../utils/ApiHelper.ts:74
+      22 |         // eslint-disable-next-line playwright/valid-title
+      23 |         await test.step(stepDescription, async () => {
+    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
+         |             ^
+      25 |                 {
+      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
+      27 |                     timeout: timeout,
 
-      72 |     async mockApi(url: string, jsonData: any) {
-      73 |         await this.page.route(url, async route => {
-    > 74 |             const response = await route.fetch();
-         |                                          ^
-      75 |             await route.fulfill({
-      76 |                 status: 200,
-      77 |                 contentType: 'application/json',
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:13
+        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:9)
+        at DashboardPage.checkSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:51:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts:14:9
 
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/ApiHelper.ts:74:42
+    attachment #1: dashboard-actual.png (image/png) ────────────────────────────────────────────────
+    test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/trace.zip
     Usage:
 
@@ -287,6 +196,8 @@
 </failure>
 <system-out>
 <![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-actual.png]]
+
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/test-failed-1.png]]
 
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/video.webm]]
@@ -296,116 +207,30 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="firefox" tests="2" failures="2" skipped="0" time="52.268" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="26.354">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="firefox" tests="2" failures="0" skipped="0" time="11.996" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.842">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="25.914">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.154">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:21:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.079" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.079">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.454" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.454">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -414,8 +239,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.114" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.114">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.2" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.2">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -430,8 +255,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="webkit" tests="1" failures="1" skipped="0" time="16.079" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="16.079">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="webkit" tests="1" failures="1" skipped="0" time="10.369" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="10.369">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -453,48 +278,42 @@
 </property>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
 </properties>
 <failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
 <![CDATA[  [webkit] › Effiziente/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard ────────────
 
-    Error: route.fetch: Request timed out after 10000ms
-    Call log:
-      - → GET https://effizienteauthdemo.azurewebsites.net/api/Cobranza/ResumenVencimientos
-      -   user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15
-      -   accept: application/json, text/plain, */*
-      -   accept-encoding: gzip,deflate,br
-      -   authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIxIiwiRW1wcmVzYUlkIjoiMSIsIkF1eCI6IlVmeGhWT29RbDA4TEUxUzFaUSt2dXc9PSIsIlVSTCI6Imh0dHBzOi8vZWZmaXppZW50ZXJlc3QuYXp1cmV3ZWJzaXRlcy5uZXQvYXBpLyIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6WyJTYWxpZGFzIiwiQ29icmFuemEiXSwiZXhwIjoxNzA5NDM3OTEzLCJpc3MiOiJodHRwczovL2VmZml6aWVudGVhdXRoZGVtby5henVyZXdlYnNpdGVzLm5ldCIsImF1ZCI6Imh0dHBzOi8vZWZmaXppZW50ZWF1dGhkZW1vLmF6dXJld2Vic2l0ZXMubmV0In0.s_veQJNv5X0Sm2ximqc9hpJ8EsHq-P1ae-J96oF2mL4
-      -   origin: https://effizientedemo.azurewebsites.net
-      -   referer: https://effizientedemo.azurewebsites.net/
-      -   sec-fetch-dest: empty
-      -   sec-fetch-mode: cors
-      -   sec-fetch-site: cross-site
-      -   cache-control: no-cache
-      -   pragma: no-cache
-      -   accept-language: en-US
+    Error: A snapshot doesn't exist at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-webkit-linux.png, writing actual.
 
+       at ../utils/VisualHelper.ts:24
 
-       at ../utils/ApiHelper.ts:74
+      22 |         // eslint-disable-next-line playwright/valid-title
+      23 |         await test.step(stepDescription, async () => {
+    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
+         |             ^
+      25 |                 {
+      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
+      27 |                     timeout: timeout,
 
-      72 |     async mockApi(url: string, jsonData: any) {
-      73 |         await this.page.route(url, async route => {
-    > 74 |             const response = await route.fetch();
-         |                                          ^
-      75 |             await route.fulfill({
-      76 |                 status: 200,
-      77 |                 contentType: 'application/json',
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:24:13
+        at VisualHelper.checkPageSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/VisualHelper.ts:23:9)
+        at DashboardPage.checkSnapshot (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:51:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts:14:9
 
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/ApiHelper.ts:74:42
+    attachment #1: dashboard-actual.png (image/png) ────────────────────────────────────────────────
+    test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-actual.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
     test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/trace.zip
     Usage:
 
@@ -505,6 +324,8 @@
 </failure>
 <system-out>
 <![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/dashboard-actual.png]]
+
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/test-failed-1.png]]
 
 [[ATTACHMENT|../test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-webkit/video.webm]]
@@ -514,116 +335,30 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="webkit" tests="2" failures="2" skipped="0" time="48.604" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="24.212">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="webkit" tests="2" failures="0" skipped="0" time="14.98" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.964">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:9:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="24.392">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="8.016">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ─────────────────
-
-    TimeoutError: locator.waitFor: Timeout 20000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
-      33 |         await this.page.goto(dashboardPage);
-    > 34 |         await this.title.locator.waitFor({ timeout: 20_000 });
-         |                                  ^
-      35 |     }
-      36 |
-      37 |     /**
-
-        at DashboardPage.goTo (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/dashboardPage.ts:34:34)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:21:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.737" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.737">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.401" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="3.401">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -632,8 +367,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T03:51:53.955Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.395" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="3.395">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-02-17T04:00:04.056Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.815" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.815">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
