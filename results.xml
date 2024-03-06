@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="30" failures="3" skipped="0" errors="0" time="83.00028">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="8.989" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="8.989">
+<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="69.53764100000001">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="20.687" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="20.687">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="19.258" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="19.258">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="29.228" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="29.228">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -31,8 +31,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="21.033" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.033">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="19.411" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="19.411">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -47,306 +47,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chromium" tests="3" failures="1" skipped="0" time="6.276" errors="0">
-<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="3.321">
-<properties>
-<property name="Go To" value="Go to: https://www.google.com">
-</property>
-<property name="Assert" value="Check accessibility for page: CustomPage">
-</property>
-<property name="1.aria-allowed-attr" value="Fix all of the following:
-  ARIA attribute is not allowed: aria-modal=&quot;true&quot;">
-</property>
-<property name="2.aria-allowed-role" value="Fix any of the following:
-  ARIA role combobox is not allowed for given element">
-</property>
-<property name="3.aria-valid-attr-value" value="Fix all of the following:
-  Invalid ARIA attribute value: aria-controls=&quot;_E-XnZfPvKdurur8PwMyX2Ag_4&quot;">
-</property>
-<property name="4.frame-title" value="Fix any of the following:
-  Element has no title attribute
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-  Element&apos;s role is not presentational because it has a global ARIA attribute">
-</property>
-<property name="5.presentation-role-conflict" value="Fix all of the following:
-  Element does not have global ARIA attribute">
-</property>
-<property name="6.region" value="Fix any of the following:
-  Some page content is not contained by landmarks">
-</property>
-</properties>
-<failure message="pageAccessibility.spec.ts:17:9 Check Page accessibility" type="FAILURE">
-<![CDATA[  [chromium] › Accessibility/pageAccessibility.spec.ts:17:9 › Test Accessibility By Page › Check Page accessibility › Check accessibility for page: CustomPage 
-
-    Error: 1.aria-allowed-attr - Fix all of the following:
-      ARIA attribute is not allowed: aria-modal="true"
-
-    expect(received).toBeNull()
-
-    Received: "aria-allowed-attr"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 2.aria-allowed-role - Fix any of the following:
-      ARIA role combobox is not allowed for given element
-
-    expect(received).toBeNull()
-
-    Received: "aria-allowed-role"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 3.aria-valid-attr-value - Fix all of the following:
-      Invalid ARIA attribute value: aria-controls="_E-XnZfPvKdurur8PwMyX2Ag_4"
-
-    expect(received).toBeNull()
-
-    Received: "aria-valid-attr-value"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 4.frame-title - Fix any of the following:
-      Element has no title attribute
-      aria-label attribute does not exist or is empty
-      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-      Element's role is not presentational because it has a global ARIA attribute
-
-    expect(received).toBeNull()
-
-    Received: "frame-title"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 5.presentation-role-conflict - Fix all of the following:
-      Element does not have global ARIA attribute
-
-    expect(received).toBeNull()
-
-    Received: "presentation-role-conflict"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 6.region - Fix any of the following:
-      Some page content is not contained by landmarks
-
-    expect(received).toBeNull()
-
-    Received: "region"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: Accessibility errors should be 0
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: 0
-    Received: 6
-
-       at ../utils/accessibility/AccessibilityHelper.ts:46
-
-      44 |             await dashboard.saveToFile(keyPage, this.currentAxeErrors);
-      45 |             await dashboard.generateDashboard();
-    > 46 |             expect.soft(accessibilityErrors.length, 'Accessibility errors should be 0').toBe(0);
-         |                                                                                         ^
-      47 |         });
-      48 |     }
-      49 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:46:89
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    attachment #1: CustomPage.1.aria-allowed-attr.png (image/png) ──────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-1-aria-allowed-attr-png-eafb6b74ef03bbd89bfd661e261f2d45b36cc335.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: CustomPage.2.aria-allowed-role.png (image/png) ──────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-2-aria-allowed-role-png-3cea77961bd0b9802da7d6e25da405f24b8b345d.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: CustomPage.3.aria-valid-attr-value.png (image/png) ──────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-3-aria-valid-attr-value-png-4d537fb9f0d52961b748143bc849d24fb2b5cbe1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: CustomPage.4.frame-title.png (image/png) ────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-4-frame-title-png-71b448ec942be160c5d9d1b9124e67800bf9bbfc.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: CustomPage.5.presentation-role-conflict.png (image/png) ─────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-5-presentation-role-conflict-png-947973e007afef15dbb1f73b82bae647dbf1a37b.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: CustomPage.6.region.png (image/png) ─────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-6-region-png-58ed01dcfade43956bb47871109da4a56da7ae4c.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: PageCustomPage.html (text/html) ─────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/PageCustomPage-html-caff6538680c23d32d37e1e3f7dc0f35e7ceb68e.html
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: AccessibilityDashboard (text/html) ──────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/AccessibilityDashboard-82a41326416152a42bf8d35db29792850f9c3995.html
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #10: video (video/webm) ─────────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #11: video (video/webm) ─────────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/video-1.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #12: trace (application/zip) ────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-1-aria-allowed-attr-png-eafb6b74ef03bbd89bfd661e261f2d45b36cc335.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-2-aria-allowed-role-png-3cea77961bd0b9802da7d6e25da405f24b8b345d.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-3-aria-valid-attr-value-png-4d537fb9f0d52961b748143bc849d24fb2b5cbe1.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-4-frame-title-png-71b448ec942be160c5d9d1b9124e67800bf9bbfc.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-5-presentation-role-conflict-png-947973e007afef15dbb1f73b82bae647dbf1a37b.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/CustomPage-6-region-png-58ed01dcfade43956bb47871109da4a56da7ae4c.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/PageCustomPage-html-caff6538680c23d32d37e1e3f7dc0f35e7ceb68e.html]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/attachments/AccessibilityDashboard-82a41326416152a42bf8d35db29792850f9c3995.html]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/video-1.webm]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-chromium/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="2.079">
-<properties>
-<property name="Assert" value="8 elements must be accessible with Tab">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-tab-order-chromium/attachments/tab-png-684b1bad34bed5a45a9031ea57cf4f30cc821ede.png]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.876">
-<properties>
-<property name="Assert" value="Check alt text in images">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-alt-text-aria-label-chromium/attachments/tab-png-f533242d84857ef4f54fb1c114cf29b7b5d33bfe.png]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.21" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.21">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.336" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.336">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -373,8 +75,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chromium" tests="2" failures="0" skipped="0" time="23.871" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="11.831">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chromium" tests="2" failures="0" skipped="0" time="7.941" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.698">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -384,7 +86,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="12.04">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.243">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -395,8 +97,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.483" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.483">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.268" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.268">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -405,8 +107,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.907" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.907">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.076" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.076">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -421,8 +123,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.764" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.764">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.77" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.77">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -437,306 +139,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="firefox" tests="3" failures="1" skipped="0" time="10.349" errors="0">
-<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="5.625">
-<properties>
-<property name="Go To" value="Go to: https://www.google.com">
-</property>
-<property name="Assert" value="Check accessibility for page: CustomPage">
-</property>
-<property name="1.aria-allowed-attr" value="Fix all of the following:
-  ARIA attribute is not allowed: aria-modal=&quot;true&quot;">
-</property>
-<property name="2.aria-allowed-role" value="Fix any of the following:
-  ARIA role combobox is not allowed for given element">
-</property>
-<property name="3.aria-valid-attr-value" value="Fix all of the following:
-  Invalid ARIA attribute value: aria-controls=&quot;_LeXnZemsNpSfkPIPg42HqAU_4&quot;">
-</property>
-<property name="4.frame-title" value="Fix any of the following:
-  Element has no title attribute
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-  Element&apos;s role is not presentational because it has a global ARIA attribute">
-</property>
-<property name="5.presentation-role-conflict" value="Fix all of the following:
-  Element does not have global ARIA attribute">
-</property>
-<property name="6.region" value="Fix any of the following:
-  Some page content is not contained by landmarks">
-</property>
-</properties>
-<failure message="pageAccessibility.spec.ts:17:9 Check Page accessibility" type="FAILURE">
-<![CDATA[  [firefox] › Accessibility/pageAccessibility.spec.ts:17:9 › Test Accessibility By Page › Check Page accessibility › Check accessibility for page: CustomPage 
-
-    Error: 1.aria-allowed-attr - Fix all of the following:
-      ARIA attribute is not allowed: aria-modal="true"
-
-    expect(received).toBeNull()
-
-    Received: "aria-allowed-attr"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 2.aria-allowed-role - Fix any of the following:
-      ARIA role combobox is not allowed for given element
-
-    expect(received).toBeNull()
-
-    Received: "aria-allowed-role"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 3.aria-valid-attr-value - Fix all of the following:
-      Invalid ARIA attribute value: aria-controls="_LeXnZemsNpSfkPIPg42HqAU_4"
-
-    expect(received).toBeNull()
-
-    Received: "aria-valid-attr-value"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 4.frame-title - Fix any of the following:
-      Element has no title attribute
-      aria-label attribute does not exist or is empty
-      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-      Element's role is not presentational because it has a global ARIA attribute
-
-    expect(received).toBeNull()
-
-    Received: "frame-title"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 5.presentation-role-conflict - Fix all of the following:
-      Element does not have global ARIA attribute
-
-    expect(received).toBeNull()
-
-    Received: "presentation-role-conflict"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 6.region - Fix any of the following:
-      Some page content is not contained by landmarks
-
-    expect(received).toBeNull()
-
-    Received: "region"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: Accessibility errors should be 0
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: 0
-    Received: 6
-
-       at ../utils/accessibility/AccessibilityHelper.ts:46
-
-      44 |             await dashboard.saveToFile(keyPage, this.currentAxeErrors);
-      45 |             await dashboard.generateDashboard();
-    > 46 |             expect.soft(accessibilityErrors.length, 'Accessibility errors should be 0').toBe(0);
-         |                                                                                         ^
-      47 |         });
-      48 |     }
-      49 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:46:89
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    attachment #1: CustomPage.1.aria-allowed-attr.png (image/png) ──────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-1-aria-allowed-attr-png-b43a043fa08318eb3bb855ef67db754ade1d04a7.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: CustomPage.2.aria-allowed-role.png (image/png) ──────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-2-aria-allowed-role-png-2157925930ead88ba98d419124cf6c62d900768d.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: CustomPage.3.aria-valid-attr-value.png (image/png) ──────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-3-aria-valid-attr-value-png-d9930011643be009a107d143c029d4d1ef4e3f35.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: CustomPage.4.frame-title.png (image/png) ────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-4-frame-title-png-20db6aab2dfe9986e88a1e3500f534da4d8cf1b1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: CustomPage.5.presentation-role-conflict.png (image/png) ─────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-5-presentation-role-conflict-png-d67c5204acc83f979dcdca8e4495df7a429f7fda.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: CustomPage.6.region.png (image/png) ─────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-6-region-png-9063333852e516c173af477f642baf14f6d34f48.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: PageCustomPage.html (text/html) ─────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/PageCustomPage-html-caff6538680c23d32d37e1e3f7dc0f35e7ceb68e.html
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: AccessibilityDashboard (text/html) ──────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/AccessibilityDashboard-82a41326416152a42bf8d35db29792850f9c3995.html
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #10: video (video/webm) ─────────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/video-1.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #11: video (video/webm) ─────────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #12: trace (application/zip) ────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-1-aria-allowed-attr-png-b43a043fa08318eb3bb855ef67db754ade1d04a7.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-2-aria-allowed-role-png-2157925930ead88ba98d419124cf6c62d900768d.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-3-aria-valid-attr-value-png-d9930011643be009a107d143c029d4d1ef4e3f35.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-4-frame-title-png-20db6aab2dfe9986e88a1e3500f534da4d8cf1b1.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-5-presentation-role-conflict-png-d67c5204acc83f979dcdca8e4495df7a429f7fda.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/CustomPage-6-region-png-9063333852e516c173af477f642baf14f6d34f48.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/PageCustomPage-html-caff6538680c23d32d37e1e3f7dc0f35e7ceb68e.html]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/attachments/AccessibilityDashboard-82a41326416152a42bf8d35db29792850f9c3995.html]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/video-1.webm]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-firefox/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="3.347">
-<properties>
-<property name="Assert" value="8 elements must be accessible with Tab">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-tab-order-firefox/attachments/tab-png-a0c4bc7f94da6de66e0ae187e822327480e7e794.png]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="1.377">
-<properties>
-<property name="Assert" value="Check alt text in images">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-alt-text-aria-label-firefox/attachments/tab-png-d8187d5aee85cbafa19031934a51b3c0b433a70d.png]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.91" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.91">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.574" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.574">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -763,8 +167,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="firefox" tests="2" failures="0" skipped="0" time="11.767" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.178">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="firefox" tests="2" failures="0" skipped="0" time="7.52" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.169">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -774,7 +178,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.589">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.351">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -785,8 +189,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.691" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.691">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.444" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.444">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -795,8 +199,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.495" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.495">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.148" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.148">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -811,8 +215,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.876" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.876">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.698" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.698">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -827,306 +231,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="webkit" tests="3" failures="1" skipped="0" time="13.253" errors="0">
-<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="7.491">
-<properties>
-<property name="Go To" value="Go to: https://www.google.com">
-</property>
-<property name="Assert" value="Check accessibility for page: CustomPage">
-</property>
-<property name="1.aria-allowed-attr" value="Fix all of the following:
-  ARIA attribute is not allowed: aria-modal=&quot;true&quot;">
-</property>
-<property name="2.aria-allowed-role" value="Fix any of the following:
-  ARIA role combobox is not allowed for given element">
-</property>
-<property name="3.aria-valid-attr-value" value="Fix all of the following:
-  Invalid ARIA attribute value: aria-controls=&quot;_QOXnZeDVGd3JkPIPoKOy2Ao_4&quot;">
-</property>
-<property name="4.frame-title" value="Fix any of the following:
-  Element has no title attribute
-  aria-label attribute does not exist or is empty
-  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-  Element&apos;s role is not presentational because it has a global ARIA attribute">
-</property>
-<property name="5.presentation-role-conflict" value="Fix all of the following:
-  Element does not have global ARIA attribute">
-</property>
-<property name="6.region" value="Fix any of the following:
-  Some page content is not contained by landmarks">
-</property>
-</properties>
-<failure message="pageAccessibility.spec.ts:17:9 Check Page accessibility" type="FAILURE">
-<![CDATA[  [webkit] › Accessibility/pageAccessibility.spec.ts:17:9 › Test Accessibility By Page › Check Page accessibility › Check accessibility for page: CustomPage 
-
-    Error: 1.aria-allowed-attr - Fix all of the following:
-      ARIA attribute is not allowed: aria-modal="true"
-
-    expect(received).toBeNull()
-
-    Received: "aria-allowed-attr"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 2.aria-allowed-role - Fix any of the following:
-      ARIA role combobox is not allowed for given element
-
-    expect(received).toBeNull()
-
-    Received: "aria-allowed-role"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 3.aria-valid-attr-value - Fix all of the following:
-      Invalid ARIA attribute value: aria-controls="_QOXnZeDVGd3JkPIPoKOy2Ao_4"
-
-    expect(received).toBeNull()
-
-    Received: "aria-valid-attr-value"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 4.frame-title - Fix any of the following:
-      Element has no title attribute
-      aria-label attribute does not exist or is empty
-      aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty
-      Element's role is not presentational because it has a global ARIA attribute
-
-    expect(received).toBeNull()
-
-    Received: "frame-title"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 5.presentation-role-conflict - Fix all of the following:
-      Element does not have global ARIA attribute
-
-    expect(received).toBeNull()
-
-    Received: "presentation-role-conflict"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: 6.region - Fix any of the following:
-      Some page content is not contained by landmarks
-
-    expect(received).toBeNull()
-
-    Received: "region"
-
-       at ../utils/accessibility/AccessibilityHelper.ts:66
-
-      64 |                 await this.annotationHelper.addDescription(targetLocator, stepDescription, axeError.impact);
-      65 |                 this.annotationHelper.addAnnotation(type, howToFix);
-    > 66 |                 expect.soft(axeError.id, stepDescription).toBeNull();
-         |                                                           ^
-      67 |             }
-      68 |         });
-      69 |     }
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:66:59
-        at AccessibilityHelper.addAnnotations (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:55:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:41:13
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    Error: Accessibility errors should be 0
-
-    expect(received).toBe(expected) // Object.is equality
-
-    Expected: 0
-    Received: 6
-
-       at ../utils/accessibility/AccessibilityHelper.ts:46
-
-      44 |             await dashboard.saveToFile(keyPage, this.currentAxeErrors);
-      45 |             await dashboard.generateDashboard();
-    > 46 |             expect.soft(accessibilityErrors.length, 'Accessibility errors should be 0').toBe(0);
-         |                                                                                         ^
-      47 |         });
-      48 |     }
-      49 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:46:89
-        at AccessibilityHelper.checkAccessibility (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/accessibility/AccessibilityHelper.ts:33:9)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Accessibility/pageAccessibility.spec.ts:24:9
-
-    attachment #1: CustomPage.1.aria-allowed-attr.png (image/png) ──────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-1-aria-allowed-attr-png-50bf1465db55918789379e3b8383aa80220e721b.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: CustomPage.2.aria-allowed-role.png (image/png) ──────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-2-aria-allowed-role-png-83fc6d11b042753190e069ea2cf61092df8942f9.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: CustomPage.3.aria-valid-attr-value.png (image/png) ──────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-3-aria-valid-attr-value-png-c1e13a265ccb4febe47b5b05bdeb270783c975ee.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: CustomPage.4.frame-title.png (image/png) ────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-4-frame-title-png-4dcfad6654af43a6606810a744b43e5ca4c5e6f9.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: CustomPage.5.presentation-role-conflict.png (image/png) ─────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-5-presentation-role-conflict-png-aedebe0521c9fbbed290269ba4f8aa0e81eb4c86.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: CustomPage.6.region.png (image/png) ─────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-6-region-png-3ec07b31c97d91be1dcdede1f009b07feced2585.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: PageCustomPage.html (text/html) ─────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/PageCustomPage-html-caff6538680c23d32d37e1e3f7dc0f35e7ceb68e.html
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: AccessibilityDashboard (text/html) ──────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/AccessibilityDashboard-82a41326416152a42bf8d35db29792850f9c3995.html
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #9: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #10: video (video/webm) ─────────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/video-1.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #11: video (video/webm) ─────────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #12: trace (application/zip) ────────────────────────────────────────────────────────
-    test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-1-aria-allowed-attr-png-50bf1465db55918789379e3b8383aa80220e721b.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-2-aria-allowed-role-png-83fc6d11b042753190e069ea2cf61092df8942f9.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-3-aria-valid-attr-value-png-c1e13a265ccb4febe47b5b05bdeb270783c975ee.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-4-frame-title-png-4dcfad6654af43a6606810a744b43e5ca4c5e6f9.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-5-presentation-role-conflict-png-aedebe0521c9fbbed290269ba4f8aa0e81eb4c86.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/CustomPage-6-region-png-3ec07b31c97d91be1dcdede1f009b07feced2585.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/PageCustomPage-html-caff6538680c23d32d37e1e3f7dc0f35e7ceb68e.html]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/attachments/AccessibilityDashboard-82a41326416152a42bf8d35db29792850f9c3995.html]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/video-1.webm]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-Page-accessibility-webkit/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="3.37">
-<properties>
-<property name="Assert" value="8 elements must be accessible with Tab">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-tab-order-webkit/attachments/tab-png-3d8942ca91af8bbbd3819680f7ac8ce5dad55fac.png]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="2.392">
-<properties>
-<property name="Assert" value="Check alt text in images">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Accessibility-pageAccessibility-Test-Accessibility-By-Page-Check-alt-text-aria-label-webkit/attachments/tab-png-0b5dce6b93523a95f3e1546790ce52394b30f880.png]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.4" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="7.4">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="webkit" tests="1" failures="0" skipped="0" time="12.755" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="12.755">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -1153,8 +259,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="webkit" tests="2" failures="0" skipped="0" time="11.498" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.115">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="webkit" tests="2" failures="0" skipped="0" time="14.206" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="10.198">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -1164,7 +270,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.383">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="4.008">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -1175,8 +281,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.621" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.621">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.945" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.945">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -1185,8 +291,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.153" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.153">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.894" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.894">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -1201,8 +307,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:37:35.478Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.649" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.649">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-06T03:47:45.141Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.826" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.826">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
