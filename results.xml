@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="24" failures="9" skipped="0" errors="0" time="113.429011">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="21.2" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.2">
+<testsuites id="" name="" tests="24" failures="0" skipped="0" errors="0" time="83.703504">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="21.261" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.261">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="38.624" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="38.624">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="38.083" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="38.083">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -31,8 +31,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="19.117" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="19.117">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="20.319" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="20.319">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -47,8 +47,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.535" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.535">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.317" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.317">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -75,8 +75,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chromium" tests="2" failures="2" skipped="0" time="13.519" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.508">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.294" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.592">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -85,111 +85,8 @@
 <property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
 </property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
-
-    Error: Menu is equal to: AccountsReceivable,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu is equal to: AccountsReceivable,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="7.011">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.702">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -198,216 +95,14 @@
 <property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
 </property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
-
-    Error: Menu is equal to:AccountsReceivable,Security,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-        "Security",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu is equal to:AccountsReceivable,Security,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-        "Security",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chromium" tests="1" failures="1" skipped="0" time="8.188" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="8.188">
-<failure message="synthetic.spec.ts:23:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/synthetic.spec.ts:23:9 › Synthetic testing › Should show dashboard ───────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 2
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Security",
-    +   "Configuration",
-      ]
-
-      35 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      36 |         const menus = ['AccountsReceivable', 'Config'];
-    > 37 |         await expect(menusInPage).toEqual(menus);
-         |                                   ^
-      38 |     });
-      39 |
-      40 | });
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/synthetic.spec.ts:37:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 2
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Security",
-    +   "Configuration",
-      ]
-
-      35 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      36 |         const menus = ['AccountsReceivable', 'Config'];
-    > 37 |         await expect(menusInPage).toEqual(menus);
-         |                                   ^
-      38 |     });
-      39 |
-      40 | });
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/synthetic.spec.ts:37:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-chromium-retry1/trace.zip]]
-]]>
-</system-out>
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.784" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="3.784">
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.567" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.567">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.485" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.485">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -416,8 +111,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.893" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.893">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.193" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.193">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -432,8 +127,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.882" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.882">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.487" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="1.487">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -448,8 +143,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.461" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.461">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.742" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.742">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -476,8 +171,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="firefox" tests="2" failures="2" skipped="0" time="16.395" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="9.162">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="firefox" tests="2" failures="0" skipped="0" time="8.009" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.629">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -486,111 +181,8 @@
 <property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
 </property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
-
-    Error: Menu is equal to: AccountsReceivable,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu is equal to: AccountsReceivable,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="7.233">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.38">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -599,216 +191,14 @@
 <property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
 </property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ────────────────
-
-    Error: Menu is equal to:AccountsReceivable,Security,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-        "Security",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu is equal to:AccountsReceivable,Security,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-        "Security",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="firefox" tests="1" failures="1" skipped="0" time="10.028" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="10.028">
-<failure message="synthetic.spec.ts:23:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/synthetic.spec.ts:23:9 › Synthetic testing › Should show dashboard ────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 2
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Security",
-    +   "Configuration",
-      ]
-
-      35 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      36 |         const menus = ['AccountsReceivable', 'Config'];
-    > 37 |         await expect(menusInPage).toEqual(menus);
-         |                                   ^
-      38 |     });
-      39 |
-      40 | });
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/synthetic.spec.ts:37:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 2
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Security",
-    +   "Configuration",
-      ]
-
-      35 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      36 |         const menus = ['AccountsReceivable', 'Config'];
-    > 37 |         await expect(menusInPage).toEqual(menus);
-         |                                   ^
-      38 |     });
-      39 |
-      40 | });
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/synthetic.spec.ts:37:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-firefox-retry1/trace.zip]]
-]]>
-</system-out>
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.974" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="4.974">
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.803" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.803">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.544" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.544">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -817,8 +207,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.134" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.134">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.305" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.305">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -833,8 +223,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.717" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.717">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.008" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="1.008">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -849,8 +239,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="webkit" tests="1" failures="0" skipped="0" time="12.697" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="12.697">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="webkit" tests="1" failures="0" skipped="0" time="9.965" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="9.965">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -877,8 +267,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="webkit" tests="2" failures="2" skipped="0" time="23.585" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="13.139">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="webkit" tests="2" failures="0" skipped="0" time="15.345" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="9.135">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -887,111 +277,8 @@
 <property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
 </property>
 </properties>
-<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────────
-
-    Error: Menu is equal to: AccountsReceivable,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu is equal to: AccountsReceivable,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="10.446">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.21">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -1000,216 +287,14 @@
 <property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
 </property>
 </properties>
-<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ─────────────────
-
-    Error: Menu is equal to:AccountsReceivable,Security,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-        "Security",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu is equal to:AccountsReceivable,Security,Config
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 1
-
-      Array [
-        "AccountsReceivable",
-        "Security",
-    -   "Config",
-    +   "Configuration",
-      ]
-
-       at ../pages/basePage.ts:111
-
-      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
-    > 111 |         expect(expected, assertMessage).toEqual(actual);
-          |                                         ^
-      112 |     }
-      113 | }
-
-        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="webkit" tests="1" failures="1" skipped="0" time="14.325" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="14.325">
-<failure message="synthetic.spec.ts:23:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/synthetic.spec.ts:23:9 › Synthetic testing › Should show dashboard ─────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 2
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Security",
-    +   "Configuration",
-      ]
-
-      35 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      36 |         const menus = ['AccountsReceivable', 'Config'];
-    > 37 |         await expect(menusInPage).toEqual(menus);
-         |                                   ^
-      38 |     });
-      39 |
-      40 | });
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/synthetic.spec.ts:37:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 1
-    + Received  + 2
-
-      Array [
-        "AccountsReceivable",
-    -   "Config",
-    +   "Security",
-    +   "Configuration",
-      ]
-
-      35 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      36 |         const menus = ['AccountsReceivable', 'Config'];
-    > 37 |         await expect(menusInPage).toEqual(menus);
-         |                                   ^
-      38 |     });
-      39 |
-      40 | });
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/synthetic.spec.ts:37:35
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-synthetic-Synthetic-testing-Should-show-dashboard-webkit-retry1/trace.zip]]
-]]>
-</system-out>
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="webkit" tests="1" failures="0" skipped="0" time="8.129" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="8.129">
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.254" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.254">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.602" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.602">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -1218,8 +303,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.214" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.214">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.787" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.787">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -1234,8 +319,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:57:33.413Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.925" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.925">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T23:12:43.218Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.944" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.944">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
