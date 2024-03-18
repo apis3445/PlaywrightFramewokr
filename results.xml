@@ -1,27 +1,6 @@
-<testsuites id="" name="" tests="21" failures="0" skipped="0" errors="0" time="110.043066">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="56.827" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="56.827">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="33.033" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="33.033">
+<testsuites id="" name="" tests="24" failures="6" skipped="0" errors="0" time="94.64730200000001">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="10.779" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="10.779">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -36,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="62.678" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="62.678">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="28.58" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="28.58">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -50,17 +29,330 @@
 <property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
 </property>
 </properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/test-failed-1.png]]
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="19.155" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="19.155">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.572" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.572">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chromium" tests="2" failures="2" skipped="0" time="11.079" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.356">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
+</properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ────────────────
 
-[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/trace.zip]]
+    Error: Menu is equal to: AccountsReceivable,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Menu is equal to: AccountsReceivable,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.723">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
+</properties>
+<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ───────────────
+
+    Error: Menu is equal to:AccountsReceivable,Security,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+        "Security",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Menu is equal to:AccountsReceivable,Security,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+        "Security",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.109" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.109">
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.662" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="3.662">
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.476" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.476">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.065" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.065">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.798" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.798">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.366" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.366">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -87,8 +379,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chromium" tests="2" failures="0" skipped="0" time="13.617" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.317">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="firefox" tests="2" failures="2" skipped="0" time="16.326" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="9.674">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -97,8 +389,111 @@
 <property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
 </property>
 </properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [firefox] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────────
+
+    Error: Menu is equal to: AccountsReceivable,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Menu is equal to: AccountsReceivable,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-firefox-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="10.3">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.652">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -107,10 +502,119 @@
 <property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
 </property>
 </properties>
+<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [firefox] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ────────────────
+
+    Error: Menu is equal to:AccountsReceivable,Security,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+        "Security",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Menu is equal to:AccountsReceivable,Security,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+        "Security",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-firefox-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.815" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="0.815">
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.976" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="4.976">
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.878" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.878">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -119,8 +623,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.763" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.763">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.278" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.278">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -135,8 +639,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.637" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.637">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.842" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.842">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -151,8 +655,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.592" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="3.592">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="webkit" tests="1" failures="0" skipped="0" time="11.777" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="11.777">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -179,8 +683,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="firefox" tests="2" failures="0" skipped="0" time="5.96" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.787">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="webkit" tests="2" failures="2" skipped="0" time="31.731" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="21.012">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -189,8 +693,111 @@
 <property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
 </property>
 </properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [webkit] › Effiziente/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────────
+
+    Error: Menu is equal to: AccountsReceivable,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Menu is equal to: AccountsReceivable,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:12:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Normal-user-Should-returns-user-menu-webkit-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.173">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="10.719">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -199,10 +806,119 @@
 <property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
 </property>
 </properties>
+<failure message="menu.spec.ts:19:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [webkit] › Effiziente/menu.spec.ts:19:9 › Admin user › Should returns admin menu ─────────────────
+
+    Error: Menu is equal to:AccountsReceivable,Security,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+        "Security",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Menu is equal to:AccountsReceivable,Security,Config
+
+    expect(received).toEqual(expected) // deep equality
+
+    - Expected  - 1
+    + Received  + 1
+
+      Array [
+        "AccountsReceivable",
+        "Security",
+    -   "Config",
+    +   "Configuration",
+      ]
+
+       at ../pages/basePage.ts:111
+
+      109 |     public AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
+      110 |         this.annotationHelper.addAnnotation(AnnotationType.Assert, assertMessage);
+    > 111 |         expect(expected, assertMessage).toEqual(actual);
+          |                                         ^
+      112 |     }
+      113 | }
+
+        at DashboardPage.AssertArrayEqual (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/basePage.ts:111:41)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/menu.spec.ts:24:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-menu-Admin-user-Should-returns-admin-menu-webkit-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.285" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.285">
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.001" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="6.001">
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.384" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.384">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -211,8 +927,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.984" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.984">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.475" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.475">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -227,100 +943,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.669" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.669">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.703" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="6.703">
-<properties>
-<property name="Mock" value="Modify the summary with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
-</property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="webkit" tests="2" failures="0" skipped="0" time="12.109" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.576">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
-</property>
-</properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.533">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.337" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.337">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
-</property>
-<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.963" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.963">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-15T03:16:12.427Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.72" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.72">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-18T22:28:00.956Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.668" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.668">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
