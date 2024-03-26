@@ -1,6 +1,105 @@
-<testsuites id="" name="" tests="24" failures="0" skipped="0" errors="0" time="53.944306">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="11.589" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="11.589">
+<testsuites id="" name="" tests="27" failures="1" skipped="0" errors="0" time="116.288179">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="1" skipped="0" time="79.998" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="79.998">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+</properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [chrome:latest:MacOS Catalina@lambdatest] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page 
+
+    Test timeout of 40000ms exceeded.
+
+    Error: locator.getAttribute: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('[data-test="password"]')
+
+
+       at ../components/BaseComponent.ts:99
+
+       97 |         return await this.addStep('Get placeholder', async () => {
+       98 |             if (!this.placeHolder) {
+    >  99 |                 const placeHolderElement = await this.locator.getAttribute('placeholder');
+          |                                                               ^
+      100 |                 this.placeHolder = placeHolderElement ? placeHolderElement! : '';
+      101 |             }
+      102 |             return this.placeHolder;
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:99:63
+        at InputPassword.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:31)
+        at InputPassword.getPlaceHolder (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:27)
+        at InputPassword.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputPassword.ts:30:39)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:30:29)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 40000ms exceeded.
+
+    Error: locator.getAttribute: Target page, context or browser has been closed
+    Call log:
+      - waiting for locator('[data-test="password"]')
+
+
+       at ../components/BaseComponent.ts:99
+
+       97 |         return await this.addStep('Get placeholder', async () => {
+       98 |             if (!this.placeHolder) {
+    >  99 |                 const placeHolderElement = await this.locator.getAttribute('placeholder');
+          |                                                               ^
+      100 |                 this.placeHolder = placeHolderElement ? placeHolderElement! : '';
+      101 |             }
+      102 |             return this.placeHolder;
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:99:63
+        at InputPassword.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:31)
+        at InputPassword.getPlaceHolder (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:27)
+        at InputPassword.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputPassword.ts:30:39)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:30:29)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="21.118" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.118">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +114,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="12.299" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="12.299">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="35.648" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="35.648">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -31,24 +130,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="12.947" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="12.947">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.358" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.358">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.887" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.887">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -75,8 +158,12 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.488" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.687">
+<testsuite name="Effiziente/login.synthetic.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.92" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/login.synthetic.spec.ts" time="3.92">
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.621" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.041">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -86,7 +173,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.801">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.58">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -97,16 +184,16 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.15" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="3.15">
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.888" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="3.888">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.868" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="0.868">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.091" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.091">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -115,8 +202,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.981" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.981">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.836" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.836">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -131,8 +218,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.842" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.842">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.703" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.703">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -147,8 +234,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.482" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.482">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.025" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.025">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -175,8 +262,12 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="firefox" tests="2" failures="0" skipped="0" time="7.987" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.74">
+<testsuite name="Effiziente/login.synthetic.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.211" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/login.synthetic.spec.ts" time="4.211">
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="2" failures="0" skipped="0" time="8.073" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.579">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -186,7 +277,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.247">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.494">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -197,16 +288,16 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.115" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="5.115">
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.244" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="5.244">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.519" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.519">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.716" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.716">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -215,8 +306,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.238" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.238">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.201" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.201">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -231,8 +322,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.786" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.786">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.747" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.747">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -247,8 +338,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.559" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="6.559">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.394" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="7.394">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -275,8 +366,12 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="webkit" tests="2" failures="0" skipped="0" time="9.264" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.882">
+<testsuite name="Effiziente/login.synthetic.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.128" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/login.synthetic.spec.ts" time="7.128">
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="2" failures="0" skipped="0" time="12.074" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.955">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -286,7 +381,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="4.382">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.119">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -297,16 +392,16 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.932" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="7.932">
+<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="1" failures="0" skipped="0" time="8.269" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="8.269">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.994" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.994">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.475" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.475">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -315,8 +410,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.363" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.363">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.036" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.036">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -331,8 +426,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:30:49.267Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.874" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.874">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:42:52.008Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.999" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.999">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
