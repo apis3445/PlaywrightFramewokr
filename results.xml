@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="27" failures="0" skipped="0" errors="0" time="103.777761">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="32.562" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="32.562">
+<testsuites id="" name="" tests="30" failures="3" skipped="0" errors="0" time="118.303202">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="7.903" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="7.903">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="69.162" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="69.162">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="18.336" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="18.336">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -29,17 +29,184 @@
 <property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
 </property>
 </properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="17.67" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="17.67">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.322" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.322">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="2" failures="0" skipped="0" time="27.935" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="16.299">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="11.636">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PirmeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.52" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="3.52">
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.211" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="4.211">
+<properties>
+<property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="1" skipped="0" time="3.399" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="3.399">
+<failure message="login.spec.ts:6:9 Should show dashboard after login" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/ZeroStep/login.spec.ts:6:9 › AI Zero Step › Should show dashboard after login 
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5'
+
+      15 |         // An object with page and test must be passed into every call
+      16 |         const aiArgs = { page, test };
+    > 17 |         await ai(`Type "${company}" in the "Company" textbox`, aiArgs);
+         |         ^
+      18 |         await ai(`Type "${userName}" in the "User" textbox`, aiArgs);
+      19 |         await ai(`Type "${password}" in the "Password" textbox`, aiArgs);
+      20 |         await ai('Click in "Login" button', aiArgs);
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/ZeroStep/login.spec.ts:17:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5'
+
+      15 |         // An object with page and test must be passed into every call
+      16 |         const aiArgs = { page, test };
+    > 17 |         await ai(`Type "${company}" in the "Company" textbox`, aiArgs);
+         |         ^
+      18 |         await ai(`Type "${userName}" in the "User" textbox`, aiArgs);
+      19 |         await ai(`Type "${password}" in the "Password" textbox`, aiArgs);
+      20 |         await ai('Click in "Login" button', aiArgs);
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/ZeroStep/login.spec.ts:17:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/test-failed-1.png]]
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestFixture-Login-Login-with-valid-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip]]
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
+<system-err>
+<![CDATA[zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5
+zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5
+]]>
+</system-err>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="23.557" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="23.557">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.691" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.691">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.022" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.022">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -54,8 +221,24 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.109" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.109">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.885" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.885">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.632" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="5.632">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -82,12 +265,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/login.synthetic.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.124" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/login.synthetic.spec.ts" time="2.124">
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="2" failures="0" skipped="0" time="3.765" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="1.936">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="2" failures="0" skipped="0" time="9.819" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.512">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -97,7 +276,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="1.829">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="4.307">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -108,16 +287,106 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.426" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="3.426">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.891" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="4.891">
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="0" skipped="0" time="8.578" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="8.578">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.013" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.013">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="1" skipped="0" time="3.931" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="3.931">
+<failure message="login.spec.ts:6:9 Should show dashboard after login" type="FAILURE">
+<![CDATA[  [firefox] › Effiziente/ZeroStep/login.spec.ts:6:9 › AI Zero Step › Should show dashboard after login 
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5'
+
+      15 |         // An object with page and test must be passed into every call
+      16 |         const aiArgs = { page, test };
+    > 17 |         await ai(`Type "${company}" in the "Company" textbox`, aiArgs);
+         |         ^
+      18 |         await ai(`Type "${userName}" in the "User" textbox`, aiArgs);
+      19 |         await ai(`Type "${password}" in the "Password" textbox`, aiArgs);
+      20 |         await ai('Click in "Login" button', aiArgs);
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/ZeroStep/login.spec.ts:17:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5'
+
+      15 |         // An object with page and test must be passed into every call
+      16 |         const aiArgs = { page, test };
+    > 17 |         await ai(`Type "${company}" in the "Company" textbox`, aiArgs);
+         |         ^
+      18 |         await ai(`Type "${userName}" in the "User" textbox`, aiArgs);
+      19 |         await ai(`Type "${password}" in the "Password" textbox`, aiArgs);
+      20 |         await ai('Click in "Login" button', aiArgs);
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/ZeroStep/login.spec.ts:17:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5
+zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.687" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.687">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -126,8 +395,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.634" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.634">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.258" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.258">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -142,8 +411,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.639" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.639">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.019" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="1.019">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -158,8 +427,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.19" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.19">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="0" skipped="0" time="17.423" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="17.423">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -186,12 +455,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/login.synthetic.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.546" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/login.synthetic.spec.ts" time="5.546">
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="2" failures="0" skipped="0" time="5.514" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.526">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="2" failures="0" skipped="0" time="35.896" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="21.408">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -201,7 +466,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.988">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="14.488">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -212,16 +477,106 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.655" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="4.655">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="0" skipped="0" time="15.864" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="15.864">
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="0" skipped="0" time="15.766" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="15.766">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.105" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.105">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="1" skipped="0" time="2.916" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="2.916">
+<failure message="login.spec.ts:6:9 Should show dashboard after login" type="FAILURE">
+<![CDATA[  [webkit] › Effiziente/ZeroStep/login.spec.ts:6:9 › AI Zero Step › Should show dashboard after login 
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5'
+
+      15 |         // An object with page and test must be passed into every call
+      16 |         const aiArgs = { page, test };
+    > 17 |         await ai(`Type "${company}" in the "Company" textbox`, aiArgs);
+         |         ^
+      18 |         await ai(`Type "${userName}" in the "User" textbox`, aiArgs);
+      19 |         await ai(`Type "${password}" in the "Password" textbox`, aiArgs);
+      20 |         await ai('Click in "Login" button', aiArgs);
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/ZeroStep/login.spec.ts:17:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5'
+
+      15 |         // An object with page and test must be passed into every call
+      16 |         const aiArgs = { page, test };
+    > 17 |         await ai(`Type "${company}" in the "Company" textbox`, aiArgs);
+         |         ^
+      18 |         await ai(`Type "${userName}" in the "User" textbox`, aiArgs);
+      19 |         await ai(`Type "${password}" in the "Password" textbox`, aiArgs);
+      20 |         await ai('Click in "Login" button', aiArgs);
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/ZeroStep/login.spec.ts:17:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-ZeroStep-login-AI-Zero-Step-Should-show-dashboard-after-login-webkit-retry1/trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5
+zerostep.error 'The $ZEROSTEP_TOKEN environment variable or a zerostep.config.json file with a "TOKEN" field must be defined to execute ai steps. You can find your token or sign up for an account at https://app.zerostep.com'. Version:v0.1.5
+]]>
+</system-err>
+</testcase>
+</testsuite>
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.265" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.265">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -230,8 +585,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.094" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.094">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.109" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.109">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -246,112 +601,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.795" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.795">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.185" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="7.185">
-<properties>
-<property name="Mock" value="Modify the summary with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
-</property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/login.synthetic.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.02" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/login.synthetic.spec.ts" time="7.02">
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="2" failures="0" skipped="0" time="10.712" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.889">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to: AccountsReceivable,Config">
-</property>
-</properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.823">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu is equal to:AccountsReceivable,Security,Config">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/synthetic.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.059" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/synthetic.spec.ts" time="7.059">
-<properties>
-<property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.58" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.58">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
-</property>
-<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.137" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.137">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-26T03:43:32.788Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.92" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.92">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-03-27T00:16:02.762Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.939" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.939">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
