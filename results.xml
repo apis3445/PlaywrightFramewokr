@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="33" failures="6" skipped="2" errors="0" time="215.318947">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="20.813" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="20.813">
+<testsuites id="" name="" tests="33" failures="3" skipped="2" errors="0" time="196.276841">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="34.333" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="34.333">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,31 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="39.74" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="39.74">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="61.765" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="61.765">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="15.813" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="15.813">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -31,24 +54,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="21.12" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.12">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="1" skipped="0" time="13.615" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="13.615">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="1" skipped="0" time="14.35" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="14.35">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -80,7 +87,7 @@
 
     Screenshot comparison failed:
 
-      Expected an image 1280px by 1448px, received 1280px by 1415px. 401220 pixels (ratio 0.22 of all image pixels) are different.
+      Expected an image 1280px by 1448px, received 1280px by 1415px. 370569 pixels (ratio 0.20 of all image pixels) are different.
 
     Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-chromium-linux.png
     Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium/dashboard-actual.png
@@ -93,32 +100,20 @@
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 263501 pixels (ratio 0.15 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 281389 pixels (ratio 0.16 of all image pixels) are different.
       - waiting 100ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - 206514 pixels (ratio 0.12 of all image pixels) are different.
+      - 192599 pixels (ratio 0.11 of all image pixels) are different.
       - waiting 250ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - 243749 pixels (ratio 0.14 of all image pixels) are different.
-      - waiting 500ms before taking screenshot
-      - taking page screenshot
-      -   disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - 243749 pixels (ratio 0.14 of all image pixels) are different.
-      - waiting 1000ms before taking screenshot
-      - taking page screenshot
-      -   disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
       - captured a stable screenshot
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 401220 pixels (ratio 0.22 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 370569 pixels (ratio 0.20 of all image pixels) are different.
 
 
        at ../utils/VisualHelper.ts:24
@@ -170,7 +165,7 @@
 
     Screenshot comparison failed:
 
-      Expected an image 1280px by 1448px, received 1280px by 1415px. 370570 pixels (ratio 0.20 of all image pixels) are different.
+      Expected an image 1280px by 1448px, received 1280px by 1415px. 401872 pixels (ratio 0.22 of all image pixels) are different.
 
     Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-chromium-linux.png
     Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-chromium-retry1/dashboard-actual.png
@@ -183,20 +178,20 @@
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 248174 pixels (ratio 0.14 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 243560 pixels (ratio 0.14 of all image pixels) are different.
       - waiting 100ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - 239419 pixels (ratio 0.14 of all image pixels) are different.
+      - 233422 pixels (ratio 0.13 of all image pixels) are different.
       - waiting 250ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
       - captured a stable screenshot
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 370570 pixels (ratio 0.20 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 401872 pixels (ratio 0.22 of all image pixels) are different.
 
 
        at ../utils/VisualHelper.ts:24
@@ -272,8 +267,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.862" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.311">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="2" failures="0" skipped="0" time="39.628" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="21.707">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -283,7 +278,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.551">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="17.921">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -294,8 +289,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/servers.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.584" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/servers.spec.ts" time="1.584">
+<testsuite name="Effiziente/servers.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="7.271" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/servers.spec.ts" time="7.271">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -304,76 +299,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="1" skipped="0" time="58.5" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="58.5">
-<failure message="login.spec.ts:6:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/Synthetic/login.spec.ts:6:9 › Synthetic login testing › Should show dashboard 
-
-    TimeoutError: locator.click: Timeout 25000ms exceeded.
-    Call log:
-      - waiting for locator('app-card-pie').getByRole('img')
-
-
-      10 |         await page.getByPlaceholder('Password').fill('Demo');
-      11 |         await page.getByRole('button', { name: 'Login' }).click();
-    > 12 |         await page.locator('app-card-pie').getByRole('img').click({ timeout: 25_000 });
-         |                                                             ^
-      13 |
-      14 |     });
-      15 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Synthetic/login.spec.ts:12:61
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.click: Timeout 25000ms exceeded.
-    Call log:
-      - waiting for locator('app-card-pie').getByRole('img')
-
-
-      10 |         await page.getByPlaceholder('Password').fill('Demo');
-      11 |         await page.getByRole('button', { name: 'Login' }).click();
-    > 12 |         await page.locator('app-card-pie').getByRole('img').click({ timeout: 25_000 });
-         |                                                             ^
-      13 |
-      14 |     });
-      15 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Synthetic/login.spec.ts:12:61
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="34.023" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="34.023">
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/test-failed-1.png]]
@@ -381,30 +308,24 @@
 [[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/video.webm]]
 
 [[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.281" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="5.281">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="26.805" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="26.805">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.991" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="6.991">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.115" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="6.115">
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.039" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.039">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.201" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.201">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -413,8 +334,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.652" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.652">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.85" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.85">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -429,8 +350,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.595" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.595">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.753" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.753">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -445,8 +366,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="1" skipped="0" time="9.022" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="9.022">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="1" skipped="0" time="21.677" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="21.677">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -478,7 +399,7 @@
 
     Screenshot comparison failed:
 
-      Expected an image 1280px by 1448px, received 1280px by 1415px. 245826 pixels (ratio 0.14 of all image pixels) are different.
+      Expected an image 1280px by 1448px, received 1280px by 1415px. 247757 pixels (ratio 0.14 of all image pixels) are different.
 
     Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png
     Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox/dashboard-actual.png
@@ -491,14 +412,14 @@
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 343149 pixels (ratio 0.19 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 304974 pixels (ratio 0.17 of all image pixels) are different.
       - waiting 100ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
       - captured a stable screenshot
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 245826 pixels (ratio 0.14 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 247757 pixels (ratio 0.14 of all image pixels) are different.
 
 
        at ../utils/VisualHelper.ts:24
@@ -550,7 +471,7 @@
 
     Screenshot comparison failed:
 
-      Expected an image 1280px by 1448px, received 1280px by 1415px. 247699 pixels (ratio 0.14 of all image pixels) are different.
+      Expected an image 1280px by 1448px, received 1280px by 1415px. 247448 pixels (ratio 0.14 of all image pixels) are different.
 
     Expected: /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/dashboard.spec.ts-snapshots/dashboard-firefox-linux.png
     Received: /home/runner/work/PlaywrightFramework/PlaywrightFramework/test-results/Effiziente-dashboard-Check-Dashboard-Should-show-dashboard-firefox-retry1/dashboard-actual.png
@@ -563,14 +484,14 @@
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 319996 pixels (ratio 0.18 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 331166 pixels (ratio 0.18 of all image pixels) are different.
       - waiting 100ms before taking screenshot
       - taking page screenshot
       -   disabled all CSS animations
       - waiting for fonts to load...
       - fonts loaded
       - captured a stable screenshot
-      - Expected an image 1280px by 1448px, received 1280px by 1415px. 247699 pixels (ratio 0.14 of all image pixels) are different.
+      - Expected an image 1280px by 1448px, received 1280px by 1415px. 247448 pixels (ratio 0.14 of all image pixels) are different.
 
 
        at ../utils/VisualHelper.ts:24
@@ -646,8 +567,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.36" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.257">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="2" failures="0" skipped="0" time="22.098" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="15.111">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -657,7 +578,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.103">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="6.987">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -668,8 +589,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/servers.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.785" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/servers.spec.ts" time="1.785">
+<testsuite name="Effiziente/servers.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.623" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/servers.spec.ts" time="5.623">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -678,103 +599,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="1" skipped="0" time="55.296" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="55.296">
-<failure message="login.spec.ts:6:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/Synthetic/login.spec.ts:6:9 › Synthetic login testing › Should show dashboard 
-
-    TimeoutError: locator.click: Timeout 25000ms exceeded.
-    Call log:
-      - waiting for locator('app-card-pie').getByRole('img')
-
-
-      10 |         await page.getByPlaceholder('Password').fill('Demo');
-      11 |         await page.getByRole('button', { name: 'Login' }).click();
-    > 12 |         await page.locator('app-card-pie').getByRole('img').click({ timeout: 25_000 });
-         |                                                             ^
-      13 |
-      14 |     });
-      15 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Synthetic/login.spec.ts:12:61
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.click: Timeout 25000ms exceeded.
-    Call log:
-      - waiting for locator('app-card-pie').getByRole('img')
-
-
-      10 |         await page.getByPlaceholder('Password').fill('Demo');
-      11 |         await page.getByRole('button', { name: 'Login' }).click();
-    > 12 |         await page.locator('app-card-pie').getByRole('img').click({ timeout: 25_000 });
-         |                                                             ^
-      13 |
-      14 |     });
-      15 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Synthetic/login.spec.ts:12:61
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-firefox-retry1/trace.zip]]
-]]>
-</system-out>
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.039" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="10.039">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="0" skipped="0" time="9.82" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="9.82">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="0" time="9.521" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="9.521">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0.343" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.343">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0.228" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.228">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -783,8 +621,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.886" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.886">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.334" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.334">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -793,8 +631,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.018" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.018">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.117" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.117">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -809,8 +647,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.625" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.625">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.654" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.654">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -825,8 +663,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="1" skipped="0" time="14.628" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="14.628">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="1" skipped="0" time="16.461" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="16.461">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -1026,8 +864,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="2" failures="0" skipped="0" time="13.72" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="8.384">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="2" failures="0" skipped="0" time="10.557" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.286">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -1037,7 +875,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.336">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.271">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -1048,8 +886,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/servers.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.447" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/servers.spec.ts" time="3.447">
+<testsuite name="Effiziente/servers.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="0" time="4.84" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/servers.spec.ts" time="4.84">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -1058,103 +896,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="1" skipped="0" time="58.486" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="58.486">
-<failure message="login.spec.ts:6:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/Synthetic/login.spec.ts:6:9 › Synthetic login testing › Should show dashboard 
-
-    TimeoutError: locator.click: Timeout 25000ms exceeded.
-    Call log:
-      - waiting for locator('app-card-pie').getByRole('img')
-
-
-      10 |         await page.getByPlaceholder('Password').fill('Demo');
-      11 |         await page.getByRole('button', { name: 'Login' }).click();
-    > 12 |         await page.locator('app-card-pie').getByRole('img').click({ timeout: 25_000 });
-         |                                                             ^
-      13 |
-      14 |     });
-      15 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Synthetic/login.spec.ts:12:61
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.click: Timeout 25000ms exceeded.
-    Call log:
-      - waiting for locator('app-card-pie').getByRole('img')
-
-
-      10 |         await page.getByPlaceholder('Password').fill('Demo');
-      11 |         await page.getByRole('button', { name: 'Login' }).click();
-    > 12 |         await page.locator('app-card-pie').getByRole('img').click({ timeout: 25_000 });
-         |                                                             ^
-      13 |
-      14 |     });
-      15 |
-
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Synthetic/login.spec.ts:12:61
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Synthetic-login-649ce-sting-Should-show-dashboard-webkit-retry1/trace.zip]]
-]]>
-</system-out>
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="0" time="8.501" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="8.501">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.153" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="6.153">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="0" time="11.647" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="11.647">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0.279" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.279">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0.467" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.467">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -1163,8 +918,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.512" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.512">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.078" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.078">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -1173,8 +928,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.411" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.411">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.025" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.025">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -1189,8 +944,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-13T15:30:34.146Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.614" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.614">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-14T03:25:03.532Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.884" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.884">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
