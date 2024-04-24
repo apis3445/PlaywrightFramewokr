@@ -1,98 +1,418 @@
-<testsuites id="" name="" tests="36" failures="3" skipped="2" errors="0" time="239.770812">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="10.013" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="10.013">
+<testsuites id="" name="" tests="36" failures="12" skipped="2" errors="0" time="318.420229">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="1" skipped="0" time="58.895" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="58.895">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [chrome:latest:MacOS Catalina@lambdatest] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-MacOS-Catalina-lambdatest-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="18.312" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="18.312">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="1" skipped="0" time="88.047" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="88.047">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [pw-webkit:latest:MacOS Monterey@lambdatest] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="23.492" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="23.492">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="1" skipped="0" time="73.348" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="73.348">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [chrome:latest:Windows 10@lambdatest] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chrome-latest-Windows-10-lambdatest-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.058" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="2.229">
+<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="2" failures="1" skipped="0" time="33.317" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="4.187">
 <properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;2&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;507131&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;Wolf and Sons&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Boyle - Hodkiewicz&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;https://bustling-centimeter.info/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Server id should be a number greater than 1">
-</property>
-<property name="Assert" value="Row with the key: 2 exists">
-</property>
-</properties>
-</testcase>
-<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="2.829">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="Step" value="Create server with API">
-</property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;key&quot; with value: &quot;4&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Name&quot; with value: &quot;Veum, Reichert and McClure&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Url&quot; with value: &quot;https://playful-volleyball.biz/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://zany-glen.biz&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Row with the key: 4 exists">
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Row with the key: 507131 exists">
 </property>
 </properties>
+<system-out>
+<![CDATA[index:2
+]]>
+</system-out>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="29.13">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+</properties>
+<failure message="servers.spec.ts:40:9 Should edit a server" type="FAILURE">
+<![CDATA[  [chromium] › Effiziente/Api/servers.spec.ts:40:9 › Servers › Should edit a server › Get label ────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="minmax"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:68:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="minmax"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:68:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-chromium-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.313" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.313">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.954" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.954">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -119,8 +439,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="2" failures="0" skipped="0" time="4.522" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.252">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="2" failures="0" skipped="0" time="26.33" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.178">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -130,7 +450,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.27">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="23.152">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -141,24 +461,24 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="9.877" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="9.877">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="0" skipped="0" time="20.654" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="20.654">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="17.864" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="17.864">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.315" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="14.315">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="28.37" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="28.37">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="0" skipped="0" time="14.581" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="14.581">
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.381" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.381">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.265" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.265">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -167,183 +487,320 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.797" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.797">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="1" skipped="0" time="22.977" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="22.977">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.745" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.745">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="2" failures="1" skipped="0" time="131.511" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="62.205">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="Button" value="Click: &quot;Add&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;2&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;Hudson Inc&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;https://baggy-pomegranate.net&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-</properties>
-<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/Api/servers.spec.ts:12:9 › Servers › Should add a server ──────────────────
+<failure message="login.spec.ts:10:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [chromium] › SauceDemo/login.spec.ts:10:9 › Login › Login with valid user load inventory page › Get label 
 
-    TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
 
-       at ../utils/ApiHelper.ts:33
 
-      31 |      */
-      32 |     waitForResponse(apiUrl: string, statusCode = 200, method: 'POST' | 'GET' | 'PUT' | 'DELETE' = 'GET') {
-    > 33 |         const responsePromise = this.page.waitForResponse(response => response.url().includes(apiUrl) && response.request().method() == method
-         |                                           ^
-      34 |             && response.status() == statusCode);
-      35 |         return responsePromise;
-      36 |     }
+       at ../components/BaseComponent.ts:101
 
-        at ApiHelper.waitForResponse (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/ApiHelper.ts:33:43)
-        at ServerApi.waitForCreateServer (/home/runner/work/PlaywrightFramework/PlaywrightFramework/api/Effiziente/Server.api.ts:19:31)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/addServerPage.ts:28:58
-        at AddServerPage.saveClick (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/addServerPage.ts:27:27)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:27:34
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
 
-    TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
-
-       at ../utils/ApiHelper.ts:33
-
-      31 |      */
-      32 |     waitForResponse(apiUrl: string, statusCode = 200, method: 'POST' | 'GET' | 'PUT' | 'DELETE' = 'GET') {
-    > 33 |         const responsePromise = this.page.waitForResponse(response => response.url().includes(apiUrl) && response.request().method() == method
-         |                                           ^
-      34 |             && response.status() == statusCode);
-      35 |         return responsePromise;
-      36 |     }
-
-        at ApiHelper.waitForResponse (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/ApiHelper.ts:33:43)
-        at ServerApi.waitForGetServers (/home/runner/work/PlaywrightFramework/PlaywrightFramework/api/Effiziente/Server.api.ts:26:31)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/addServerPage.ts:29:55
-        at AddServerPage.saveClick (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/addServerPage.ts:27:27)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:27:34
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/login.spec.ts:16:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/test-failed-1.png
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/video.webm
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/trace.zip
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/trace.zip
+        npx playwright show-trace test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
 
-    TimeoutError: page.waitForResponse: Timeout 10000ms exceeded while waiting for event "response"
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
 
-       at ../utils/ApiHelper.ts:33
 
-      31 |      */
-      32 |     waitForResponse(apiUrl: string, statusCode = 200, method: 'POST' | 'GET' | 'PUT' | 'DELETE' = 'GET') {
-    > 33 |         const responsePromise = this.page.waitForResponse(response => response.url().includes(apiUrl) && response.request().method() == method
-         |                                           ^
-      34 |             && response.status() == statusCode);
-      35 |         return responsePromise;
-      36 |     }
+       at ../components/BaseComponent.ts:101
 
-        at ApiHelper.waitForResponse (/home/runner/work/PlaywrightFramework/PlaywrightFramework/utils/ApiHelper.ts:33:43)
-        at ServerApi.waitForGetServers (/home/runner/work/PlaywrightFramework/PlaywrightFramework/api/Effiziente/Server.api.ts:26:31)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/addServerPage.ts:29:55
-        at AddServerPage.saveClick (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/addServerPage.ts:27:27)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:27:34
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/login.spec.ts:16:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/test-failed-1.png
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/video.webm
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/trace.zip
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/trace.zip
+        npx playwright show-trace test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/test-failed-1.png]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/video.webm]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/video.webm]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/trace.zip]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium/trace.zip]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/test-failed-1.png]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/video.webm]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/video.webm]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/trace.zip]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="69.306">
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="chromium" tests="1" failures="1" skipped="0" time="21.287" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.287">
 <properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="Step" value="Create server with API">
+</properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [chromium] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="2" failures="1" skipped="0" time="36.493" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="5.172">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+<property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;key&quot; with value: &quot;4&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;975531&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Name&quot; with value: &quot;Runte - Wolff&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Kiehn - Hane&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Url&quot; with value: &quot;https://alarmed-submitter.biz&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://different-shear.name&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Row with the key: 4 exists">
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Row with the key: 975531 exists">
 </property>
 </properties>
+<system-out>
+<![CDATA[index:2
+]]>
+</system-out>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="31.321">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+</properties>
+<failure message="servers.spec.ts:40:9 Should edit a server" type="FAILURE">
+<![CDATA[  [firefox] › Effiziente/Api/servers.spec.ts:40:9 › Servers › Should edit a server › Get label ─────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="minmax"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:68:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="minmax"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:68:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/test-failed-1.png]]
@@ -351,12 +808,18 @@
 [[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/video.webm]]
 
 [[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-firefox-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="0" time="11.28" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="11.28">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.905" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.905">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -383,8 +846,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="2" failures="0" skipped="0" time="30.842" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="15.44">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="2" failures="0" skipped="0" time="9.895" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="6.869">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -394,7 +857,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="15.402">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.026">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -405,20 +868,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="0" time="15.291" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="15.291">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.702" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="3.702">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="0" time="10.12" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="10.12">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="0" skipped="0" time="5.78" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="5.78">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0.265" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.265">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0.278" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.278">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -427,8 +890,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.452" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.452">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.581" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.581">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -437,89 +900,50 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.108" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.108">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="1" skipped="0" time="22.345" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="22.345">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
-</testcase>
-</testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.759" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.759">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="2" failures="2" skipped="0" time="70.675" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="24.508">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="Button" value="Click: &quot;Add&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;2&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;Stark - Franecki&quot;">
-</property>
-<property name="InputText" value="Fill: &quot;&quot; with value: &quot;https://tricky-pension.com/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Server id should be a number greater than 1">
-</property>
-</properties>
-<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/Api/servers.spec.ts:12:9 › Servers › Should add a server ───────────────────
+<failure message="login.spec.ts:10:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [firefox] › SauceDemo/login.spec.ts:10:9 › Login › Login with valid user load inventory page › Get label 
 
-    Error: The total rows for server is greater than 1
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
 
-    expect(received).toBeGreaterThan(expected)
 
-    Expected: > 1
-    Received:   1
+       at ../components/BaseComponent.ts:101
 
-      31 |         const totalRows = await serversPage.table.getTotalRows();
-      32 |         assertDescription = 'The total rows for server is greater than 1';
-    > 33 |         expect(totalRows, assertDescription).toBeGreaterThan(1);
-         |                                              ^
-      34 |         await serversPage.checkRow(key, name, url);
-      35 |     });
-      36 |
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
 
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:33:46
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/login.spec.ts:16:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/test-failed-1.png
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/video.webm
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/trace.zip
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/trace.zip
+        npx playwright show-trace test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -527,98 +951,212 @@
 
     TimeoutError: locator.innerText: Timeout 10000ms exceeded.
     Call log:
-      - waiting for locator('tbody > tr').nth(3).locator('td').last()
+      - waiting for locator('label[for="user-name"]')
 
 
-       at ../components/TableComponent.ts:54
+       at ../components/BaseComponent.ts:101
 
-      52 |         for (let i = 0; i < totalRows; i++) {
-      53 |             const row = this.page.locator('tbody > tr').nth(i);
-    > 54 |             const columnValue = await row.locator('td').nth(index).innerText();
-         |                                                                    ^
-      55 |             if (columnValue == value)
-      56 |                 return row;
-      57 |         }
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
 
-        at Table.getRowByColumnIndex (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/TableComponent.ts:54:68)
-        at Table.getRowBykey (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/TableComponent.ts:77:21)
-        at ServersPage.checkRow (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:74:21)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:34:9
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/login.spec.ts:16:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/test-failed-1.png
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/test-failed-1.png
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/video.webm
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/video.webm
     ────────────────────────────────────────────────────────────────────────────────────────────────
 
     attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/trace.zip
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/trace.zip
     Usage:
 
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/trace.zip
+        npx playwright show-trace test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/trace.zip
 
     ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
 </failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/test-failed-1.png]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/video.webm]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/video.webm]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/trace.zip]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox/trace.zip]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/test-failed-1.png]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/test-failed-1.png]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/video.webm]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/video.webm]]
 
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/trace.zip]]
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-firefox-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="46.167">
+</testsuite>
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="firefox" tests="1" failures="1" skipped="0" time="21.245" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.245">
 <properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="Step" value="Create server with API">
+</properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [firefox] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="2" failures="1" skipped="0" time="42.215" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="8.293">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+<property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;key&quot; with value: &quot;4&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;281958&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Name&quot; with value: &quot;Lindgren, Davis and Pacocha&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Senger and Sons&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Url&quot; with value: &quot;https://webbed-wrinkle.name/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://serious-convection.org&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Row with the key: 281958 exists">
+</property>
 </properties>
-<failure message="servers.spec.ts:38:9 Should edit a server" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/Api/servers.spec.ts:38:9 › Servers › Should edit a server ──────────────────
+<system-out>
+<![CDATA[index:2
+]]>
+</system-out>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="33.922">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+</properties>
+<failure message="servers.spec.ts:40:9 Should edit a server" type="FAILURE">
+<![CDATA[  [webkit] › Effiziente/Api/servers.spec.ts:40:9 › Servers › Should edit a server › Get label ──────
 
     TimeoutError: locator.innerText: Timeout 10000ms exceeded.
     Call log:
-      - waiting for locator('tbody > tr').nth(2).locator('td').last()
+      - waiting for locator('label[for="minmax"]')
 
 
-       at ../components/TableComponent.ts:54
+       at ../components/BaseComponent.ts:101
 
-      52 |         for (let i = 0; i < totalRows; i++) {
-      53 |             const row = this.page.locator('tbody > tr').nth(i);
-    > 54 |             const columnValue = await row.locator('td').nth(index).innerText();
-         |                                                                    ^
-      55 |             if (columnValue == value)
-      56 |                 return row;
-      57 |         }
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
 
-        at Table.getRowByColumnIndex (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/TableComponent.ts:54:68)
-        at Table.getRowBykey (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/TableComponent.ts:77:21)
-        at ServersPage.checkRow (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:74:21)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:73:9
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:68:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-webkit/test-failed-1.png
@@ -640,23 +1178,24 @@
 
     TimeoutError: locator.innerText: Timeout 10000ms exceeded.
     Call log:
-      - waiting for locator('tbody > tr').nth(2).locator('td').last()
+      - waiting for locator('label[for="minmax"]')
 
 
-       at ../components/TableComponent.ts:54
+       at ../components/BaseComponent.ts:101
 
-      52 |         for (let i = 0; i < totalRows; i++) {
-      53 |             const row = this.page.locator('tbody > tr').nth(i);
-    > 54 |             const columnValue = await row.locator('td').nth(index).innerText();
-         |                                                                    ^
-      55 |             if (columnValue == value)
-      56 |                 return row;
-      57 |         }
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
 
-        at Table.getRowByColumnIndex (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/TableComponent.ts:54:68)
-        at Table.getRowBykey (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/TableComponent.ts:77:21)
-        at ServersPage.checkRow (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:74:21)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:73:9
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:68:9
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Effiziente-Api-servers-Servers-Should-edit-a-server-webkit-retry1/test-failed-1.png
@@ -692,8 +1231,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="0" time="9.302" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="9.302">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.708" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="6.708">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -720,8 +1259,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="2" failures="0" skipped="0" time="16.394" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="11.257">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="2" failures="0" skipped="0" time="9.377" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.822">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -731,7 +1270,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="5.137">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="4.555">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -742,20 +1281,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="0" time="10.271" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="10.271">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.65" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="6.65">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="0" time="11.698" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="11.698">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.748" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="7.748">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0.447" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.447">
+<testsuite name="Effiziente/ZeroStep/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0.301" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/ZeroStep/login.spec.ts" time="0.301">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -764,8 +1303,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.197" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.197">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.008" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.008">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -774,36 +1313,202 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.128" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.128">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="1" skipped="0" time="23.282" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="23.282">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
+<failure message="login.spec.ts:10:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [webkit] › SauceDemo/login.spec.ts:10:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/login.spec.ts:16:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/login.spec.ts:16:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/SauceDemo-login-Login-Logi-d5111-id-user-load-inventory-page-webkit-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-23T04:08:58.908Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.783" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.783">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-04-24T03:54:42.726Z" hostname="webkit" tests="1" failures="1" skipped="0" time="21.775" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="21.775">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
-<property name="InputText" value="Fill: &quot;Username&quot; with value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
 </properties>
+<failure message="loginLambdaTestFixture.spec.ts:8:9 Login with valid user load inventory page" type="FAILURE">
+<![CDATA[  [webkit] › SauceDemo/loginLambdaTestFixture.spec.ts:8:9 › Login › Login with valid user load inventory page › Get label 
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.innerText: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('label[for="user-name"]')
+
+
+       at ../components/BaseComponent.ts:101
+
+       99 |                 const id = await this.locator.getAttribute('id');
+      100 |                 if (id) {
+    > 101 |                     this.label = await this.page.locator('label[for="' + id + '"]').innerText();
+          |                                                                                     ^
+      102 |                     if (this.label)
+      103 |                         return this.label;
+      104 |                     const placeHolderAttribute = await this.locator.getAttribute('placeholder');
+
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:101:85
+        at InputText.addStep (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:50:20)
+        at InputText.getLabel (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/BaseComponent.ts:97:16)
+        at InputText.fill (/home/runner/work/PlaywrightFramework/PlaywrightFramework/components/InputText.ts:30:22)
+        at LoginPage.loginWithUser (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/SauceDemo/loginPage.ts:29:9)
+        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/SauceDemo/loginLambdaTestFixture.spec.ts:13:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/SauceDemo-loginLambdaTestF-3de67-id-user-load-inventory-page-webkit-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
