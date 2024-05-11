@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="39" failures="3" skipped="2" errors="0" time="130.18848500000001">
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="19.525" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="19.525">
+<testsuites id="" name="" tests="39" failures="0" skipped="2" errors="0" time="122.764111">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="8.973" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="8.973">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="4.003" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="4.003">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="4.558" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="4.558">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -31,8 +31,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="17.509" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="17.509">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="20.594" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="20.594">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -47,133 +47,42 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/AI-ZeroStep/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="6.542" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/AI-ZeroStep/login.spec.ts" time="6.542">
+<testsuite name="Effiziente/AI-ZeroStep/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="5.55" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/AI-ZeroStep/login.spec.ts" time="5.55">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="2" failures="1" skipped="0" time="31.56" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="28.754">
+<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="2" failures="0" skipped="0" time="5.098" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="2.235">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;271323&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;10832&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Flatley, Stark and Prohaska&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Herzog Group&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://full-key.biz/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://improbable-revenant.org&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Row with the key: 10832 exists">
+</property>
+<property name="Assert" value="The server name for the key: &quot;10832&quot; is: &quot;Herzog Group&quot;">
+</property>
+<property name="Assert" value="The server name for the key: &quot;10832&quot; is: &quot;Herzog Group&quot;">
+</property>
 </properties>
-<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
-<![CDATA[  [chromium] › Effiziente/Api/servers.spec.ts:12:9 › Servers › Should add a server ─────────────────
-
-    Error: Success message is visible
-
-    Timed out 10000ms waiting for expect(locator).toBeVisible()
-
-    Locator: locator('[data-test="message"]')
-    Expected: visible
-    Received: <element(s) not found>
-    Call log:
-      - Success message is visible with timeout 10000ms
-      - waiting for locator('[data-test="message"]')
-
-
-       at ../pages/Effiziente/serversPage.ts:108
-
-      106 |         const assertDescription = 'Success message is visible';
-      107 |         await this.addAnnotation(AnnotationType.Assert, assertDescription);
-    > 108 |         await expect(this.message.locator, assertDescription).toBeVisible();
-          |                                                               ^
-      109 |     }
-      110 |
-      111 | }
-
-        at ServersPage.checkSuccessMessage (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:108:63)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:28:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Success message is visible
-
-    Timed out 10000ms waiting for expect(locator).toBeVisible()
-
-    Locator: locator('[data-test="message"]')
-    Expected: visible
-    Received: <element(s) not found>
-    Call log:
-      - Success message is visible with timeout 10000ms
-      - waiting for locator('[data-test="message"]')
-
-
-       at ../pages/Effiziente/serversPage.ts:108
-
-      106 |         const assertDescription = 'Success message is visible';
-      107 |         await this.addAnnotation(AnnotationType.Assert, assertDescription);
-    > 108 |         await expect(this.message.locator, assertDescription).toBeVisible();
-          |                                                               ^
-      109 |     }
-      110 |
-      111 | }
-
-        at ServersPage.checkSuccessMessage (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:108:63)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:28:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
 <system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-chromium-retry1/trace.zip]]
+<![CDATA[index:2
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="2.806">
+<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="2.863">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -181,21 +90,21 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;707847&quot;">
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;49972&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Kuphal - Corkery&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Emmerich - Orn&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://buzzing-railing.com&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://oval-reduction.org/&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Row with the key: 707847 exists">
+<property name="Assert" value="Row with the key: 49972 exists">
 </property>
-<property name="Assert" value="The server name for the key: &quot;707847&quot; is: &quot;Kuphal - Corkery&quot;">
+<property name="Assert" value="The server name for the key: &quot;49972&quot; is: &quot;Emmerich - Orn&quot;">
 </property>
-<property name="Assert" value="The server name for the key: &quot;707847&quot; is: &quot;Kuphal - Corkery&quot;">
+<property name="Assert" value="The server name for the key: &quot;49972&quot; is: &quot;Emmerich - Orn&quot;">
 </property>
 </properties>
 <system-out>
@@ -204,8 +113,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.225" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.225">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="2.269" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.269">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -232,8 +141,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Excel/exportServers.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.587" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Effiziente/Excel/exportServers.spec.ts" time="1.587">
+<testsuite name="Effiziente/Excel/exportServers.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.463" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Effiziente/Excel/exportServers.spec.ts" time="1.463">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -244,8 +153,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="2" failures="0" skipped="0" time="4.71" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.306">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="2" failures="0" skipped="0" time="16.077" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.133">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -255,7 +164,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="2.404">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="13.944">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -266,20 +175,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.711" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="3.711">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="13.322" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="13.322">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.726" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="3.726">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="4.096" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="4.096">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.026" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.026">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.696" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.696">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -288,8 +197,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.644" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.644">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.856" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.856">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -304,8 +213,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="chromium" tests="1" failures="0" skipped="0" time="0.622" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.622">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="chromium" tests="1" failures="0" skipped="0" time="1.139" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="1.139">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -320,8 +229,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/AI-ZeroStep/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="1" time="0.8" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/AI-ZeroStep/login.spec.ts" time="0.8">
+<testsuite name="Effiziente/AI-ZeroStep/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="1" time="1.031" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/AI-ZeroStep/login.spec.ts" time="1.031">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -330,112 +239,32 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="2" failures="1" skipped="0" time="32.238" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="27.929">
+<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="2" failures="0" skipped="0" time="14.495" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="9.763">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;207969&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;825534&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Vandervort - Smith&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Hilll Inc&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://unconscious-nephew.info&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://menacing-neon.biz&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Row with the key: 825534 exists">
+</property>
+<property name="Assert" value="The server name for the key: &quot;825534&quot; is: &quot;Hilll Inc&quot;">
+</property>
+<property name="Assert" value="The server name for the key: &quot;825534&quot; is: &quot;Hilll Inc&quot;">
+</property>
 </properties>
-<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
-<![CDATA[  [firefox] › Effiziente/Api/servers.spec.ts:12:9 › Servers › Should add a server ──────────────────
-
-    Error: Success message is visible
-
-    Timed out 10000ms waiting for expect(locator).toBeVisible()
-
-    Locator: locator('[data-test="message"]')
-    Expected: visible
-    Received: <element(s) not found>
-    Call log:
-      - Success message is visible with timeout 10000ms
-      - waiting for locator('[data-test="message"]')
-
-
-       at ../pages/Effiziente/serversPage.ts:108
-
-      106 |         const assertDescription = 'Success message is visible';
-      107 |         await this.addAnnotation(AnnotationType.Assert, assertDescription);
-    > 108 |         await expect(this.message.locator, assertDescription).toBeVisible();
-          |                                                               ^
-      109 |     }
-      110 |
-      111 | }
-
-        at ServersPage.checkSuccessMessage (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:108:63)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:28:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Success message is visible
-
-    Timed out 10000ms waiting for expect(locator).toBeVisible()
-
-    Locator: locator('[data-test="message"]')
-    Expected: visible
-    Received: <element(s) not found>
-    Call log:
-      - Success message is visible with timeout 10000ms
-      - waiting for locator('[data-test="message"]')
-
-
-       at ../pages/Effiziente/serversPage.ts:108
-
-      106 |         const assertDescription = 'Success message is visible';
-      107 |         await this.addAnnotation(AnnotationType.Assert, assertDescription);
-    > 108 |         await expect(this.message.locator, assertDescription).toBeVisible();
-          |                                                               ^
-      109 |     }
-      110 |
-      111 | }
-
-        at ServersPage.checkSuccessMessage (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:108:63)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:28:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
 <system-out>
 <![CDATA[
 [[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/test-failed-1.png]]
@@ -443,16 +272,11 @@
 [[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/video.webm]]
 
 [[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-firefox-retry1/trace.zip]]
+index:2
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="4.309">
+<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="4.732">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -460,21 +284,21 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;255706&quot;">
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;893929&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Nienow - Sanford&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Haley, Kassulke and Goyette&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://cute-hydrant.biz/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://stupendous-rutabaga.info/&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Row with the key: 255706 exists">
+<property name="Assert" value="Row with the key: 893929 exists">
 </property>
-<property name="Assert" value="The server name for the key: &quot;255706&quot; is: &quot;Nienow - Sanford&quot;">
+<property name="Assert" value="The server name for the key: &quot;893929&quot; is: &quot;Haley, Kassulke and Goyette&quot;">
 </property>
-<property name="Assert" value="The server name for the key: &quot;255706&quot; is: &quot;Nienow - Sanford&quot;">
+<property name="Assert" value="The server name for the key: &quot;893929&quot; is: &quot;Haley, Kassulke and Goyette&quot;">
 </property>
 </properties>
 <system-out>
@@ -483,8 +307,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.334" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.334">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.861" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="2.861">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -511,8 +335,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Excel/exportServers.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.512" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Effiziente/Excel/exportServers.spec.ts" time="2.512">
+<testsuite name="Effiziente/Excel/exportServers.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.907" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Effiziente/Excel/exportServers.spec.ts" time="2.907">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -523,8 +347,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.072" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="2.87">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="2" failures="0" skipped="0" time="6.534" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="3.442">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -534,7 +358,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.202">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="3.092">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -545,20 +369,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="2.506" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="2.506">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.901" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="3.901">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="3.008" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="3.008">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="4.225" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="4.225">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.337" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.337">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.828" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="1.828">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -567,8 +391,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.919" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="0.919">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="1.295" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.295">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -583,8 +407,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.607" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.607">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="firefox" tests="1" failures="0" skipped="0" time="0.93" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.93">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -599,8 +423,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/AI-ZeroStep/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="1" time="0.536" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/AI-ZeroStep/login.spec.ts" time="0.536">
+<testsuite name="Effiziente/AI-ZeroStep/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="1" time="5.226" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="Effiziente/AI-ZeroStep/login.spec.ts" time="5.226">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -609,129 +433,38 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="2" failures="1" skipped="0" time="39.862" errors="0">
-<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="31.713">
+<testsuite name="Effiziente/Api/servers.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="2" failures="0" skipped="0" time="20.377" errors="0">
+<testcase name="Servers › Should add a server" classname="Effiziente/Api/servers.spec.ts" time="12.197">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;942422&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;314184&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Goodwin Inc&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Ziemann, Gutmann and Deckow&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://made-up-reluctance.name/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://kaleidoscopic-bake.info&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Row with the key: 314184 exists">
+</property>
+<property name="Assert" value="The server name for the key: &quot;314184&quot; is: &quot;Ziemann, Gutmann and Deckow&quot;">
+</property>
+<property name="Assert" value="The server name for the key: &quot;314184&quot; is: &quot;Ziemann, Gutmann and Deckow&quot;">
+</property>
 </properties>
-<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
-<![CDATA[  [webkit] › Effiziente/Api/servers.spec.ts:12:9 › Servers › Should add a server ───────────────────
-
-    Error: Success message is visible
-
-    Timed out 10000ms waiting for expect(locator).toBeVisible()
-
-    Locator: locator('[data-test="message"]')
-    Expected: visible
-    Received: <element(s) not found>
-    Call log:
-      - Success message is visible with timeout 10000ms
-      - waiting for locator('[data-test="message"]')
-
-
-       at ../pages/Effiziente/serversPage.ts:108
-
-      106 |         const assertDescription = 'Success message is visible';
-      107 |         await this.addAnnotation(AnnotationType.Assert, assertDescription);
-    > 108 |         await expect(this.message.locator, assertDescription).toBeVisible();
-          |                                                               ^
-      109 |     }
-      110 |
-      111 | }
-
-        at ServersPage.checkSuccessMessage (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:108:63)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:28:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Success message is visible
-
-    Timed out 10000ms waiting for expect(locator).toBeVisible()
-
-    Locator: locator('[data-test="message"]')
-    Expected: visible
-    Received: <element(s) not found>
-    Call log:
-      - Success message is visible with timeout 10000ms
-      - waiting for locator('[data-test="message"]')
-
-
-       at ../pages/Effiziente/serversPage.ts:108
-
-      106 |         const assertDescription = 'Success message is visible';
-      107 |         await this.addAnnotation(AnnotationType.Assert, assertDescription);
-    > 108 |         await expect(this.message.locator, assertDescription).toBeVisible();
-          |                                                               ^
-      109 |     }
-      110 |
-      111 | }
-
-        at ServersPage.checkSuccessMessage (/home/runner/work/PlaywrightFramework/PlaywrightFramework/pages/Effiziente/serversPage.ts:108:63)
-        at /home/runner/work/PlaywrightFramework/PlaywrightFramework/tests/Effiziente/Api/servers.spec.ts:28:9
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
 <system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Effiziente-Api-servers-Servers-Should-add-a-server-webkit-retry1/trace.zip]]
+<![CDATA[index:2
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="8.149">
+<testcase name="Servers › Should edit a server" classname="Effiziente/Api/servers.spec.ts" time="8.18">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -739,21 +472,21 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;678159&quot;">
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;366543&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Hayes, Romaguera and Watsica&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Lang Inc&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://dull-amber.com/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://safe-lettuce.com/&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Row with the key: 678159 exists">
+<property name="Assert" value="Row with the key: 366543 exists">
 </property>
-<property name="Assert" value="The server name for the key: &quot;678159&quot; is: &quot;Hayes, Romaguera and Watsica&quot;">
+<property name="Assert" value="The server name for the key: &quot;366543&quot; is: &quot;Lang Inc&quot;">
 </property>
-<property name="Assert" value="The server name for the key: &quot;678159&quot; is: &quot;Hayes, Romaguera and Watsica&quot;">
+<property name="Assert" value="The server name for the key: &quot;366543&quot; is: &quot;Lang Inc&quot;">
 </property>
 </properties>
 <system-out>
@@ -762,8 +495,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="4.589" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="4.589">
+<testsuite name="Effiziente/dashboard.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.418" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="Effiziente/dashboard.spec.ts" time="5.418">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -790,8 +523,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Excel/exportServers.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.367" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Effiziente/Excel/exportServers.spec.ts" time="2.367">
+<testsuite name="Effiziente/Excel/exportServers.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="3.481" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Effiziente/Excel/exportServers.spec.ts" time="3.481">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
@@ -802,8 +535,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="2" failures="0" skipped="0" time="8.884" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="4.575">
+<testsuite name="Effiziente/menu.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="2" failures="0" skipped="0" time="24.663" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Effiziente/menu.spec.ts" time="5.267">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -813,7 +546,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="4.309">
+<testcase name="Admin user › Should returns admin menu" classname="Effiziente/menu.spec.ts" time="19.396">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
@@ -824,20 +557,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="6.238" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="6.238">
+<testsuite name="Effiziente/Synthetic/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="15.446" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Effiziente/Synthetic/login.spec.ts" time="15.446">
 </testcase>
 </testsuite>
-<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="5.662" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="5.662">
+<testsuite name="Effiziente/Synthetic/menu.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="7.361" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Effiziente/Synthetic/menu.spec.ts" time="7.361">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.02" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.02">
+<testsuite name="Google/searchLocale.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.081" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="Google/searchLocale.spec.ts" time="2.081">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -846,8 +579,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="1.955" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="1.955">
+<testsuite name="SauceDemo/login.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="2.02" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/login.spec.ts" time="2.02">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -862,8 +595,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:29:34.684Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.581" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.581">
+<testsuite name="SauceDemo/loginLambdaTestFixture.spec.ts" timestamp="2024-05-11T03:52:51.224Z" hostname="webkit" tests="1" failures="0" skipped="0" time="0.941" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="SauceDemo/loginLambdaTestFixture.spec.ts" time="0.941">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
