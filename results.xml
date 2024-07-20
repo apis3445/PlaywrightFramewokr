@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="54" failures="13" skipped="3" errors="0" time="165.012157">
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="22.781" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="22.781">
+<testsuites id="" name="" tests="54" failures="37" skipped="3" errors="0" time="792.402365">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="42.761" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="42.761">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="11.102" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="11.102">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="21.097" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="21.097">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -31,8 +31,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="24.488" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="24.488">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="22.996" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="22.996">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -47,8 +47,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="3" failures="3" skipped="0" time="0.321" errors="0">
-<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="0.105">
+<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="3" failures="3" skipped="0" time="0.374" errors="0">
+<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="0.108">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -95,7 +95,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.109">
+<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.124">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -142,7 +142,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.107">
+<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.142">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -190,12 +190,74 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="8.328" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="8.328">
+<testsuite name="AI/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="3.508" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="3.508">
+<failure message="login.spec.ts:6:9 Should show dashboard after login" type="FAILURE">
+<![CDATA[  [desktop-chromium] › AI/login.spec.ts:6:9 › AI Zero Step › Should show dashboard after login ─────
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0190d16b-6dc7-7749-80a0-4a9672abbdd8'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TypeError: Cannot create property 'Symbol(step)' on string 'zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0190d16b-79d2-7812-8904-8f345001aeea'
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+<system-err>
+<![CDATA[zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0190d16b-6dc7-7749-80a0-4a9672abbdd8
+zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0190d16b-79d2-7812-8904-8f345001aeea
+]]>
+</system-err>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="0.51" errors="0">
-<testcase name="Contoso Traders › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="0.51">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="0.405" errors="0">
+<testcase name="Contoso Traders › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="0.405">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://cloudtesting.contosotraders.com&quot;">
 </property>
@@ -295,70 +357,208 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="8.103" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="3.868">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="134.23" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="67.02">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Button" value="Click: &quot;Add&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;273002&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Keeling and Sons&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://mortified-ashram.info/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server id should be a number greater than 1">
-</property>
-<property name="Assert" value="Server with the key: &quot;273002&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;273002&quot; is: &quot;Keeling and Sons&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;273002&quot; is: &quot;https://mortified-ashram.info/&quot;">
-</property>
 </properties>
+<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Api/servers.spec.ts:12:9 › Servers › Should add a server › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:15:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:15:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[index:2
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.235">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="67.21">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Step" value="Create server with API">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;48631&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Hills, DuBuque and Kiehn&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://unripe-enthusiasm.name/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server with the key: &quot;48631&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;48631&quot; is: &quot;Hills, DuBuque and Kiehn&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;48631&quot; is: &quot;https://unripe-enthusiasm.name/&quot;">
-</property>
 </properties>
+<failure message="servers.spec.ts:39:9 Should edit a server" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Api/servers.spec.ts:39:9 › Servers › Should edit a server › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:43:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:43:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[index:2
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.013" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.013">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.044" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.044">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -373,47 +573,301 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="6.526" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.076">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="100.315" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="33.611">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
-</property>
 </properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.45">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.488" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.488">
-<properties>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
-</property>
-<property name="Assert" value="The excel file rows are equal to the grid rows">
-</property>
-</properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Basic/menu.spec.ts:7:9 › Normal user › Should returns user menu ─────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: net::ERR_CONNECTION_CLOSED at https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard
+    Call log:
+      - navigating to "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard", waiting until "load"
+
+
+       at ../pages/Effiziente/dashboardPage.ts:33
+
+      31 |         const dashboardPage = this.baseURL + '/AccountsReceivable/dashboard';
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+    > 33 |         await this.page.goto(dashboardPage);
+         |                         ^
+      34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+      35 |     }
+      36 |
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:33:25)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:9:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="66.704">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+</properties>
+<failure message="menu.spec.ts:18:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Basic/menu.spec.ts:18:9 › Admin user › Should returns admin menu ────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:20:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:20:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.897" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.897">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="66.914" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="66.914">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+</properties>
+<failure message="exportServers.spec.ts:9:9 Should export servers to excel" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Excel/exportServers.spec.ts:9:9 › Servers › Should export servers to excel › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.764" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.764">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -428,8 +882,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="5.517" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="5.517">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="4.832" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="4.832">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.bing.com/maps&quot;">
 </property>
@@ -442,8 +896,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.304" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="1.304">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.095" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="1.095">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -452,20 +906,197 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.889" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.889">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="22.652" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="22.652">
+<failure message="login.spec.ts:6:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Synthetic/login.spec.ts:6:9 › Synthetic login testing › Should show dashboard 
+
+    TimeoutError: locator.fill: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Company')
+
+
+       6 |     test('Should show dashboard', async ({ page }) => {
+       7 |         await page.goto('https://effizientedemo.azurewebsites.net');
+    >  8 |         await page.getByLabel('Company').fill(process.env.EFFIZIENTE_COMPANY!);
+         |                                          ^
+       9 |         await page.getByLabel('User').fill(process.env.EFFIZIENTE_NORMAL_USER!);
+      10 |         await page.getByPlaceholder('Password').fill(process.env.EFFIZIENTE_NORMAL_PASSWORD!);
+      11 |         await page.getByRole('button', { name: 'Login' }).click();
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/login.spec.ts:8:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Company')
+
+
+       6 |     test('Should show dashboard', async ({ page }) => {
+       7 |         await page.goto('https://effizientedemo.azurewebsites.net');
+    >  8 |         await page.getByLabel('Company').fill(process.env.EFFIZIENTE_COMPANY!);
+         |                                          ^
+       9 |         await page.getByLabel('User').fill(process.env.EFFIZIENTE_NORMAL_USER!);
+      10 |         await page.getByPlaceholder('Password').fill(process.env.EFFIZIENTE_NORMAL_PASSWORD!);
+      11 |         await page.getByRole('button', { name: 'Login' }).click();
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/login.spec.ts:8:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/test-failed-2.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-chromium-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.27" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="3.27">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="39.977" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="39.977">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
+<failure message="menu.spec.ts:23:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Synthetic/menu.spec.ts:23:9 › Synthetic testing › Should show dashboard ─────
+
+    Error: page.goto: net::ERR_CONNECTION_CLOSED at https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard
+    Call log:
+      - navigating to "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard", waiting until "load"
+
+
+      31 |             }, token);
+      32 |         });
+    > 33 |         await page.goto(dashboardPageUrl);
+         |                    ^
+      34 |         const timeout = 35_000;
+      35 |         await expect(page.locator('#top5 canvas')).toBeVisible({ timeout: timeout });
+      36 |         await expect(page.locator('#top5Debt canvas')).toBeVisible({ timeout: timeout });
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:33:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 35000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('#top5 canvas')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 35000ms
+      - waiting for locator('#top5 canvas')
+
+
+      33 |         await page.goto(dashboardPageUrl);
+      34 |         const timeout = 35_000;
+    > 35 |         await expect(page.locator('#top5 canvas')).toBeVisible({ timeout: timeout });
+         |                                                    ^
+      36 |         await expect(page.locator('#top5Debt canvas')).toBeVisible({ timeout: timeout });
+      37 |         await expect(page.locator('#top5DaysDelay canvas')).toBeVisible({ timeout: timeout });
+      38 |         await expect(page.locator('#summaryExpiration canvas')).toBeVisible({ timeout: timeout });
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:35:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="11.9" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="11.9">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="66.616" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="66.616">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -487,28 +1118,100 @@
 </property>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
 </properties>
+<failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-chromium] › VisualTesting/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:14:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:14:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-diff.png]]
-
 [[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/test-failed-1.png]]
 
 [[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/video.webm]]
 
 [[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/trace.zip]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="3" failures="3" skipped="0" time="2.74" errors="0">
-<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="0.98">
+<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="3" failures="3" skipped="0" time="1.948" errors="0">
+<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="0.652">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -555,7 +1258,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.966">
+<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.635">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -602,7 +1305,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.794">
+<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.661">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -650,8 +1353,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.099" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.099">
+<testsuite name="AI/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.82" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.82">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -660,8 +1363,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="2.434" errors="0">
-<testcase name="Contoso Traders › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="2.434">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="1.131" errors="0">
+<testcase name="Contoso Traders › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="1.131">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://cloudtesting.contosotraders.com&quot;">
 </property>
@@ -761,70 +1464,208 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="11.607" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="5.174">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="96.575" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="63.531">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Button" value="Click: &quot;Add&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;325954&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Steuber LLC&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://constant-birdbath.net/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server id should be a number greater than 1">
-</property>
-<property name="Assert" value="Server with the key: &quot;325954&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;325954&quot; is: &quot;Steuber LLC&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;325954&quot; is: &quot;https://constant-birdbath.net/&quot;">
-</property>
 </properties>
+<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Api/servers.spec.ts:12:9 › Servers › Should add a server › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:15:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:15:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[index:2
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="6.433">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="33.044">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Step" value="Create server with API">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;221121&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Trantow, Gottlieb and Denesik&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://identical-grapefruit.name/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server with the key: &quot;221121&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;221121&quot; is: &quot;Trantow, Gottlieb and Denesik&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;221121&quot; is: &quot;https://identical-grapefruit.name/&quot;">
-</property>
 </properties>
+<failure message="servers.spec.ts:39:9 Should edit a server" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Api/servers.spec.ts:39:9 › Servers › Should edit a server › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:43:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: NS_ERROR_NET_INTERRUPT
+    Call log:
+      - navigating to "https://effizientedemo.azurewebsites.net/Security/servers", waiting until "load"
+
+
+       at ../pages/Effiziente/serversPage.ts:49
+
+      47 |         const serversPage = this.baseURL + '/Security/servers';
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+    > 49 |             await this.page.goto(serversPage);
+         |                             ^
+      50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+      51 |         });
+      52 |     }
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:49:29
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:31)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:20)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:43:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[index:2
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.505" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.505">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.958" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.958">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -839,47 +1680,301 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="6.336" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.241">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="95.655" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="32.164">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
-</property>
 </properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.095">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="2.795" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.795">
-<properties>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
-</property>
-<property name="Assert" value="The excel file rows are equal to the grid rows">
-</property>
-</properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Basic/menu.spec.ts:7:9 › Normal user › Should returns user menu ──────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: page.goto: NS_ERROR_NET_INTERRUPT
+    Call log:
+      - navigating to "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard", waiting until "load"
+
+
+       at ../pages/Effiziente/dashboardPage.ts:33
+
+      31 |         const dashboardPage = this.baseURL + '/AccountsReceivable/dashboard';
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+    > 33 |         await this.page.goto(dashboardPage);
+         |                         ^
+      34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+      35 |     }
+      36 |
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:33:25)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:9:29
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="63.491">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+</properties>
+<failure message="menu.spec.ts:18:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Basic/menu.spec.ts:18:9 › Admin user › Should returns admin menu ─────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:20:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:20:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.923" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.923">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="63.501" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="63.501">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+</properties>
+<failure message="exportServers.spec.ts:9:9 Should export servers to excel" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Excel/exportServers.spec.ts:9:9 › Servers › Should export servers to excel › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.773" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.773">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -894,8 +1989,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.297" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.297">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.877" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.877">
 <properties>
 <property name="skip" value="Geolocation not work in firefox">
 </property>
@@ -904,8 +1999,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="2.22" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="2.22">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.725" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="1.725">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -914,20 +2009,202 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.598" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.598">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="21.816" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="21.816">
+<failure message="login.spec.ts:6:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Synthetic/login.spec.ts:6:9 › Synthetic login testing › Should show dashboard 
+
+    TimeoutError: locator.fill: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Company')
+
+
+       6 |     test('Should show dashboard', async ({ page }) => {
+       7 |         await page.goto('https://effizientedemo.azurewebsites.net');
+    >  8 |         await page.getByLabel('Company').fill(process.env.EFFIZIENTE_COMPANY!);
+         |                                          ^
+       9 |         await page.getByLabel('User').fill(process.env.EFFIZIENTE_NORMAL_USER!);
+      10 |         await page.getByPlaceholder('Password').fill(process.env.EFFIZIENTE_NORMAL_PASSWORD!);
+      11 |         await page.getByRole('button', { name: 'Login' }).click();
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/login.spec.ts:8:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Company')
+
+
+       6 |     test('Should show dashboard', async ({ page }) => {
+       7 |         await page.goto('https://effizientedemo.azurewebsites.net');
+    >  8 |         await page.getByLabel('Company').fill(process.env.EFFIZIENTE_COMPANY!);
+         |                                          ^
+       9 |         await page.getByLabel('User').fill(process.env.EFFIZIENTE_NORMAL_USER!);
+      10 |         await page.getByPlaceholder('Password').fill(process.env.EFFIZIENTE_NORMAL_PASSWORD!);
+      11 |         await page.getByRole('button', { name: 'Login' }).click();
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/login.spec.ts:8:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/test-failed-2.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-firefox-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="4.417" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="4.417">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="74.375" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="74.375">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
 </properties>
+<failure message="menu.spec.ts:23:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Synthetic/menu.spec.ts:23:9 › Synthetic testing › Should show dashboard ──────
+
+    Error: Timed out 35000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('#top5 canvas')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 35000ms
+      - waiting for locator('#top5 canvas')
+
+
+      33 |         await page.goto(dashboardPageUrl);
+      34 |         const timeout = 35_000;
+    > 35 |         await expect(page.locator('#top5 canvas')).toBeVisible({ timeout: timeout });
+         |                                                    ^
+      36 |         await expect(page.locator('#top5Debt canvas')).toBeVisible({ timeout: timeout });
+      37 |         await expect(page.locator('#top5DaysDelay canvas')).toBeVisible({ timeout: timeout });
+      38 |         await expect(page.locator('#summaryExpiration canvas')).toBeVisible({ timeout: timeout });
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:35:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: Timed out 35000ms waiting for expect(locator).toBeVisible()
+
+    Locator: locator('#top5 canvas')
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+      - expect.toBeVisible with timeout 35000ms
+      - waiting for locator('#top5 canvas')
+
+
+      33 |         await page.goto(dashboardPageUrl);
+      34 |         const timeout = 35_000;
+    > 35 |         await expect(page.locator('#top5 canvas')).toBeVisible({ timeout: timeout });
+         |                                                    ^
+      36 |         await expect(page.locator('#top5Debt canvas')).toBeVisible({ timeout: timeout });
+      37 |         await expect(page.locator('#top5DaysDelay canvas')).toBeVisible({ timeout: timeout });
+      38 |         await expect(page.locator('#summaryExpiration canvas')).toBeVisible({ timeout: timeout });
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:35:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.585" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="3.585">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="63.848" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="63.848">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -949,13 +2226,100 @@
 </property>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
 </properties>
+<failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-firefox] › VisualTesting/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:14:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:14:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/trace.zip]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="3" failures="3" skipped="0" time="2.526" errors="0">
-<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="1.116">
+<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="3" failures="3" skipped="0" time="0.808" errors="0">
+<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="0.393">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -1002,7 +2366,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="1.121">
+<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.198">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -1049,7 +2413,7 @@
 ]]>
 </system-out>
 </testcase>
-<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.289">
+<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.217">
 <properties>
 <property name="Go To" value="Go to: undefined">
 </property>
@@ -1097,8 +2461,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.446" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.446">
+<testsuite name="AI/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.384" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.384">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -1107,8 +2471,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="0.89" errors="0">
-<testcase name="Contoso Traders › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="0.89">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="1.018" errors="0">
+<testcase name="Contoso Traders › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="1.018">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://cloudtesting.contosotraders.com&quot;">
 </property>
@@ -1208,70 +2572,208 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="15.073" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="6.068">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="131.403" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="65.753">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Button" value="Click: &quot;Add&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;859021&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Boehm, Koss and Schaden&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://fitting-optimisation.info/&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server id should be a number greater than 1">
-</property>
-<property name="Assert" value="Server with the key: &quot;859021&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;859021&quot; is: &quot;Boehm, Koss and Schaden&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;859021&quot; is: &quot;https://fitting-optimisation.info/&quot;">
-</property>
 </properties>
+<failure message="servers.spec.ts:12:9 Should add a server" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Api/servers.spec.ts:12:9 › Servers › Should add a server › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:15:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:15:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[index:2
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="9.005">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="65.65">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
 </property>
-<property name="Step" value="Create server with API">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;787874&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Christiansen Inc&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://remote-rawhide.com&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server with the key: &quot;787874&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;787874&quot; is: &quot;Christiansen Inc&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;787874&quot; is: &quot;https://remote-rawhide.com&quot;">
-</property>
 </properties>
+<failure message="servers.spec.ts:39:9 Should edit a server" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Api/servers.spec.ts:39:9 › Servers › Should edit a server › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:43:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:43:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
-<![CDATA[index:2
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.204" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="2.204">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.939" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.939">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -1286,47 +2788,301 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="8.983" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="4.088">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="131.007" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="65.523">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
-</property>
 </properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="4.895">
-<properties>
-<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PirmeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="4.042" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="4.042">
-<properties>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
-</property>
-<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
-</property>
-<property name="Assert" value="The excel file rows are equal to the grid rows">
-</property>
-</properties>
+<failure message="menu.spec.ts:7:9 Should returns user menu" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Basic/menu.spec.ts:7:9 › Normal user › Should returns user menu ───────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:9:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="65.484">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+</properties>
+<failure message="menu.spec.ts:18:9 Should returns admin menu" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Basic/menu.spec.ts:18:9 › Admin user › Should returns admin menu ──────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:20:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:20:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.824" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.824">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="65.321" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="65.321">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+</properties>
+<failure message="exportServers.spec.ts:9:9 Should export servers to excel" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Excel/exportServers.spec.ts:9:9 › Servers › Should export servers to excel › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers" 
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
+
+
+       at ../pages/Effiziente/serversPage.ts:50
+
+      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, 'Go to the servers page: "' + serversPage + '"', async () => {
+      49 |             await this.page.goto(serversPage);
+    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                      ^
+      51 |         });
+      52 |     }
+      53 |
+
+        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
+        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:55:20)
+        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
+        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:11:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.679" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.679">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -1341,8 +3097,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="10.233" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="10.233">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="8.384" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="8.384">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.bing.com/maps&quot;">
 </property>
@@ -1355,8 +3111,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.571" errors="0">
-<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="2.571">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.662" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="1.662">
 <properties>
 <property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
 </property>
@@ -1365,12 +3121,101 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="8.412" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="8.412">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="22.155" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="22.155">
+<failure message="login.spec.ts:6:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Synthetic/login.spec.ts:6:9 › Synthetic login testing › Should show dashboard ─
+
+    TimeoutError: locator.fill: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Company')
+
+
+       6 |     test('Should show dashboard', async ({ page }) => {
+       7 |         await page.goto('https://effizientedemo.azurewebsites.net');
+    >  8 |         await page.getByLabel('Company').fill(process.env.EFFIZIENTE_COMPANY!);
+         |                                          ^
+       9 |         await page.getByLabel('User').fill(process.env.EFFIZIENTE_NORMAL_USER!);
+      10 |         await page.getByPlaceholder('Password').fill(process.env.EFFIZIENTE_NORMAL_PASSWORD!);
+      11 |         await page.getByRole('button', { name: 'Login' }).click();
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/login.spec.ts:8:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/test-failed-2.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.fill: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for getByLabel('Company')
+
+
+       6 |     test('Should show dashboard', async ({ page }) => {
+       7 |         await page.goto('https://effizientedemo.azurewebsites.net');
+    >  8 |         await page.getByLabel('Company').fill(process.env.EFFIZIENTE_COMPANY!);
+         |                                          ^
+       9 |         await page.getByLabel('User').fill(process.env.EFFIZIENTE_NORMAL_USER!);
+      10 |         await page.getByPlaceholder('Password').fill(process.env.EFFIZIENTE_NORMAL_PASSWORD!);
+      11 |         await page.getByRole('button', { name: 'Login' }).click();
+
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/login.spec.ts:8:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/test-failed-2.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/Synthetic-login-Synthetic--650bd-sting-Should-show-dashboard-desktop-webkit-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="32.84" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="32.84">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="76.339" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="76.339">
 <properties>
 <property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
 </property>
@@ -1378,51 +3223,25 @@
 <failure message="menu.spec.ts:23:9 Should show dashboard" type="FAILURE">
 <![CDATA[  [desktop-webkit] › Synthetic/menu.spec.ts:23:9 › Synthetic testing › Should show dashboard ───────
 
-    Error: Timed out 10000ms waiting for expect(locator).toBeVisible()
+    Error: Timed out 35000ms waiting for expect(locator).toBeVisible()
 
-    Locator: locator('#summaryExpiration')
+    Locator: locator('#top5 canvas')
     Expected: visible
-    Received: hidden
+    Received: <element(s) not found>
     Call log:
-      - expect.toBeVisible with timeout 10000ms
-      - waiting for locator('#summaryExpiration')
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
+      - expect.toBeVisible with timeout 35000ms
+      - waiting for locator('#top5 canvas')
 
 
+      33 |         await page.goto(dashboardPageUrl);
+      34 |         const timeout = 35_000;
+    > 35 |         await expect(page.locator('#top5 canvas')).toBeVisible({ timeout: timeout });
+         |                                                    ^
       36 |         await expect(page.locator('#top5Debt canvas')).toBeVisible({ timeout: timeout });
       37 |         await expect(page.locator('#top5DaysDelay canvas')).toBeVisible({ timeout: timeout });
-    > 38 |         await expect(page.locator('#summaryExpiration')).toBeVisible();
-         |                                                          ^
-      39 |         const topMenuLocator = 'app-menu > p-menubar > .p-menubar > p-menubarsub > ul > li > .p-menuitem-content > a > .p-menuitem-text';
-      40 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      41 |         const menus = ['AccountsReceivable', 'Config'];
+      38 |         await expect(page.locator('#summaryExpiration canvas')).toBeVisible({ timeout: timeout });
 
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:38:58
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:35:52
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/test-failed-1.png
@@ -1442,51 +3261,25 @@
 
     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
 
-    Error: Timed out 10000ms waiting for expect(locator).toBeVisible()
+    Error: Timed out 35000ms waiting for expect(locator).toBeVisible()
 
-    Locator: locator('#summaryExpiration')
+    Locator: locator('#top5 canvas')
     Expected: visible
-    Received: hidden
+    Received: <element(s) not found>
     Call log:
-      - expect.toBeVisible with timeout 10000ms
-      - waiting for locator('#summaryExpiration')
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
-      -   locator resolved to <app-card-pie-detallado width="400" height="400" id="summaryExpiration" _nghost-ng-c4188208940="" _ngcontent-ng-c3043973981="" classtype="card-header-success">…</app-card-pie-detallado>
-      -   unexpected value "hidden"
+      - expect.toBeVisible with timeout 35000ms
+      - waiting for locator('#top5 canvas')
 
 
+      33 |         await page.goto(dashboardPageUrl);
+      34 |         const timeout = 35_000;
+    > 35 |         await expect(page.locator('#top5 canvas')).toBeVisible({ timeout: timeout });
+         |                                                    ^
       36 |         await expect(page.locator('#top5Debt canvas')).toBeVisible({ timeout: timeout });
       37 |         await expect(page.locator('#top5DaysDelay canvas')).toBeVisible({ timeout: timeout });
-    > 38 |         await expect(page.locator('#summaryExpiration')).toBeVisible();
-         |                                                          ^
-      39 |         const topMenuLocator = 'app-menu > p-menubar > .p-menubar > p-menubarsub > ul > li > .p-menuitem-content > a > .p-menuitem-text';
-      40 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      41 |         const menus = ['AccountsReceivable', 'Config'];
+      38 |         await expect(page.locator('#summaryExpiration canvas')).toBeVisible({ timeout: timeout });
 
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:38:58
+        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:35:52
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png
@@ -1522,8 +3315,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-07-20T18:16:53.851Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="4.32" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="4.32">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-07-20T18:32:30.902Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="65.281" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="65.281">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -1545,9 +3338,96 @@
 </property>
 <property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
 </properties>
+<failure message="dashboard.spec.ts:8:9 Should show dashboard" type="FAILURE">
+<![CDATA[  [desktop-webkit] › VisualTesting/dashboard.spec.ts:8:9 › Check Dashboard › Should show dashboard ─
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:14:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+    Call log:
+      - waiting for locator('#title') to be visible
+
+
+       at ../pages/Effiziente/dashboardPage.ts:34
+
+      32 |         this.annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to the page: "' + dashboardPage + '"');
+      33 |         await this.page.goto(dashboardPage);
+    > 34 |         await this.title.locator.waitFor({ timeout: 30_000 });
+         |                                  ^
+      35 |     }
+      36 |
+      37 |     /**
+
+        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:34)
+        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:14:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/trace.zip]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/video.webm]]
+
+[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>
