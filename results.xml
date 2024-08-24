@@ -1,2 +1,1141 @@
-<testsuites id="" name="" tests="0" failures="0" skipped="0" errors="0" time="3.5871890000000004">
+<testsuites id="" name="" tests="54" failures="9" skipped="3" errors="0" time="162.456947">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="17.953" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="17.953">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="0" skipped="0" time="26.826" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="26.826">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="23.475" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="23.475">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="3" failures="3" skipped="0" time="0.564" errors="0">
+<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="0.192">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:17:9 Check Page accessibility" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Accessibility/pageAccessibility.spec.ts:17:9 › Test Accessibility By Page › Check Page accessibility 
+
+    Error: page.goto: url: expected string, got undefined
+
+      21 |         const annotationHelper = new AnnotationHelper(page, pageToTest);
+      22 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 23 |         await page.goto(pageToTest);
+         |                    ^
+      24 |         await accessibilityHelper.checkAccessibility('CustomPage', annotationHelper.getAnnotations());
+      25 |
+      26 |     });
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:23:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.178">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:28:9 Check tab order" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Accessibility/pageAccessibility.spec.ts:28:9 › Test Accessibility By Page › Check tab order 
+
+    Error: page.goto: url: expected string, got undefined
+
+      32 |         const tabHelper = new TabHelper(page, keyPage);
+      33 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 34 |         await page.goto(pageToTest);
+         |                    ^
+      35 |         //Add a number and blue box to the element after press tab
+      36 |         await tabHelper.showTabOrder();
+      37 |         //Check that the tab is the same that the elements
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:34:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.194">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:42:9 Check alt text &amp; aria-label" type="FAILURE">
+<![CDATA[  [desktop-chromium] › Accessibility/pageAccessibility.spec.ts:42:9 › Test Accessibility By Page › Check alt text & aria-label 
+
+    Error: page.goto: url: expected string, got undefined
+
+      46 |         const altHelper = new AltHelper(page, keyPage, testInfo);
+      47 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 48 |         await page.goto(pageToTest);
+         |                    ^
+      49 |         //Check that images have alt text attribute
+      50 |         await altHelper.checkAltText();
+      51 |         //Generate a table with all alt texts
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:48:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="AI/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="5.348" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="5.348">
+</testcase>
+</testsuite>
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="30.839" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="30.839">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://shop.webdriver.io&quot;">
+</property>
+<property name="Link" value="Click: &quot;Shop All&quot;">
+</property>
+<property name="Step" value="Click in the product: &quot;Cuffed Beanie&quot;">
+</property>
+<property name="Button" value="Click: &quot;button[data-dd-action-name=&quot;add-to-cart&quot;]&quot;">
+</property>
+<property name="Assert" value="There is one item in the bag">
+</property>
+<property name="Button" value="Click: &quot;button[aria-label=&quot;Cart icon&quot;]&quot;">
+</property>
+<property name="Assert" value="The name of the item in the cart is: &quot;Cuffed Beanie&quot;">
+</property>
+<property name="Assert" value="The price of the item in the cart is: &quot;$15.50&quot;">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Api-addToCart-WebdriverIO--609ad-uld-add-an-item-to-the-cart-desktop-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Api-addToCart-WebdriverIO--609ad-uld-add-an-item-to-the-cart-desktop-chromium/video.webm]]
+
+[[ATTACHMENT|../test-results/Api-addToCart-WebdriverIO--609ad-uld-add-an-item-to-the-cart-desktop-chromium/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Api/servers.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="5.983" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="2.709">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;658322&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Price LLC&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://glistening-many.com/&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;658322&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;658322&quot; is: &quot;Price LLC&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;658322&quot; is: &quot;https://glistening-many.com/&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="3.274">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;645959&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Bode and Sons&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://focused-passbook.info/&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;645959&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;645959&quot; is: &quot;Bode and Sons&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;645959&quot; is: &quot;https://focused-passbook.info/&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.91" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.91">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="5.414" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="2.677">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.737">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.866" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.866">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.959" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.959">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="4.942" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="4.942">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.bing.com/maps&quot;">
+</property>
+<property name="Button" value="Click: &quot;button.locateMeBtn&quot;">
+</property>
+<property name="Button" value="Click: &quot;button.geochainUncollapse&quot;">
+</property>
+<property name="Assert" value="Geo name is equal to:GermanyBavariaMunich (District)">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.075" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="1.075">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="4.022" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="4.022">
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.557" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="3.557">
+<properties>
+<property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.937" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="2.937">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="3" failures="3" skipped="0" time="3.167" errors="0">
+<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="1.041">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:17:9 Check Page accessibility" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Accessibility/pageAccessibility.spec.ts:17:9 › Test Accessibility By Page › Check Page accessibility 
+
+    Error: page.goto: url: expected string, got undefined
+
+      21 |         const annotationHelper = new AnnotationHelper(page, pageToTest);
+      22 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 23 |         await page.goto(pageToTest);
+         |                    ^
+      24 |         await accessibilityHelper.checkAccessibility('CustomPage', annotationHelper.getAnnotations());
+      25 |
+      26 |     });
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:23:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="1.085">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:28:9 Check tab order" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Accessibility/pageAccessibility.spec.ts:28:9 › Test Accessibility By Page › Check tab order 
+
+    Error: page.goto: url: expected string, got undefined
+
+      32 |         const tabHelper = new TabHelper(page, keyPage);
+      33 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 34 |         await page.goto(pageToTest);
+         |                    ^
+      35 |         //Add a number and blue box to the element after press tab
+      36 |         await tabHelper.showTabOrder();
+      37 |         //Check that the tab is the same that the elements
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:34:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="1.041">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:42:9 Check alt text &amp; aria-label" type="FAILURE">
+<![CDATA[  [desktop-firefox] › Accessibility/pageAccessibility.spec.ts:42:9 › Test Accessibility By Page › Check alt text & aria-label 
+
+    Error: page.goto: url: expected string, got undefined
+
+      46 |         const altHelper = new AltHelper(page, keyPage, testInfo);
+      47 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 48 |         await page.goto(pageToTest);
+         |                    ^
+      49 |         //Check that images have alt text attribute
+      50 |         await altHelper.checkAltText();
+      51 |         //Generate a table with all alt texts
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:48:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-firefox/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="AI/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.008" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.008">
+<properties>
+<property name="skip" value="Zero Steps only works in chromium">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="13.757" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="13.757">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://shop.webdriver.io&quot;">
+</property>
+<property name="Link" value="Click: &quot;Shop All&quot;">
+</property>
+<property name="Step" value="Click in the product: &quot;WebdriverIO Trucker Cap&quot;">
+</property>
+<property name="Button" value="Click: &quot;button[data-dd-action-name=&quot;add-to-cart&quot;]&quot;">
+</property>
+<property name="Assert" value="There is one item in the bag">
+</property>
+<property name="Button" value="Click: &quot;button[aria-label=&quot;Cart icon&quot;]&quot;">
+</property>
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO Trucker Cap&quot;">
+</property>
+<property name="Assert" value="The price of the item in the cart is: &quot;$16.00&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Api/servers.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="8.959" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="4.43">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;311215&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Franecki - Strosin&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://disguised-leash.info&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;311215&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;311215&quot; is: &quot;Franecki - Strosin&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;311215&quot; is: &quot;https://disguised-leash.info&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.529">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;794567&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Lind and Sons&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://inexperienced-gear.biz&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;794567&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;794567&quot; is: &quot;Lind and Sons&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;794567&quot; is: &quot;https://inexperienced-gear.biz&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.13" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.13">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="6.316" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.399">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.917">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="2.737" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.737">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.818" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.818">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.36" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.36">
+<properties>
+<property name="skip" value="Geolocation not work in firefox">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.583" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="1.583">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.383" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.383">
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.911" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="3.911">
+<properties>
+<property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.379" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="3.379">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Accessibility/pageAccessibility.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="3" failures="3" skipped="0" time="2.218" errors="0">
+<testcase name="Test Accessibility By Page › Check Page accessibility" classname="Accessibility/pageAccessibility.spec.ts" time="1.187">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:17:9 Check Page accessibility" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Accessibility/pageAccessibility.spec.ts:17:9 › Test Accessibility By Page › Check Page accessibility 
+
+    Error: page.goto: url: expected string, got undefined
+
+      21 |         const annotationHelper = new AnnotationHelper(page, pageToTest);
+      22 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 23 |         await page.goto(pageToTest);
+         |                    ^
+      24 |         await accessibilityHelper.checkAccessibility('CustomPage', annotationHelper.getAnnotations());
+      25 |
+      26 |     });
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:23:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-c4c16-ge-Check-Page-accessibility-desktop-webkit/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test Accessibility By Page › Check tab order" classname="Accessibility/pageAccessibility.spec.ts" time="0.466">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:28:9 Check tab order" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Accessibility/pageAccessibility.spec.ts:28:9 › Test Accessibility By Page › Check tab order 
+
+    Error: page.goto: url: expected string, got undefined
+
+      32 |         const tabHelper = new TabHelper(page, keyPage);
+      33 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 34 |         await page.goto(pageToTest);
+         |                    ^
+      35 |         //Add a number and blue box to the element after press tab
+      36 |         await tabHelper.showTabOrder();
+      37 |         //Check that the tab is the same that the elements
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:34:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-bc5d8-ity-By-Page-Check-tab-order-desktop-webkit/trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Test Accessibility By Page › Check alt text &amp; aria-label" classname="Accessibility/pageAccessibility.spec.ts" time="0.565">
+<properties>
+<property name="Go To" value="Go to: undefined">
+</property>
+</properties>
+<failure message="pageAccessibility.spec.ts:42:9 Check alt text &amp; aria-label" type="FAILURE">
+<![CDATA[  [desktop-webkit] › Accessibility/pageAccessibility.spec.ts:42:9 › Test Accessibility By Page › Check alt text & aria-label 
+
+    Error: page.goto: url: expected string, got undefined
+
+      46 |         const altHelper = new AltHelper(page, keyPage, testInfo);
+      47 |         annotationHelper.addAnnotation(AnnotationType.GoTo, 'Go to: ' + pageToTest);
+    > 48 |         await page.goto(pageToTest);
+         |                    ^
+      49 |         //Check that images have alt text attribute
+      50 |         await altHelper.checkAltText();
+      51 |         //Generate a table with all alt texts
+
+        at /home/runner/work/Playwright/Playwright/tests/Accessibility/pageAccessibility.spec.ts:48:20
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/test-failed-1.png]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Accessibility-pageAccessib-e1df0-e-Check-alt-text-aria-label-desktop-webkit/trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="AI/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.51" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.51">
+<properties>
+<property name="skip" value="Zero Steps only works in chromium">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="25.417" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="25.417">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://shop.webdriver.io&quot;">
+</property>
+<property name="Link" value="Click: &quot;Shop All&quot;">
+</property>
+<property name="Step" value="Click in the product: &quot;Cuffed Beanie&quot;">
+</property>
+<property name="Button" value="Click: &quot;button[data-dd-action-name=&quot;add-to-cart&quot;]&quot;">
+</property>
+<property name="Assert" value="There is one item in the bag">
+</property>
+<property name="Button" value="Click: &quot;button[aria-label=&quot;Cart icon&quot;]&quot;">
+</property>
+<property name="Assert" value="The name of the item in the cart is: &quot;Cuffed Beanie&quot;">
+</property>
+<property name="Assert" value="The price of the item in the cart is: &quot;$15.50&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Api/servers.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="15.143" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="6.547">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;68833&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Reichert LLC&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://mealy-tulip.net&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;68833&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;68833&quot; is: &quot;Reichert LLC&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;68833&quot; is: &quot;https://mealy-tulip.net&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="8.596">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;41983&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Gleason Inc&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://quiet-fingernail.biz/&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;41983&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;41983&quot; is: &quot;Gleason Inc&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;41983&quot; is: &quot;https://quiet-fingernail.biz/&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.174" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="2.174">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="9.384" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="5.64">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.744">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="3.863" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="3.863">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&quot;">
+</property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.789" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.789">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill: &quot;Password with value: *****&quot;">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="12.029" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="12.029">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.bing.com/maps&quot;">
+</property>
+<property name="Button" value="Click: &quot;button.locateMeBtn&quot;">
+</property>
+<property name="Button" value="Click: &quot;button.geochainUncollapse&quot;">
+</property>
+<property name="Assert" value="Geo name is equal to:GermanyBavariaMunich (District)">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.597" errors="0">
+<testcase name="Locale translations › Translations with locale and time zone id" classname="LocaleGeo/searchLocale.spec.ts" time="2.597">
+<properties>
+<property name="Go To" value="Go to the page: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="8.443" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="8.443">
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="8.101" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="8.101">
+<properties>
+<property name="Navigation" value="Go to:https://effizientedemo.azurewebsites.net">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-08-24T18:07:29.644Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="7.598" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="7.598">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to the page: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
 </testsuites>
