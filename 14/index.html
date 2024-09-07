@@ -119,26 +119,27 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should add an item to the cart
+            Should returns user menu
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">API</span>
+            <span class="chip tags">Basic</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>Login to effiziente demo with a normal user, the user will see the menu for normal users</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid normal user</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
-                <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;</li>
+                <li>Go to the page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;AccountsReceivable&#x2F;dashboard&quot;</li>
+                <li>Get top menus</li>
+                <li>Menu are equal to: &quot;AccountsReceivable,Config&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -152,7 +153,7 @@
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
+                    <img src="test-finished-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
@@ -162,10 +163,6 @@
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  <span class="dim">- waiting for locator('select[name="dropdown-0"]') to be visible</span>
-</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
