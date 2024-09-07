@@ -119,13 +119,13 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should edit a server
+            Should add an item to the cart
         </h1>
         <div>
-            <span class="chip desktop-firefox">desktop-firefox</span>
+            <span class="chip desktop-chromium">desktop-chromium</span>
             <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
@@ -136,15 +136,23 @@
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
-                <li>Create server with API</li>
-                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
-                <li>Fill &quot;key:&quot; with the value: &quot;204402&quot;</li>
-                <li>Fill &quot;Name:&quot; with the value: &quot;Runte - Friesen&quot;</li>
-                <li>Fill &quot;Url:&quot; with the value: &quot;https:&#x2F;&#x2F;grouchy-swordfish.biz&#x2F;&quot;</li>
-                <li>Click: &quot;Save&quot;</li>
-                <li>Success message is visible</li>
-                <li>Server with the key: &quot;204402&quot; exists in the table</li>
+                <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
+                <li>Click: &quot;Shop All&quot;</li>
+                <li>Click in the product: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;</li>
+                <li>Click: &quot; 
+		Add to Cart
+		 
+	$35.00
+&quot;</li>
+                <li>There is one item in the bag</li>
+                <li>Click: &quot;
+ 
+				1
+			 
+				items
+			&quot;</li>
+                <li>The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;</li>
+                <li>The price of the item in the cart is: &quot;$35.00&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -158,7 +166,7 @@
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
+                    <img src="test-finished-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
@@ -168,11 +176,6 @@
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>Error: Server with the key: "204402" exists in the table
-
-<span class="dim">expect(</span><span class="red">received</span><span class="dim">).</span>not<span class="dim">.</span>toBeNull<span class="dim">()</span>
-
-Received: <span class="red">null</span></span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
