@@ -119,8 +119,8 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
             Should add an item to the cart
         </h1>
@@ -138,12 +138,21 @@
             <ol>
                 <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
                 <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;</li>
+                <li>Click in the product: &quot;Cuffed Beanie&quot;</li>
                 <li>Click: &quot; 
-		Out of stock
+		Add to Cart
 		 
-	$35.00
+	$15.50
 &quot;</li>
+                <li>There is one item in the bag</li>
+                <li>Click: &quot;
+ 
+				1
+			 
+				items
+			&quot;</li>
+                <li>The name of the item in the cart is: &quot;Cuffed Beanie&quot;</li>
+                <li>The price of the item in the cart is: &quot;$15.50&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -157,7 +166,7 @@
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
+                    <img src="test-finished-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
@@ -167,99 +176,6 @@
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>TimeoutError: locator.click: Timeout 10000ms exceeded.
-Call log:
-  <span class="dim">- waiting for locator('button[data-dd-action-name="add-to-cart"]')</span>
-<span class="dim">  -   locator resolved to <button type="button" data-v-a8b3891e="" disabled="disabled" data-dd-action-name="add-to-cart" class="cart-button 📚19-7-0vQBWk 📚19-7-0wcHKQ 📚19-7-0pt7y9 📚19-7-0_N8aS 📚19-7-0vaDLi">…</button></span>
-<span class="dim">  - attempting click action</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #1</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #2</span>
-<span class="dim">  -   waiting 20ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #3</span>
-<span class="dim">  -   waiting 100ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #4</span>
-<span class="dim">  -   waiting 100ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #5</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #6</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #7</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #8</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #9</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #10</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #11</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #12</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #13</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #14</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #15</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #16</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #17</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #18</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #19</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #20</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #21</span>
-<span class="dim">  -   waiting 500ms</span>
-<span class="dim">  -   waiting for element to be visible, enabled and stable</span>
-<span class="dim">  -   element is not enabled</span>
-<span class="dim">  - retrying click action, attempt #22</span>
-<span class="dim">  -   waiting 500ms</span>
-</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
