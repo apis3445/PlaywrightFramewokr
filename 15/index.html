@@ -122,31 +122,26 @@
             <span class="status passed">
                 <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should add a server
+            Login with valid user load inventory page
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">API</span>
+            <span class="chip tags">Basic</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>Login with valid user in saucedemo</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid username and password</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
-                <li>Click: &quot;Add&quot;</li>
-                <li>Fill &quot;Key:&quot; with the value: &quot;340540&quot;</li>
-                <li>Fill &quot;Name:&quot; with the value: &quot;Rau Group&quot;</li>
-                <li>Fill &quot;Url:&quot; with the value: &quot;https:&#x2F;&#x2F;orange-rawhide.info&quot;</li>
-                <li>Click: &quot;Save&quot;</li>
-                <li>Success message is visible</li>
-                <li>Server id should be a number greater than 1</li>
-                <li>Server with the key: &quot;340540&quot; exists in the table</li>
-                <li>The server name for the key: &quot;340540&quot; is: &quot;Rau Group&quot;</li>
-                <li>The server url for the key: &quot;340540&quot; is: &quot;https:&#x2F;&#x2F;orange-rawhide.info&quot;</li>
+                <li>Go to the page: &quot;https:&#x2F;&#x2F;www.saucedemo.com&quot;</li>
+                <li>Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;</li>
+                <li>Fill &quot;Password&quot;: with value: *****</li>
+                <li>Click: &quot;Login&quot;</li>
+                <li>Check URL Page is equal to: &quot;https:&#x2F;&#x2F;www.saucedemo.com&#x2F;inventory.html&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>

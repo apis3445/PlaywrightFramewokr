@@ -119,40 +119,25 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status passed">
-                <i class="material-symbols-outlined">check_circle</i>
+            <span class="status failed">
+                <i class="material-symbols-outlined">cancel</i>
             </span>
-            Should add an item to the cart
+            Should returns user menu
         </h1>
         <div>
             <span class="chip desktop-chromium">desktop-chromium</span>
-            <span class="chip tags">API</span>
+            <span class="chip tags">Basic</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>Login to effiziente demo with a normal user, the user will see the menu for normal users</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid normal user</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
-                <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;Cuffed Beanie&quot;</li>
-                <li>Click: &quot; 
-		Add to Cart
-		 
-	$15.50
-&quot;</li>
-                <li>There is one item in the bag</li>
-                <li>Click: &quot;
- 
-				1
-			 
-				items
-			&quot;</li>
-                <li>The name of the item in the cart is: &quot;Cuffed Beanie&quot;</li>
-                <li>The price of the item in the cart is: &quot;$15.50&quot;</li>
+                <li>Go to the page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;AccountsReceivable&#x2F;dashboard&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -166,7 +151,7 @@
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-finished-1.png" alt="Screenshot">
+                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
@@ -176,6 +161,10 @@
     </div>
     <h2>Errors</h2>
     <ol>
+        <li>TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+  <span class="dim">- waiting for locator('#title') to be visible</span>
+</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
