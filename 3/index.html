@@ -119,66 +119,57 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should add an item to the cart
+            Should add a server
         </h1>
         <div>
             <span class="chip desktop-chromium">desktop-chromium</span>
             <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>An admin user can add a server</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid admin username and password is logged</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
-                <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO Trucker Cap&quot;</li>
-                <li>Click: &quot; 
-		Add to Cart
-		 
-	$16.00
-&quot;</li>
-                <li>There is one item in the bag</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
+                <li>Click: &quot;Add&quot;</li>
+                <li>Fill &quot;Key:&quot; with the value: &quot;452797&quot;</li>
+                <li>Fill &quot;Name:&quot; with the value: &quot;Bailey, Stoltenberg and Schowalter&quot;</li>
+                <li>Fill &quot;Url:&quot; with the value: &quot;https:&#x2F;&#x2F;realistic-dividend.name&quot;</li>
+                <li>Click: &quot;Save&quot;</li>
+                <li>Success message is visible</li>
+                <li>Server id should be a number greater than 1</li>
+                <li>Server with the key: &quot;452797&quot; exists in the table</li>
+                <li>The server name for the key: &quot;452797&quot; is: &quot;Bailey, Stoltenberg and Schowalter&quot;</li>
+                <li>The server url for the key: &quot;452797&quot; is: &quot;https:&#x2F;&#x2F;realistic-dividend.name&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
             <ol>
+                <li>Delete the server with API requests</li>
             </ol>
             
             <h2>Video:</h2>
             <video controls>
-                <source src="video.webm" type="video/webm">
+                <source src="" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
-                <li><a href="trace.zip" target="_blank">trace</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>Error: There is one item in the bag
-
-<span class="red">Timed out 10000ms waiting for </span><span class="dim">expect(</span><span class="red">locator</span><span class="dim">).</span>toContainText<span class="dim">(</span><span class="green">expected</span><span class="dim">)</span>
-
-Locator: locator('span.nav-icon__cart-number')
-Expected string: <span class="green">"1"</span>
-Received: <element(s) not found>
-Call log:
-  <span class="dim">- There is one item in the bag with timeout 10000ms</span>
-<span class="dim">  - waiting for locator('span.nav-icon__cart-number')</span>
-</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
