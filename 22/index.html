@@ -119,28 +119,40 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status skipped">
-                <i class="material-symbols-outlined">skip_next</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should show dashboard after login
+            Should add a server
         </h1>
         <div>
             <span class="chip desktop-webkit">desktop-webkit</span>
-            <span class="chip tags">AI_Zero_Step</span>
+            <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>An admin user can add a server</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid admin username and password is logged</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Zero Steps only works in chromium</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
+                <li>Click: &quot;Add&quot;</li>
+                <li>Fill &quot;Key:&quot; with the value: &quot;50228&quot;</li>
+                <li>Fill &quot;Name:&quot; with the value: &quot;Marvin, Reynolds and Kling&quot;</li>
+                <li>Fill &quot;Url:&quot; with the value: &quot;https:&#x2F;&#x2F;polite-boulevard.biz&quot;</li>
+                <li>Click: &quot;Save&quot;</li>
+                <li>Success message is visible</li>
+                <li>Server id should be a number greater than 1</li>
+                <li>Server with the key: &quot;50228&quot; exists in the table</li>
+                <li>The server name for the key: &quot;50228&quot; is: &quot;Marvin, Reynolds and Kling&quot;</li>
+                <li>The server url for the key: &quot;50228&quot; is: &quot;https:&#x2F;&#x2F;polite-boulevard.biz&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
             <ol>
+                <li>Delete the server with API requests</li>
             </ol>
             
             <h2>Video:</h2>
