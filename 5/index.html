@@ -122,41 +122,37 @@
             <span class="status passed">
                 <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should add an item to the cart
+            Should edit a server
         </h1>
         <div>
             <span class="chip desktop-chromium">desktop-chromium</span>
             <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>An admin user can edit a server</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid admin username and password is logged</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
-                <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;</li>
-                <li>Click: &quot; 
-		Add to Cart
-		 
-	$35.00
-&quot;</li>
-                <li>There is one item in the bag</li>
-                <li>Click: &quot;
- 
-				1
-			 
-				items
-			&quot;</li>
-                <li>The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;</li>
-                <li>The price of the item in the cart is: &quot;$35.00&quot;</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
+                <li>Create server with API</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
+                <li>Fill &quot;key:&quot; with the value: &quot;954743&quot;</li>
+                <li>Fill &quot;Name:&quot; with the value: &quot;Stokes and Sons&quot;</li>
+                <li>Fill &quot;Url:&quot; with the value: &quot;https:&#x2F;&#x2F;early-soliloquy.name&quot;</li>
+                <li>Click: &quot;Save&quot;</li>
+                <li>Success message is visible</li>
+                <li>Server with the key: &quot;954743&quot; exists in the table</li>
+                <li>The server name for the key: &quot;954743&quot; is: &quot;Stokes and Sons&quot;</li>
+                <li>The server url for the key: &quot;954743&quot; is: &quot;https:&#x2F;&#x2F;early-soliloquy.name&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
             <ol>
+                <li>Delete the server with API requests</li>
             </ol>
             
             <h2>Video:</h2>
