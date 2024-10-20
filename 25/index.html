@@ -122,30 +122,37 @@
             <span class="status passed">
                 <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Login with valid user load inventory page
+            Should edit a server
         </h1>
         <div>
             <span class="chip desktop-webkit">desktop-webkit</span>
-            <span class="chip tags">Basic</span>
+            <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
-        <p>Login with valid user in saucedemo</p>
+        <p>An admin user can edit a server</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
-                <li>A valid username and password</li>
+                <li>A valid admin username and password is logged</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the page: &quot;https:&#x2F;&#x2F;www.saucedemo.com&quot;</li>
-                <li>Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;</li>
-                <li>Fill &quot;Password&quot;: with value: *****</li>
-                <li>Click: &quot;Login&quot;</li>
-                <li>Check URL Page is equal to: &quot;https:&#x2F;&#x2F;www.saucedemo.com&#x2F;inventory.html&quot;</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
+                <li>Create server with API</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
+                <li>Fill &quot;key:&quot; with the value: &quot;411549&quot;</li>
+                <li>Fill &quot;Name:&quot; with the value: &quot;Cruickshank, O&#39;Kon and King&quot;</li>
+                <li>Fill &quot;Url:&quot; with the value: &quot;https:&#x2F;&#x2F;timely-velocity.info&quot;</li>
+                <li>Click: &quot;Save&quot;</li>
+                <li>Success message is visible</li>
+                <li>Server with the key: &quot;411549&quot; exists in the table</li>
+                <li>The server name for the key: &quot;411549&quot; is: &quot;Cruickshank, O&#39;Kon and King&quot;</li>
+                <li>The server url for the key: &quot;411549&quot; is: &quot;https:&#x2F;&#x2F;timely-velocity.info&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
             <ol>
+                <li>Delete the server with API requests</li>
             </ol>
             
             <h2>Video:</h2>
