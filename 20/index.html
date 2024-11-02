@@ -119,29 +119,25 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status passed">
-                <i class="material-symbols-outlined">check_circle</i>
+            <span class="status failed">
+                <i class="material-symbols-outlined">cancel</i>
             </span>
-            Login with &quot;standard_user&quot; from parameters will load inventory page
+            Should returns admin menu
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">Basic,[395]</span>
+            <span class="chip tags">Basic</span>
         </div>
         <h2>Description</h2>
-        <p>Login with valid user in saucedemo</p>
+        <p>Login to effiziente demo with a admin user, the user will see the menu for admin users</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
-                <li>A valid username and password</li>
+                <li>A valid admin user</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the page: &quot;https:&#x2F;&#x2F;www.saucedemo.com&quot;</li>
-                <li>Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;</li>
-                <li>Fill &quot;Password&quot;: with value: *****</li>
-                <li>Click: &quot;Login&quot;</li>
-                <li>Check URL Page is equal to: &quot;https:&#x2F;&#x2F;www.saucedemo.com&#x2F;inventory.html&quot;</li>
+                <li>Go to the page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;AccountsReceivable&#x2F;dashboard&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -150,20 +146,27 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="" type="video/webm">
+                <source src="video.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
+                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
+                <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
+                <li><a href="trace.zip" target="_blank">trace</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
+        <li>TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
+Call log:
+  <span class="dim">- waiting for locator('#title') to be visible</span>
+</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>

@@ -119,14 +119,14 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should export servers to excel
+            Should add an item to the cart
         </h1>
         <div>
-            <span class="chip desktop-chromium">desktop-chromium</span>
-            <span class="chip tags">Excel</span>
+            <span class="chip desktop-firefox">desktop-firefox</span>
+            <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
         <p>No Description</p>
@@ -136,8 +136,23 @@
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&quot;</li>
-                <li>Click: &quot;Export to Excel&quot;</li>
+                <li>Go to the page: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
+                <li>Click: &quot;Shop All&quot;</li>
+                <li>Click in the product: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;</li>
+                <li>Click: &quot; 
+		Add to Cart
+		 
+	$25.00
+&quot;</li>
+                <li>There is one item in the bag</li>
+                <li>Click: &quot;
+ 
+				1
+			 
+				items
+			&quot;</li>
+                <li>The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;</li>
+                <li>The price of the item in the cart is: &quot;$25.00&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -146,25 +161,21 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="video.webm" type="video/webm">
+                <source src="" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
-                <li><a href="trace.zip" target="_blank">trace</a></li>
+                <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
+                <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>TimeoutError: page.waitForEvent: Timeout 10000ms exceeded while waiting for event "download"
-=========================== logs ===========================
-waiting for event "download"
-============================================================</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
