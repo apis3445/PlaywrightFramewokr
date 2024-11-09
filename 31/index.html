@@ -119,8 +119,8 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status passed">
-                <i class="material-symbols-outlined">check_circle</i>
+            <span class="status failed">
+                <i class="material-symbols-outlined">cancel</i>
             </span>
             Should add an item to the cart
         </h1>
@@ -138,21 +138,13 @@
             <ol>
                 <li>Go to: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
                 <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;</li>
+                <li>Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;</li>
                 <li>Click: &quot; 
 		Add to Cart
 		 
 	$25.00
 &quot;</li>
                 <li>There is one item in the bag</li>
-                <li>Click: &quot;
- 
-				1
-			 
-				items
-			&quot;</li>
-                <li>The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;</li>
-                <li>The price of the item in the cart is: &quot;$25.00&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -161,21 +153,34 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="" type="video/webm">
+                <source src="video.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
+                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
+                <li><a href="trace.zip" target="_blank">trace</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
+        <li>Error: There is one item in the bag
+
+<span class="red">Timed out 10000ms waiting for </span><span class="dim">expect(</span><span class="red">locator</span><span class="dim">).</span>toContainText<span class="dim">(</span><span class="green">expected</span><span class="dim">)</span>
+
+Locator: locator('span.nav-icon__cart-number')
+Expected string: <span class="green">"1"</span>
+Received: <element(s) not found>
+Call log:
+  <span class="dim">- There is one item in the bag with timeout 10000ms</span>
+<span class="dim">  - waiting for locator('span.nav-icon__cart-number')</span>
+</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
