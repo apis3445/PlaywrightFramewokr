@@ -119,27 +119,27 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status passed">
-                <i class="material-symbols-outlined">check_circle</i>
+            <span class="status failed">
+                <i class="material-symbols-outlined">cancel</i>
             </span>
-            Should returns admin menu
+            Should add an item to the cart
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">Basic</span>
+            <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
-        <p>Login to effiziente demo with a admin user, the user will see the menu for admin users</p>
+        <p>No Description</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
-                <li>A valid admin user</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;AccountsReceivable&#x2F;dashboard&quot;</li>
-                <li>Get top menus</li>
-                <li>Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;</li>
+                <li>Go to: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
+                <li>Click: &quot;Shop All&quot;</li>
+                <li>Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;</li>
+                <li>On &quot;Color&quot; select any option</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -148,21 +148,27 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="" type="video/webm">
+                <source src="video.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
+                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
+                <li><a href="trace.zip" target="_blank">trace</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
+        <li>TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  <span class="dim">- waiting for locator('select[name="dropdown-0"]') to be visible</span>
+</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
