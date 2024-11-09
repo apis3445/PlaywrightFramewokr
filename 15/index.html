@@ -119,27 +119,25 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status passed">
-                <i class="material-symbols-outlined">check_circle</i>
+            <span class="status failed">
+                <i class="material-symbols-outlined">cancel</i>
             </span>
-            Should returns user menu
+            Should edit a server
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">Basic</span>
+            <span class="chip tags">API</span>
         </div>
         <h2>Description</h2>
-        <p>Login to effiziente demo with a normal user, the user will see the menu for normal users</p>
+        <p>An admin user can edit a server</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
-                <li>A valid normal user</li>
+                <li>A valid admin username and password is logged</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;AccountsReceivable&#x2F;dashboard&quot;</li>
-                <li>Get top menus</li>
-                <li>Menu are equal to: &quot;AccountsReceivable,Config&quot;</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&#39;&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -148,21 +146,24 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="" type="video/webm">
+                <source src="video.webm" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
+                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
+                <li><a href="trace.zip" target="_blank">trace</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
+        <li>SyntaxError: Unexpected end of JSON input</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>

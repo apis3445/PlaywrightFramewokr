@@ -122,23 +122,26 @@
             <span class="status passed">
                 <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should export servers to excel
+            Login with &quot;standard_user&quot; from parameters will load inventory page
         </h1>
         <div>
             <span class="chip desktop-webkit">desktop-webkit</span>
-            <span class="chip tags">Excel</span>
+            <span class="chip tags">Basic,[395]</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>Login with valid user on Sauce Demo</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid username and password</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&#39;&quot;</li>
-                <li>Click: &quot;Export to Excel&quot;</li>
-                <li>The excel file rows are equal to the grid rows</li>
+                <li>Go to: &quot;https:&#x2F;&#x2F;www.saucedemo.com&quot;</li>
+                <li>Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;</li>
+                <li>Fill &quot;Password&quot; with value: *****</li>
+                <li>Click: &quot;Login&quot;</li>
+                <li>Check URL Page is equal to: https:&#x2F;&#x2F;www.saucedemo.com&#x2F;inventory.html&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -157,7 +160,7 @@
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
-                <li><a href="servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx" target="_blank">servers.xlsx</a></li>
+                <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
             </ul>
         </div>
     </div>

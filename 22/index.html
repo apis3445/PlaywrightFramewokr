@@ -119,14 +119,14 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should add an item to the cart
+            Should export servers to excel
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">API</span>
+            <span class="chip tags">Excel</span>
         </div>
         <h2>Description</h2>
         <p>No Description</p>
@@ -136,15 +136,9 @@
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
-                <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;</li>
-                <li>Select a random option</li>
-                <li>Select the option Asphalt</li>
-                <li>Select a random option</li>
-                <li>Select the option Select one</li>
-                <li>Click: &quot;button[data-dd-action-name&#x3D;&quot;add-to-cart&quot;]&quot;</li>
-                <li>There is one item in the bag</li>
+                <li>Go to the servers page: &quot;https:&#x2F;&#x2F;effizientedemo.azurewebsites.net&#x2F;Security&#x2F;servers&#39;&quot;</li>
+                <li>Click: &quot;Export to Excel&quot;</li>
+                <li>The excel file rows are equal to the grid rows</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -153,34 +147,22 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="video.webm" type="video/webm">
+                <source src="" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
-                <li><a href="trace.zip" target="_blank">trace</a></li>
+                <li><a href="servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx" target="_blank">servers.xlsx</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>Error: There is one item in the bag
-
-<span class="red">Timed out 10000ms waiting for </span><span class="dim">expect(</span><span class="red">locator</span><span class="dim">).</span>toContainText<span class="dim">(</span><span class="green">expected</span><span class="dim">)</span>
-
-Locator: locator('span.nav-icon__cart-number')
-Expected string: <span class="green">"1"</span>
-Received: <element(s) not found>
-Call log:
-  <span class="dim">- There is one item in the bag with timeout 10000ms</span>
-<span class="dim">  - waiting for locator('span.nav-icon__cart-number')</span>
-</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
