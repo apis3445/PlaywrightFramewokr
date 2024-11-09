@@ -119,27 +119,29 @@
 <body>
     <div class="test">
         <h1>
-            <span class="status failed">
-                <i class="material-symbols-outlined">cancel</i>
+            <span class="status passed">
+                <i class="material-symbols-outlined">check_circle</i>
             </span>
-            Should add an item to the cart
+            Login with &quot;visual_user&quot; from parameters will load inventory page
         </h1>
         <div>
             <span class="chip desktop-firefox">desktop-firefox</span>
-            <span class="chip tags">API</span>
+            <span class="chip tags">Basic,[395]</span>
         </div>
         <h2>Description</h2>
-        <p>No Description</p>
+        <p>Login with valid user on Sauce Demo</p>
         <div class="annotations">
             <h2>Pre conditions:</h2>
             <ol>
+                <li>A valid username and password</li>
             </ol>
             <h2>Steps:</h2>
             <ol>
-                <li>Go to: &quot;https:&#x2F;&#x2F;shop.webdriver.io&quot;</li>
-                <li>Click: &quot;Shop All&quot;</li>
-                <li>Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;</li>
-                <li>On &quot;Color&quot; select any option</li>
+                <li>Go to: &quot;https:&#x2F;&#x2F;www.saucedemo.com&quot;</li>
+                <li>Fill &quot;Username:&quot; with the value: &quot;visual_user&quot;</li>
+                <li>Fill &quot;Password&quot; with value: *****</li>
+                <li>Click: &quot;&quot;</li>
+                <li>Check URL Page is equal to: https:&#x2F;&#x2F;www.saucedemo.com&#x2F;inventory.html&quot;</li>
             </ol>
             
             <h2>Post conditions:</h2>
@@ -148,27 +150,22 @@
             
             <h2>Video:</h2>
             <video controls>
-                <source src="video.webm" type="video/webm">
+                <source src="" type="video/webm">
                 Your browser does not support the video tag.
             </video>
             <h2>Screenshots:</h2>
             <div class="screenshots">
-                    <img src="test-failed-1.png" alt="Screenshot">
             </div>  
             <h2>Attachments</h2>
             <ul>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
                 <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
-                <li><a href="trace.zip" target="_blank">trace</a></li>
+                <li><a href="" target="_blank">Allure Metadata (metadata)</a></li>
             </ul>
         </div>
     </div>
     <h2>Errors</h2>
     <ol>
-        <li>TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
-Call log:
-  <span class="dim">- waiting for locator('select[name="dropdown-0"]') to be visible</span>
-</span></span></span></span></span></span></li>
     </ol>
 </body>
 </html>
