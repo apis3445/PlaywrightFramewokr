@@ -1,10 +1,10 @@
-<testsuites id="" name="" tests="30" failures="16" skipped="2" errors="0" time="560.159067">
-<testsuite name="AI/login.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="2.435" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="2.435">
+<testsuites id="" name="" tests="30" failures="16" skipped="2" errors="0" time="564.4894250000001">
+<testsuite name="AI/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="2.378" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="2.378">
 <failure message="login.spec.ts:7:9 Should show dashboard after login" type="FAILURE">
 <![CDATA[  [desktop-chromium] › AI/login.spec.ts:7:9 › AI Zero Step › Should show dashboard after login @AI_Zero_Step 
 
-    "zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a2af-79a7-a920-b757c18e45d0"
+    "zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-b263-736b-ac90-9ecc7a9ffb5d"
 
     attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/test-failed-1.png
@@ -24,7 +24,7 @@
 
     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
 
-    "zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd-888f-8145bb74aa9c"
+    "zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f-807c-97c06a6031d7"
 
     attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
     test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/test-failed-1.png
@@ -59,37 +59,33 @@
 ]]>
 </system-out>
 <system-err>
-<![CDATA[zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a2af-79a7-a920-b757c18e45d0
-zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd-888f-8145bb74aa9c
+<![CDATA[zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-b263-736b-ac90-9ecc7a9ffb5d
+zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f-807c-97c06a6031d7
 ]]>
 </system-err>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="14.919" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="14.919">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="10.374" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="10.374">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
 <property name="Link" value="Click: &quot;Shop All&quot;">
 </property>
-<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+<property name="Step" value="Click in the product: &quot;Cuffed Beanie&quot;">
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Black">
+<property name="Select" value="On &quot;Color&quot; select the option Olive">
 </property>
 <property name="Step" value="Select any available Size">
-</property>
-<property name="Select" value="On &quot;Size&quot; select any option">
-</property>
-<property name="Select" value="On &quot;Size&quot; select the option 4XL">
 </property>
 <property name="Step" value="Get the product price">
 </property>
 <property name="Button" value="Click: &quot; 
 		Add to Cart
 		 
-	$30.00
+	$15.50
 &quot;">
 </property>
 <property name="Assert" value="There is one item in the bag">
@@ -101,17 +97,17 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 				items
 			&quot;">
 </property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+<property name="Assert" value="The name of the item in the cart is: &quot;Cuffed Beanie&quot;">
 </property>
-<property name="Assert" value="The price of the item in the cart is: &quot;$30.00&quot;">
+<property name="Assert" value="The price of the item in the cart is: &quot;$15.50&quot;">
 </property>
-<property name="Assert" value="The subtotal is: &quot;$30.00&quot;">
+<property name="Assert" value="The subtotal is: &quot;$15.50&quot;">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="128.545" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="64.34">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="128.584" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="64.308">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -212,7 +208,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="64.205">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="64.276">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -314,8 +310,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.653" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.653">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.666" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.666">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -334,8 +330,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="128.226" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="64.117">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="128.545" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="64.127">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -436,7 +432,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="64.109">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="64.418">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -538,8 +534,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.121" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.62">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.215" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.688">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -557,7 +553,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.501">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.527">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -576,8 +572,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="64.39" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="64.39">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="64.514" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="64.514">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -675,8 +671,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.836" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.836">
+<testsuite name="AI/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.885" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.885">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -685,31 +681,27 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="11.088" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="11.088">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="9.187" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="9.187">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
 <property name="Link" value="Click: &quot;Shop All&quot;">
 </property>
-<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
+<property name="Step" value="Click in the product: &quot;WebdriverIO Trucker Cap&quot;">
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Asphalt">
+<property name="Select" value="On &quot;Color&quot; select the option Navy">
 </property>
 <property name="Step" value="Select any available Size">
-</property>
-<property name="Select" value="On &quot;Size&quot; select any option">
-</property>
-<property name="Select" value="On &quot;Size&quot; select the option L">
 </property>
 <property name="Step" value="Get the product price">
 </property>
 <property name="Button" value="Click: &quot; 
 		Add to Cart
 		 
-	$25.00
+	$16.00
 &quot;">
 </property>
 <property name="Assert" value="There is one item in the bag">
@@ -721,17 +713,17 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 				items
 			&quot;">
 </property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO Trucker Cap&quot;">
 </property>
-<property name="Assert" value="The price of the item in the cart is: &quot;$25.00&quot;">
+<property name="Assert" value="The price of the item in the cart is: &quot;$16.00&quot;">
 </property>
-<property name="Assert" value="The subtotal is: &quot;$25.00&quot;">
+<property name="Assert" value="The subtotal is: &quot;$16.00&quot;">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="125.297" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="62.251">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="125.382" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="62.342">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -832,7 +824,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="63.046">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="63.04">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -934,8 +926,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.673" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.673">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.695" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.695">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -954,8 +946,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="125.131" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="62.186">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="125.311" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="62.291">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -1056,7 +1048,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="62.945">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="63.02">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -1158,8 +1150,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.493" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.684">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.475" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.696">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1177,7 +1169,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.809">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.779">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1196,8 +1188,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="62.226" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="62.226">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="62.485" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="62.485">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -1295,8 +1287,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.58" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.58">
+<testsuite name="AI/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.725" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.725">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -1305,8 +1297,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="14.453" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="14.453">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="17.299" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="17.299">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
@@ -1316,7 +1308,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Heather Grey">
+<property name="Select" value="On &quot;Color&quot; select the option Black">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
@@ -1346,8 +1338,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="130.901" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="65.484">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="131.667" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="65.891">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -1448,7 +1440,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 ]]>
 </system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="65.417">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="65.776">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -1550,8 +1542,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.226" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.226">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.525" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.525">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -1570,8 +1562,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="130.777" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="65.316">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="131.449" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="65.785">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -1672,7 +1664,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 ]]>
 </system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="65.461">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="65.664">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -1774,8 +1766,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="2.32" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.235">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="3.106" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.589">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1793,7 +1785,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.085">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.517">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1812,8 +1804,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:0193714c-a91a-76fd
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-28T05:44:26.347Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="65.27" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="65.27">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="65.542" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="65.542">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
