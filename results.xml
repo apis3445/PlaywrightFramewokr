@@ -1,72 +1,10 @@
-<testsuites id="" name="" tests="30" failures="16" skipped="2" errors="0" time="564.4894250000001">
-<testsuite name="AI/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="2.378" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="2.378">
-<failure message="login.spec.ts:7:9 Should show dashboard after login" type="FAILURE">
-<![CDATA[  [desktop-chromium] › AI/login.spec.ts:7:9 › AI Zero Step › Should show dashboard after login @AI_Zero_Step 
-
-    "zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-b263-736b-ac90-9ecc7a9ffb5d"
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    "zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f-807c-97c06a6031d7"
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/AI-login-AI-Zero-Step-Should-show-dashboard-after-login-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
-<system-err>
-<![CDATA[zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-b263-736b-ac90-9ecc7a9ffb5d
-zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f-807c-97c06a6031d7
-]]>
-</system-err>
+<testsuites id="" name="" tests="30" failures="0" skipped="2" errors="0" time="72.875788">
+<testsuite name="AI/login.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="13.853" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="13.853">
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="10.374" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="10.374">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="13.98" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="13.98">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
@@ -76,7 +14,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Olive">
+<property name="Select" value="On &quot;Color&quot; select the option White">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
@@ -106,8 +44,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="128.584" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="64.308">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="8.093" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="3.824">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -115,100 +53,35 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="Post Condition" value="Delete server with the key: &quot;912592&quot; if exists">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;912592&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Borer, Glover and Kiehn&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://wilted-pile.com&quot;">
+</property>
+<property name="Step" value="Save server and return server id from api">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;912592&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;912592&quot; is: &quot;Borer, Glover and Kiehn&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;912592&quot; is: &quot;https://wilted-pile.com&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:13:9 Should add a server" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Api/servers.spec.ts:13:9 › Servers › Should add a server @API › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:24:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:24:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="64.276">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.269">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -216,102 +89,33 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;803531&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Kuhic, Prosacco and Swift&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://smug-retention.name&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;803531&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;803531&quot; is: &quot;Kuhic, Prosacco and Swift&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;803531&quot; is: &quot;https://smug-retention.name&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:48:9 Should edit a server" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Api/servers.spec.ts:48:9 › Servers › Should edit a server @API › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:60:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:60:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.666" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.666">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.75" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.75">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -330,8 +134,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="128.545" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="64.127">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="5.28" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="2.306">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -339,100 +143,13 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
 </properties>
-<failure message="menu.spec.ts:9:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Basic/menu.spec.ts:9:9 › Normal user › Should returns user menu @Basic › Go to: "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="64.418">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.974">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -440,102 +157,15 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
 </properties>
-<failure message="menu.spec.ts:29:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Basic/menu.spec.ts:29:9 › Admin user › Should returns admin menu @Basic › Go to: "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:39:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:39:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.215" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.688">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.48" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.748">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -553,7 +183,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.527">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.732">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -572,107 +202,25 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="64.514" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="64.514">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.319" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="1.319">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
 </properties>
-<failure message="exportServers.spec.ts:10:9 Should export servers to excel" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Excel/exportServers.spec.ts:10:9 › Servers › Should export servers to excel @Excel › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:16:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:16:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium-retry1/trace.zip]]
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-chromium/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.885" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.885">
+<testsuite name="AI/login.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.143" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.143">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -681,8 +229,238 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="9.187" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="9.187">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="16.629" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="16.629">
+<properties>
+<property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
+</property>
+<property name="Link" value="Click: &quot;Shop All&quot;">
+</property>
+<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+</property>
+<property name="Select" value="On &quot;Color&quot; select any option">
+</property>
+<property name="Select" value="On &quot;Color&quot; select the option Maroon">
+</property>
+<property name="Step" value="Select any available Size">
+</property>
+<property name="Select" value="On &quot;Size&quot; select any option">
+</property>
+<property name="Select" value="On &quot;Size&quot; select the option S">
+</property>
+<property name="Step" value="Get the product price">
+</property>
+<property name="Button" value="Click: &quot; 
+		Add to Cart
+		 
+	$25.00
+&quot;">
+</property>
+<property name="Assert" value="There is one item in the bag">
+</property>
+<property name="Button" value="Click: &quot;
+ 
+				1
+			 
+				items
+			&quot;">
+</property>
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+</property>
+<property name="Assert" value="The price of the item in the cart is: &quot;$25.00&quot;">
+</property>
+<property name="Assert" value="The subtotal is: &quot;$25.00&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Api/servers.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="7.686" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="3.919">
+<properties>
+<property name="Description" value="An admin user can add a server">
+</property>
+<property name="Pre Condition" value="A valid admin username and password is logged">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="Post Condition" value="Delete server with the key: &quot;820186&quot; if exists">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;820186&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Dietrich Group&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://cool-nerve.biz&quot;">
+</property>
+<property name="Step" value="Save server and return server id from api">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;820186&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;820186&quot; is: &quot;Dietrich Group&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;820186&quot; is: &quot;https://cool-nerve.biz&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
+</properties>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="3.767">
+<properties>
+<property name="Description" value="An admin user can edit a server">
+</property>
+<property name="Pre Condition" value="A valid admin username and password is logged">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;191077&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Little - Schroeder&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://circular-puppet.net&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;191077&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;191077&quot; is: &quot;Little - Schroeder&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;191077&quot; is: &quot;https://circular-puppet.net&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/login.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.194" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.194">
+<properties>
+<property name="Description" value="Login with valid user on sauce demo">
+</property>
+<property name="Pre Condition" value="A valid username and password">
+</property>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="6.242" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.122">
+<properties>
+<property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
+</property>
+<property name="Pre Condition" value="A valid normal user">
+</property>
+<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.12">
+<properties>
+<property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
+</property>
+<property name="Pre Condition" value="A valid admin user">
+</property>
+<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.62" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.27">
+<properties>
+<property name="Description" value="Login with valid user on Sauce Demo">
+</property>
+<property name="Pre Condition" value="A valid username and password">
+</property>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.35">
+<properties>
+<property name="Description" value="Login with valid user on Sauce Demo">
+</property>
+<property name="Pre Condition" value="A valid username and password">
+</property>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;visual_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="2.066" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.066">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="AI/login.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.603" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.603">
+<properties>
+<property name="skip" value="Zero Steps only works in chromium">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="16.396" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="16.396">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
@@ -692,7 +470,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Navy">
+<property name="Select" value="On &quot;Color&quot; select the option Navy/ White">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
@@ -722,8 +500,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="125.382" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="62.342">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="12.576" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="6.128">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -731,100 +509,35 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="Post Condition" value="Delete server with the key: &quot;287944&quot; if exists">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;287944&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Hermann, Zieme and Kunde&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://somber-cutlet.net/&quot;">
+</property>
+<property name="Step" value="Save server and return server id from api">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;287944&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;287944&quot; is: &quot;Hermann, Zieme and Kunde&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;287944&quot; is: &quot;https://somber-cutlet.net/&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:13:9 Should add a server" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Api/servers.spec.ts:13:9 › Servers › Should add a server @API › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:24:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:24:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="63.04">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="6.448">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -832,102 +545,33 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;986828&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Leannon - Legros&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://astonishing-ribbon.name/&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;986828&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;986828&quot; is: &quot;Leannon - Legros&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;986828&quot; is: &quot;https://astonishing-ribbon.name/&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:48:9 Should edit a server" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Api/servers.spec.ts:48:9 › Servers › Should edit a server @API › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:60:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:60:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.695" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.695">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.022" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="2.022">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -946,8 +590,8 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="125.311" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="62.291">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="10.549" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="5.691">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -955,100 +599,13 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
 </properties>
-<failure message="menu.spec.ts:9:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Basic/menu.spec.ts:9:9 › Normal user › Should returns user menu @Basic › Go to: "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="63.02">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="4.858">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -1056,102 +613,15 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 <property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
 </properties>
-<failure message="menu.spec.ts:29:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Basic/menu.spec.ts:29:9 › Admin user › Should returns admin menu @Basic › Go to: "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:39:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:39:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.475" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.696">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="2.967" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.498">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1169,7 +639,7 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.779">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.469">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1188,717 +658,19 @@ zerostep.error 'No valid target found'. Version:v0.1.5 TaskId:01937672-ba56-7e4f
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="62.485" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="62.485">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-30T05:42:42.480Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.048" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.048">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
 </properties>
-<failure message="exportServers.spec.ts:10:9 Should export servers to excel" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Excel/exportServers.spec.ts:10:9 › Servers › Should export servers to excel @Excel › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:16:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:16:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.725" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.725">
-<properties>
-<property name="skip" value="Zero Steps only works in chromium">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="17.299" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="17.299">
-<properties>
-<property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
-</property>
-<property name="Link" value="Click: &quot;Shop All&quot;">
-</property>
-<property name="Step" value="Click in the product: &quot;Cuffed Beanie&quot;">
-</property>
-<property name="Select" value="On &quot;Color&quot; select any option">
-</property>
-<property name="Select" value="On &quot;Color&quot; select the option Black">
-</property>
-<property name="Step" value="Select any available Size">
-</property>
-<property name="Step" value="Get the product price">
-</property>
-<property name="Button" value="Click: &quot; 
-		Add to Cart
-		 
-	$15.50
-&quot;">
-</property>
-<property name="Assert" value="There is one item in the bag">
-</property>
-<property name="Button" value="Click: &quot;
- 
-				1
-			 
-				items
-			&quot;">
-</property>
-<property name="Assert" value="The name of the item in the cart is: &quot;Cuffed Beanie&quot;">
-</property>
-<property name="Assert" value="The price of the item in the cart is: &quot;$15.50&quot;">
-</property>
-<property name="Assert" value="The subtotal is: &quot;$15.50&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="131.667" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="65.891">
-<properties>
-<property name="Description" value="An admin user can add a server">
-</property>
-<property name="Pre Condition" value="A valid admin username and password is logged">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-</properties>
-<failure message="servers.spec.ts:13:9 Should add a server" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Api/servers.spec.ts:13:9 › Servers › Should add a server @API › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:24:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:24:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-add-a-server-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="65.776">
-<properties>
-<property name="Description" value="An admin user can edit a server">
-</property>
-<property name="Pre Condition" value="A valid admin username and password is logged">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-</properties>
-<failure message="servers.spec.ts:48:9 Should edit a server" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Api/servers.spec.ts:48:9 › Servers › Should edit a server @API › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:60:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:60:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.525" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.525">
-<properties>
-<property name="Description" value="Login with valid user on sauce demo">
-</property>
-<property name="Pre Condition" value="A valid username and password">
-</property>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="131.449" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="65.785">
-<properties>
-<property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
-</property>
-<property name="Pre Condition" value="A valid normal user">
-</property>
-<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-</properties>
-<failure message="menu.spec.ts:9:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Basic/menu.spec.ts:9:9 › Normal user › Should returns user menu @Basic › Go to: "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="65.664">
-<properties>
-<property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
-</property>
-<property name="Pre Condition" value="A valid admin user">
-</property>
-<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-</properties>
-<failure message="menu.spec.ts:29:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Basic/menu.spec.ts:29:9 › Admin user › Should returns admin menu @Basic › Go to: "https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:39:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:39:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="3.106" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.589">
-<properties>
-<property name="Description" value="Login with valid user on Sauce Demo">
-</property>
-<property name="Pre Condition" value="A valid username and password">
-</property>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.517">
-<properties>
-<property name="Description" value="Login with valid user on Sauce Demo">
-</property>
-<property name="Pre Condition" value="A valid username and password">
-</property>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;visual_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-11-29T05:44:07.573Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="65.542" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="65.542">
-<properties>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-</properties>
-<failure message="exportServers.spec.ts:10:9 Should export servers to excel" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Excel/exportServers.spec.ts:10:9 › Servers › Should export servers to excel @Excel › Go to the servers page: "https://effizientedemo.azurewebsites.net/Security/servers'" 
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:16:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.waitFor: Timeout 30000ms exceeded.
-    Call log:
-      - waiting for getByRole('heading', { name: 'Servers' }) to be visible
-
-
-       at ../pages/Effiziente/serversPage.ts:50
-
-      48 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to the servers page: "${serversPage}'"`, async () => {
-      49 |             await this.page.goto(serversPage);
-    > 50 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      51 |         });
-      52 |     }
-      53 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:50:38
-        at ServersPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at ServersPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/serversPage.ts:48:9)
-        at /home/runner/work/Playwright/Playwright/tests/Excel/exportServers.spec.ts:16:9
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit-retry1/trace.zip]]
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-webkit/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
 ]]>
 </system-out>
 </testcase>
