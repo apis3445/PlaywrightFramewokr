@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="51" failures="1" skipped="3" errors="0" time="181.736473">
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="24.411" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="24.411">
+<testsuites id="" name="" tests="51" failures="1" skipped="3" errors="0" time="186.334153">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="33.769" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="33.769">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,8 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="1" skipped="0" time="57.138" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="57.138">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="1" skipped="0" time="62.194" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="62.194">
 <failure message="loginLambdaTestFixture.spec.ts:9:9 Login with valid user load inventory page" type="FAILURE">
 <![CDATA[  [pw-webkit:latest:MacOS Monterey@lambdatest] › Fixture-LambdaTest/loginLambdaTestFixture.spec.ts:9:9 › Login › Login with valid user load inventory page @Fixture 
 
@@ -47,24 +47,9 @@
 
     Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
 
-    Error: browser.newPage: Protocol error (Page.overrideSetting): Unknown setting: FixedBackgroundsPaintRelativeToDocument
+    Test timeout of 50000ms exceeded while setting up "page".
 
-       at ../fixtures/lambdaTestFixture.ts:56
-
-      54 |             const browser = await chromium.connect(`wss://cdp.lambdatest.com/playwright?capabilities=
-      55 |         ${encodeURIComponent(JSON.stringify(capabilities))}`);
-    > 56 |             const ltPage = await browser.newPage(testInfo.project.use);
-         |                                          ^
-      57 |             await use(ltPage);
-      58 |             const testStatus = {
-      59 |                 action: 'setTestStatus',
-        at Object.page (/home/runner/work/Playwright/Playwright/fixtures/lambdaTestFixture.ts:56:42)
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
     test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip
     Usage:
 
@@ -79,15 +64,13 @@
 
 [[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip]]
 
-[[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/test-failed-1.png]]
-
 [[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="19.161" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="19.161">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="20.735" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="20.735">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -102,22 +85,22 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="18.536" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="18.536">
+<testsuite name="AI/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="19.435" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="19.435">
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="13.356" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="13.356">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="13.069" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="13.069">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
 <property name="Link" value="Click: &quot;Shop All&quot;">
 </property>
-<property name="Step" value="Click in the product: &quot;WebdriverIO Trucker Cap&quot;">
+<property name="Step" value="Click in the product: &quot;Cuffed Beanie&quot;">
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Black/ White">
+<property name="Select" value="On &quot;Color&quot; select the option White">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
@@ -126,7 +109,7 @@
 <property name="Button" value="Click: &quot; 
 		Add to Cart
 		 
-	$16.00
+	$15.50
 &quot;">
 </property>
 <property name="Assert" value="There is one item in the bag">
@@ -138,17 +121,17 @@
 				items
 			&quot;">
 </property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO Trucker Cap&quot;">
+<property name="Assert" value="The name of the item in the cart is: &quot;Cuffed Beanie&quot;">
 </property>
-<property name="Assert" value="The price of the item in the cart is: &quot;$16.00&quot;">
+<property name="Assert" value="The price of the item in the cart is: &quot;$15.50&quot;">
 </property>
-<property name="Assert" value="The subtotal is: &quot;$16.00&quot;">
+<property name="Assert" value="The subtotal is: &quot;$15.50&quot;">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="6.927" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="3.264">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="9.341" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="4.42">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -156,15 +139,15 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="Post Condition" value="Delete server with the key: &quot;474150&quot; if exists">
+<property name="Post Condition" value="Delete server with the key: &quot;567816&quot; if exists">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;474150&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;567816&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Crona - Kuhn&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Gusikowski - Baumbach&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://quixotic-cheetah.net/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://polite-vein.biz&quot;">
 </property>
 <property name="Step" value="Save server and return server id from api">
 </property>
@@ -174,17 +157,17 @@
 </property>
 <property name="Assert" value="Server id should be a number greater than 1">
 </property>
-<property name="Assert" value="Server with the key: &quot;474150&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;567816&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;474150&quot; is: &quot;Crona - Kuhn&quot;">
+<property name="Assert" value="The server name for the key: &quot;567816&quot; is: &quot;Gusikowski - Baumbach&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;474150&quot; is: &quot;https://quixotic-cheetah.net/&quot;">
+<property name="Assert" value="The server url for the key: &quot;567816&quot; is: &quot;https://polite-vein.biz&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="3.663">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.921">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -196,29 +179,29 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;517916&quot;">
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;913658&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Romaguera, Kuhic and Hilll&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Breitenberg LLC&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://gruesome-department.net/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://utter-object.org/&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Server with the key: &quot;517916&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;913658&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;517916&quot; is: &quot;Romaguera, Kuhic and Hilll&quot;">
+<property name="Assert" value="The server name for the key: &quot;913658&quot; is: &quot;Breitenberg LLC&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;517916&quot; is: &quot;https://gruesome-department.net/&quot;">
+<property name="Assert" value="The server url for the key: &quot;913658&quot; is: &quot;https://utter-object.org/&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.156" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.156">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.967" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.967">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -237,8 +220,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="5.415" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="2.621">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="5.533" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="2.914">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -252,7 +235,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.794">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.619">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -267,8 +250,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.767" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.878">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.365" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.737">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -286,7 +269,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.889">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.628">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -305,8 +288,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.565" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.565">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.298" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.298">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -322,8 +305,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.644" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.644">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.471" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.471">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -338,8 +321,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="7.039" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="7.039">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="5.533" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="5.533">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.bing.com/maps&quot;">
 </property>
@@ -354,8 +337,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.7" errors="0">
-<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.7">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.39" errors="0">
+<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.39">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
 </property>
@@ -364,20 +347,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.117" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.117">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.162" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.162">
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.773" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="3.773">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="4.824" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="4.824">
 <properties>
 <property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.32" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="3.32">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="4.841" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="4.841">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -406,8 +389,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.174" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.174">
+<testsuite name="AI/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.099" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.099">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -416,14 +399,322 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="16.477" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="16.477">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="15.142" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="15.142">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
 <property name="Link" value="Click: &quot;Shop All&quot;">
 </property>
 <property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
+</property>
+<property name="Select" value="On &quot;Color&quot; select any option">
+</property>
+<property name="Select" value="On &quot;Color&quot; select the option Forest">
+</property>
+<property name="Step" value="Select any available Size">
+</property>
+<property name="Select" value="On &quot;Size&quot; select any option">
+</property>
+<property name="Select" value="On &quot;Size&quot; select the option 3XL">
+</property>
+<property name="Step" value="Get the product price">
+</property>
+<property name="Button" value="Click: &quot; 
+		Add to Cart
+		 
+	$25.00
+&quot;">
+</property>
+<property name="Assert" value="There is one item in the bag">
+</property>
+<property name="Button" value="Click: &quot;
+ 
+				1
+			 
+				items
+			&quot;">
+</property>
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
+</property>
+<property name="Assert" value="The price of the item in the cart is: &quot;$25.00&quot;">
+</property>
+<property name="Assert" value="The subtotal is: &quot;$25.00&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Api/servers.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="9.494" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="4.761">
+<properties>
+<property name="Description" value="An admin user can add a server">
+</property>
+<property name="Pre Condition" value="A valid admin username and password is logged">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="Post Condition" value="Delete server with the key: &quot;222013&quot; if exists">
+</property>
+<property name="Button" value="Click: &quot;Add&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;222013&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Ondricka Inc&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://yearly-solution.biz/&quot;">
+</property>
+<property name="Step" value="Save server and return server id from api">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server id should be a number greater than 1">
+</property>
+<property name="Assert" value="Server with the key: &quot;222013&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;222013&quot; is: &quot;Ondricka Inc&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;222013&quot; is: &quot;https://yearly-solution.biz/&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
+</properties>
+</testcase>
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.733">
+<properties>
+<property name="Description" value="An admin user can edit a server">
+</property>
+<property name="Pre Condition" value="A valid admin username and password is logged">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="Step" value="Create server with API">
+</property>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;59401&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Bradtke - Corwin&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://young-cosset.org&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;59401&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;59401&quot; is: &quot;Bradtke - Corwin&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;59401&quot; is: &quot;https://young-cosset.org&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.414" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.414">
+<properties>
+<property name="Description" value="Login with valid user on sauce demo">
+</property>
+<property name="Pre Condition" value="A valid username and password">
+</property>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="7.383" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.487">
+<properties>
+<property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
+</property>
+<property name="Pre Condition" value="A valid normal user">
+</property>
+<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.896">
+<properties>
+<property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
+</property>
+<property name="Pre Condition" value="A valid admin user">
+</property>
+<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.096" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.112">
+<properties>
+<property name="Description" value="Login with valid user on Sauce Demo">
+</property>
+<property name="Pre Condition" value="A valid username and password">
+</property>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.984">
+<properties>
+<property name="Description" value="Login with valid user on Sauce Demo">
+</property>
+<property name="Pre Condition" value="A valid username and password">
+</property>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;visual_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="2.915" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.915">
+<properties>
+<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
+</property>
+<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
+</property>
+<property name="Assert" value="The excel file rows are equal to the grid rows">
+</property>
+</properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.685" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.685">
+<properties>
+<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
+</property>
+<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
+</property>
+<property name="Button" value="Click: &quot;Login&quot;">
+</property>
+<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.307" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.307">
+<properties>
+<property name="skip" value="Geolocation not work in firefox">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.596" errors="0">
+<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.596">
+<properties>
+<property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
+</property>
+<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.367" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.367">
+</testcase>
+</testsuite>
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="5.004" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="5.004">
+<properties>
+<property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.521" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="3.521">
+<properties>
+<property name="Mock" value="Modify the summary with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
+</property>
+<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
+</property>
+<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
+</property>
+<property name="Go To" value="Wait to charts are visible">
+</property>
+<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
+</property>
+</properties>
+</testcase>
+</testsuite>
+<testsuite name="AI/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.788" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.788">
+<properties>
+<property name="skip" value="Zero Steps only works in chromium">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="Api/addToCart.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="18.209" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="18.209">
+<properties>
+<property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
+</property>
+<property name="Link" value="Click: &quot;Shop All&quot;">
+</property>
+<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
@@ -452,7 +743,7 @@
 				items
 			&quot;">
 </property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
 </property>
 <property name="Assert" value="The price of the item in the cart is: &quot;$30.00&quot;">
 </property>
@@ -461,8 +752,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="8.691" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="4.678">
+<testsuite name="Api/servers.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="13.976" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="6.472">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -470,15 +761,15 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="Post Condition" value="Delete server with the key: &quot;544104&quot; if exists">
+<property name="Post Condition" value="Delete server with the key: &quot;412073&quot; if exists">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;544104&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;412073&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Treutel Group&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Lebsack - Davis&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://long-term-pliers.name&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://vibrant-gallery.org&quot;">
 </property>
 <property name="Step" value="Save server and return server id from api">
 </property>
@@ -488,17 +779,17 @@
 </property>
 <property name="Assert" value="Server id should be a number greater than 1">
 </property>
-<property name="Assert" value="Server with the key: &quot;544104&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;412073&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;544104&quot; is: &quot;Treutel Group&quot;">
+<property name="Assert" value="The server name for the key: &quot;412073&quot; is: &quot;Lebsack - Davis&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;544104&quot; is: &quot;https://long-term-pliers.name&quot;">
+<property name="Assert" value="The server url for the key: &quot;412073&quot; is: &quot;https://vibrant-gallery.org&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.013">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="7.504">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -510,29 +801,29 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;289875&quot;">
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;316165&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Murphy Inc&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Pfeffer - Stracke&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://trustworthy-sushi.net/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://husky-gerbil.com/&quot;">
 </property>
 <property name="Button" value="Click: &quot;Save&quot;">
 </property>
 <property name="Assert" value="Success message is visible">
 </property>
-<property name="Assert" value="Server with the key: &quot;289875&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;316165&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;289875&quot; is: &quot;Murphy Inc&quot;">
+<property name="Assert" value="The server name for the key: &quot;316165&quot; is: &quot;Pfeffer - Stracke&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;289875&quot; is: &quot;https://trustworthy-sushi.net/&quot;">
+<property name="Assert" value="The server url for the key: &quot;316165&quot; is: &quot;https://husky-gerbil.com/&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.885" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.885">
+<testsuite name="Basic/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.146" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="2.146">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -551,8 +842,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="6.013" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.087">
+<testsuite name="Basic/menu.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="21.792" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="5.537">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -566,7 +857,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.926">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="16.255">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -579,10 +870,17 @@
 <property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
 </property>
 </properties>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm]]
+
+[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.505" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.275">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="2.789" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.363">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -600,7 +898,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.23">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.426">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -619,325 +917,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.611" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="3.611">
-<properties>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-<property name="ButtonExcel" value="Click: &quot;Export to Excel&quot;">
-</property>
-<property name="Assert" value="The excel file rows are equal to the grid rows">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Excel-exportServers-Servers-Should-export-servers-to-excel-desktop-firefox/attachments/servers-xlsx-b45414d1440b649c23868d9b19e0f22e5f012826.xlsx]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.694" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.694">
-<properties>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page equal to: &quot;https://www.saucedemo.com/inventory.html">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.378" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.378">
-<properties>
-<property name="skip" value="Geolocation not work in firefox">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.549" errors="0">
-<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.549">
-<properties>
-<property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
-</property>
-<property name="Assert" value="Search button text is equal to: &quot;Buscar con Google&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.479" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.479">
-</testcase>
-</testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="4.864" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="4.864">
-<properties>
-<property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.29" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="3.29">
-<properties>
-<property name="Mock" value="Modify the summary with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Sumary Expiration&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 delay&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 total&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 5 type&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 1&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 2&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 Limit 3&quot; with fixed data">
-</property>
-<property name="Mock" value="Modify the &quot;Top 10 To Expire&quot; with fixed data">
-</property>
-<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="Go To" value="Wait to charts are visible">
-</property>
-<property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="1.207" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.207">
-<properties>
-<property name="skip" value="Zero Steps only works in chromium">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="43.289" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="43.289">
-<properties>
-<property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
-</property>
-<property name="Link" value="Click: &quot;Shop All&quot;">
-</property>
-<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;">
-</property>
-<property name="Select" value="On &quot;Color&quot; select any option">
-</property>
-<property name="Select" value="On &quot;Color&quot; select the option Anthracite">
-</property>
-<property name="Step" value="Select any available Size">
-</property>
-<property name="Select" value="On &quot;Size&quot; select any option">
-</property>
-<property name="Select" value="On &quot;Size&quot; select the option M">
-</property>
-<property name="Step" value="Get the product price">
-</property>
-<property name="Button" value="Click: &quot; 
-		Add to Cart
-		 
-	$35.00
-&quot;">
-</property>
-<property name="Assert" value="There is one item in the bag">
-</property>
-<property name="Button" value="Click: &quot;
- 
-				1
-			 
-				items
-			&quot;">
-</property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;">
-</property>
-<property name="Assert" value="The price of the item in the cart is: &quot;$35.00&quot;">
-</property>
-<property name="Assert" value="The subtotal is: &quot;$35.00&quot;">
-</property>
-</properties>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-addToCart-WebdriverIO--609ad-uld-add-an-item-to-the-cart-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-addToCart-WebdriverIO--609ad-uld-add-an-item-to-the-cart-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-addToCart-WebdriverIO--609ad-uld-add-an-item-to-the-cart-desktop-webkit/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="11.682" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="7.183">
-<properties>
-<property name="Description" value="An admin user can add a server">
-</property>
-<property name="Pre Condition" value="A valid admin username and password is logged">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-<property name="Post Condition" value="Delete server with the key: &quot;1132&quot; if exists">
-</property>
-<property name="Button" value="Click: &quot;Add&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;1132&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Corkery, Durgan and Daniel&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://outlandish-circumference.com&quot;">
-</property>
-<property name="Step" value="Save server and return server id from api">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server id should be a number greater than 1">
-</property>
-<property name="Assert" value="Server with the key: &quot;1132&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;1132&quot; is: &quot;Corkery, Durgan and Daniel&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;1132&quot; is: &quot;https://outlandish-circumference.com&quot;">
-</property>
-<property name="Post Condition" value="Delete the server with API request">
-</property>
-</properties>
-</testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.499">
-<properties>
-<property name="Description" value="An admin user can edit a server">
-</property>
-<property name="Pre Condition" value="A valid admin username and password is logged">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-<property name="Step" value="Create server with API">
-</property>
-<property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
-</property>
-<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;766097&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Howe and Sons&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://stupendous-tribe.com&quot;">
-</property>
-<property name="Button" value="Click: &quot;Save&quot;">
-</property>
-<property name="Assert" value="Success message is visible">
-</property>
-<property name="Assert" value="Server with the key: &quot;766097&quot; exists in the table">
-</property>
-<property name="Assert" value="The server name for the key: &quot;766097&quot; is: &quot;Howe and Sons&quot;">
-</property>
-<property name="Assert" value="The server url for the key: &quot;766097&quot; is: &quot;https://stupendous-tribe.com&quot;">
-</property>
-<property name="Post Condition" value="Delete the server with API request">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.139" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.139">
-<properties>
-<property name="Description" value="Login with valid user on sauce demo">
-</property>
-<property name="Pre Condition" value="A valid username and password">
-</property>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page is equal to: &quot;https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="8.458" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="4.29">
-<properties>
-<property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
-</property>
-<property name="Pre Condition" value="A valid normal user">
-</property>
-<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PrimeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
-</property>
-</properties>
-</testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="4.168">
-<properties>
-<property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
-</property>
-<property name="Pre Condition" value="A valid admin user">
-</property>
-<property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
-</property>
-<property name="PrimeFacesMenu" value="Get top menus">
-</property>
-<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="3.96" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="2.284">
-<properties>
-<property name="Description" value="Login with valid user on Sauce Demo">
-</property>
-<property name="Pre Condition" value="A valid username and password">
-</property>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;standard_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.676">
-<properties>
-<property name="Description" value="Login with valid user on Sauce Demo">
-</property>
-<property name="Pre Condition" value="A valid username and password">
-</property>
-<property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
-</property>
-<property name="InputText" value="Fill &quot;Username:&quot; with the value: &quot;visual_user&quot;">
-</property>
-<property name="InputPassword" value="Fill &quot;Password&quot; with value: *****">
-</property>
-<property name="Button" value="Click: &quot;Login&quot;">
-</property>
-<property name="Assert" value="Check URL Page is equal to: https://www.saucedemo.com/inventory.html&quot;">
-</property>
-</properties>
-</testcase>
-</testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="4.047" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="4.047">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="3.201" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="3.201">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -953,8 +934,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.961" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.961">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.532" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.532">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -969,8 +950,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="13.12" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="13.12">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="10.79" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="10.79">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.bing.com/maps&quot;">
 </property>
@@ -985,8 +966,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.342" errors="0">
-<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="2.342">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="3.463" errors="0">
+<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="3.463">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
 </property>
@@ -995,20 +976,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="5.258" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="5.258">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="5.923" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="5.923">
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="7.55" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="7.55">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="6.132" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="6.132">
 <properties>
 <property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-12-26T05:42:13.145Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="5.584" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="5.584">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2024-12-27T05:41:54.343Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="5.241" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="5.241">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
