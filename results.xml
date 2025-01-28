@@ -1,6 +1,6 @@
-<testsuites id="" name="" tests="51" failures="16" skipped="3" errors="0" time="267.623245">
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="22.915" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="22.915">
+<testsuites id="" name="" tests="50" failures="0" skipped="3" errors="0" time="138.38654300000002">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="chrome:latest:MacOS Catalina@lambdatest" tests="1" failures="0" skipped="0" time="14.302" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="14.302">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -15,79 +15,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="pw-webkit:latest:MacOS Monterey@lambdatest" tests="1" failures="1" skipped="0" time="36.044" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="36.044">
-<failure message="loginLambdaTestFixture.spec.ts:9:9 Login with valid user load inventory page" type="FAILURE">
-<![CDATA[  [pw-webkit:latest:MacOS Monterey@lambdatest] › Fixture-LambdaTest/loginLambdaTestFixture.spec.ts:9:9 › Login › Login with valid user load inventory page @Fixture 
-
-    Error: browser.newPage: Protocol error (Page.overrideSetting): Unknown setting: FixedBackgroundsPaintRelativeToDocument
-
-       at ../fixtures/lambdaTestFixture.ts:56
-
-      54 |             const browser = await chromium.connect(`wss://cdp.lambdatest.com/playwright?capabilities=
-      55 |         ${encodeURIComponent(JSON.stringify(capabilities))}`);
-    > 56 |             const ltPage = await browser.newPage(testInfo.project.use);
-         |                                          ^
-      57 |             await use(ltPage);
-      58 |             const testStatus = {
-      59 |                 action: 'setTestStatus',
-        at Object.page (/home/runner/work/Playwright/Playwright/fixtures/lambdaTestFixture.ts:56:42)
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: browser.newPage: Protocol error (Page.overrideSetting): Unknown setting: FixedBackgroundsPaintRelativeToDocument
-
-       at ../fixtures/lambdaTestFixture.ts:56
-
-      54 |             const browser = await chromium.connect(`wss://cdp.lambdatest.com/playwright?capabilities=
-      55 |         ${encodeURIComponent(JSON.stringify(capabilities))}`);
-    > 56 |             const ltPage = await browser.newPage(testInfo.project.use);
-         |                                          ^
-      57 |             await use(ltPage);
-      58 |             const testStatus = {
-      59 |                 action: 'setTestStatus',
-        at Object.page (/home/runner/work/Playwright/Playwright/fixtures/lambdaTestFixture.ts:56:42)
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest/trace.zip]]
-
-[[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Fixture-LambdaTest-loginLa-24caa-id-user-load-inventory-page-pw-webkit-latest-MacOS-Monterey-lambdatest-retry1/trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="32.07" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="32.07">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="chrome:latest:Windows 10@lambdatest" tests="1" failures="0" skipped="0" time="36.289" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="36.289">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -102,28 +31,28 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="24.627" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="24.627">
+<testsuite name="AI/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="9.403" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="9.403">
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="15.438" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="15.438">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="12.906" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="12.906">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
 <property name="Link" value="Click: &quot;Shop All&quot;">
 </property>
-<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Black">
+<property name="Select" value="On &quot;Color&quot; select the option Forest">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
 <property name="Select" value="On &quot;Size&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Size&quot; select the option 2XL">
+<property name="Select" value="On &quot;Size&quot; select the option S">
 </property>
 <property name="Step" value="Get the product price">
 </property>
@@ -142,7 +71,7 @@
 				items
 			&quot;">
 </property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Box Logo Tee&quot;">
 </property>
 <property name="Assert" value="The price of the item in the cart is: &quot;$25.00&quot;">
 </property>
@@ -151,8 +80,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="2" failures="1" skipped="0" time="34.696" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="5.931">
+<testsuite name="Api/servers.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="7.573" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="3.174">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -160,15 +89,15 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="Post Condition" value="Delete server with the key: &quot;556994&quot; if exists">
+<property name="Post Condition" value="Delete server with the key: &quot;630322&quot; if exists">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;556994&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;630322&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Hoeger Inc&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Kerluke and Sons&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://better-mantua.net/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://elastic-sideboard.net&quot;">
 </property>
 <property name="Step" value="Save server and return server id from api">
 </property>
@@ -178,17 +107,17 @@
 </property>
 <property name="Assert" value="Server id should be a number greater than 1">
 </property>
-<property name="Assert" value="Server with the key: &quot;556994&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;630322&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;556994&quot; is: &quot;Hoeger Inc&quot;">
+<property name="Assert" value="The server name for the key: &quot;630322&quot; is: &quot;Kerluke and Sons&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;556994&quot; is: &quot;https://better-mantua.net/&quot;">
+<property name="Assert" value="The server url for the key: &quot;630322&quot; is: &quot;https://elastic-sideboard.net&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="28.765">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="4.399">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -200,102 +129,29 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;588387&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Heathcote - Carroll&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://deserted-wafer.biz&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;588387&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;588387&quot; is: &quot;Heathcote - Carroll&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;588387&quot; is: &quot;https://deserted-wafer.biz&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:48:9 Should edit a server" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Api/servers.spec.ts:48:9 › Servers › Should edit a server @API ──────────────
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('row', { name: '460157' }).locator('[aria-label="Edit"]')
-
-
-       at ../components/Table.ts:22
-
-      20 |         await this.addStep(`Click in the edit table for the row with the key: "${keyValue}"`, async () => {
-      21 |             const row = this.page.getByRole('row', { name: keyValue.toString() });
-    > 22 |             await row?.locator('[aria-label="Edit"]').click();
-         |                                                       ^
-      23 |         });
-      24 |     }
-      25 |
-        at /home/runner/work/Playwright/Playwright/components/Table.ts:22:55
-        at Table.addStep (/home/runner/work/Playwright/Playwright/components/BaseComponent.ts:64:27)
-        at Table.clickInEditByKey (/home/runner/work/Playwright/Playwright/components/Table.ts:20:20)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:84:33
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('row', { name: '197783' }).locator('[aria-label="Edit"]')
-
-
-       at ../components/Table.ts:22
-
-      20 |         await this.addStep(`Click in the edit table for the row with the key: "${keyValue}"`, async () => {
-      21 |             const row = this.page.getByRole('row', { name: keyValue.toString() });
-    > 22 |             await row?.locator('[aria-label="Edit"]').click();
-         |                                                       ^
-      23 |         });
-      24 |     }
-      25 |
-        at /home/runner/work/Playwright/Playwright/components/Table.ts:22:55
-        at Table.addStep (/home/runner/work/Playwright/Playwright/components/BaseComponent.ts:64:27)
-        at Table.clickInEditByKey (/home/runner/work/Playwright/Playwright/components/Table.ts:20:20)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:84:33
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.615" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.615">
+<testsuite name="Basic/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.91" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.91">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -314,8 +170,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="2" failures="2" skipped="0" time="10.309" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="5.081">
+<testsuite name="Basic/menu.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="4.981" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="2.181">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -328,115 +184,8 @@
 <property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:9:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Basic/menu.spec.ts:9:9 › Normal user › Should returns user menu @Basic › Menu are equal to: "AccountsReceivable,Config" 
-
-    Error: Menu are equal to: "AccountsReceivable,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:22:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu are equal to: "AccountsReceivable,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:22:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="5.228">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="2.8">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -449,119 +198,10 @@
 <property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:29:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Basic/menu.spec.ts:29:9 › Admin user › Should returns admin menu @Basic › Menu are equal to: "AccountsReceivable,Security,Config" 
-
-    Error: Menu are equal to: "AccountsReceivable,Security,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 5
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Security",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:42:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu are equal to: "AccountsReceivable,Security,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 5
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Security",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:42:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.203" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.655">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="2" failures="0" skipped="0" time="1.331" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.67">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -579,7 +219,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.548">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.661">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -598,8 +238,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.427" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.427">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.711" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="1.711">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -615,8 +255,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.462" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.462">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.589" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.589">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -631,8 +271,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="5.806" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="5.806">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="5.41" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="5.41">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.bing.com/maps&quot;">
 </property>
@@ -647,8 +287,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="0.904" errors="0">
-<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="0.904">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="1.211" errors="0">
+<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.211">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
 </property>
@@ -657,113 +297,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.268" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.268">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.163" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.163">
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="7.422" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="7.422">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="3.397" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="3.397">
 <properties>
 <property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:24:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [desktop-chromium] › Synthetic/menu.spec.ts:24:9 › Synthetic testing › Should show dashboard @PerfAgents 
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-      45 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      46 |         const menus = ['AccountsReceivable', 'Config'];
-    > 47 |         expect(menusInPage).toEqual(menus);
-         |                             ^
-      48 |     });
-      49 |
-      50 | });
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:47:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-      45 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      46 |         const menus = ['AccountsReceivable', 'Config'];
-    > 47 |         expect(menusInPage).toEqual(menus);
-         |                             ^
-      48 |     });
-      49 |
-      50 | });
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:47:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-chromium" tests="1" failures="1" skipped="0" time="11.752" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="11.752">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-chromium" tests="1" failures="0" skipped="0" time="2.766" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="2.766">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -790,199 +337,10 @@
 <property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
 </property>
 </properties>
-<failure message="dashboard.spec.ts:9:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [desktop-chromium] › VisualTesting/dashboard.spec.ts:9:9 › Check Dashboard › Should show dashboard @VisualTesting › Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 
-
-    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
-
-    expect(page).toHaveScreenshot(expected)
-
-      Expected an image 1280px by 1358px, received 1280px by 1361px. 
-
-    Expected: /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png
-    Received: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-actual.png
-        Diff: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-diff.png
-
-    Call log:
-      - Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 with timeout 10000ms
-        - verifying given screenshot expectation
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - 199738 pixels (ratio 0.12 of all image pixels) are different.
-      - waiting 250ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - 199738 pixels (ratio 0.12 of all image pixels) are different.
-      - waiting 500ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-
-
-       at ../utils/VisualHelper.ts:24
-
-      22 |          
-      23 |         await test.step(stepDescription, async () => {
-    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |                                                      ^
-      25 |                 {
-      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
-      27 |                     timeout: timeout,
-        at /home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:24:54
-        at VisualHelper.checkPageSnapshot (/home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:23:20)
-        at DashboardPage.checkSnapshot (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:54:9)
-        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:21:9
-
-    attachment #3: dashboard-expected.png (image/png) ──────────────────────────────────────────────
-    tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: dashboard-actual.png (image/png) ────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/test-failed-2.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
-
-    expect(page).toHaveScreenshot(expected)
-
-      Expected an image 1280px by 1358px, received 1280px by 1361px. 
-
-    Expected: /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png
-    Received: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/dashboard-actual.png
-        Diff: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/dashboard-diff.png
-
-    Call log:
-      - Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 with timeout 10000ms
-        - verifying given screenshot expectation
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-
-
-       at ../utils/VisualHelper.ts:24
-
-      22 |          
-      23 |         await test.step(stepDescription, async () => {
-    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |                                                      ^
-      25 |                 {
-      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
-      27 |                     timeout: timeout,
-        at /home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:24:54
-        at VisualHelper.checkPageSnapshot (/home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:23:20)
-        at DashboardPage.checkSnapshot (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:54:9)
-        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:21:9
-
-    attachment #3: dashboard-expected.png (image/png) ──────────────────────────────────────────────
-    tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: dashboard-actual.png (image/png) ────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/dashboard-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/dashboard-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/dashboard-diff.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/test-failed-2.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/video.webm]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium/trace.zip]]
-
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-chromium-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/dashboard-diff.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-chromium-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.053" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.053">
+<testsuite name="AI/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="1.121" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="1.121">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -991,18 +349,18 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="15.547" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="15.547">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="16.234" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="16.234">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
 <property name="Link" value="Click: &quot;Shop All&quot;">
 </property>
-<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+<property name="Step" value="Click in the product: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;">
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Forest">
+<property name="Select" value="On &quot;Color&quot; select the option Black">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
@@ -1015,7 +373,7 @@
 <property name="Button" value="Click: &quot; 
 		Add to Cart
 		 
-	$25.00
+	$35.00
 &quot;">
 </property>
 <property name="Assert" value="There is one item in the bag">
@@ -1027,17 +385,17 @@
 				items
 			&quot;">
 </property>
-<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Robot Shining&quot;">
+<property name="Assert" value="The name of the item in the cart is: &quot;WebdriverIO T-Shirt - Code Test Dominate&quot;">
 </property>
-<property name="Assert" value="The price of the item in the cart is: &quot;$25.00&quot;">
+<property name="Assert" value="The price of the item in the cart is: &quot;$35.00&quot;">
 </property>
-<property name="Assert" value="The subtotal is: &quot;$25.00&quot;">
+<property name="Assert" value="The subtotal is: &quot;$35.00&quot;">
 </property>
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="2" failures="1" skipped="0" time="32.308" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="4.305">
+<testsuite name="Api/servers.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="9.686" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="4.287">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -1045,15 +403,15 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="Post Condition" value="Delete server with the key: &quot;902706&quot; if exists">
+<property name="Post Condition" value="Delete server with the key: &quot;135696&quot; if exists">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;902706&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;135696&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Swaniawski, Hegmann and Pollich&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Cummerata Inc&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://shrill-octave.com/&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://blushing-commodity.net&quot;">
 </property>
 <property name="Step" value="Save server and return server id from api">
 </property>
@@ -1063,17 +421,17 @@
 </property>
 <property name="Assert" value="Server id should be a number greater than 1">
 </property>
-<property name="Assert" value="Server with the key: &quot;902706&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;135696&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;902706&quot; is: &quot;Swaniawski, Hegmann and Pollich&quot;">
+<property name="Assert" value="The server name for the key: &quot;135696&quot; is: &quot;Cummerata Inc&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;902706&quot; is: &quot;https://shrill-octave.com/&quot;">
+<property name="Assert" value="The server url for the key: &quot;135696&quot; is: &quot;https://blushing-commodity.net&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="28.003">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="5.399">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -1085,102 +443,29 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;918677&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Kutch - Sauer&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://glaring-widow.biz/&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;918677&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;918677&quot; is: &quot;Kutch - Sauer&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;918677&quot; is: &quot;https://glaring-widow.biz/&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:48:9 Should edit a server" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Api/servers.spec.ts:48:9 › Servers › Should edit a server @API ───────────────
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('row', { name: '779957' }).locator('[aria-label="Edit"]')
-
-
-       at ../components/Table.ts:22
-
-      20 |         await this.addStep(`Click in the edit table for the row with the key: "${keyValue}"`, async () => {
-      21 |             const row = this.page.getByRole('row', { name: keyValue.toString() });
-    > 22 |             await row?.locator('[aria-label="Edit"]').click();
-         |                                                       ^
-      23 |         });
-      24 |     }
-      25 |
-        at /home/runner/work/Playwright/Playwright/components/Table.ts:22:55
-        at Table.addStep (/home/runner/work/Playwright/Playwright/components/BaseComponent.ts:64:27)
-        at Table.clickInEditByKey (/home/runner/work/Playwright/Playwright/components/Table.ts:20:20)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:84:33
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('row', { name: '835354' }).locator('[aria-label="Edit"]')
-
-
-       at ../components/Table.ts:22
-
-      20 |         await this.addStep(`Click in the edit table for the row with the key: "${keyValue}"`, async () => {
-      21 |             const row = this.page.getByRole('row', { name: keyValue.toString() });
-    > 22 |             await row?.locator('[aria-label="Edit"]').click();
-         |                                                       ^
-      23 |         });
-      24 |     }
-      25 |
-        at /home/runner/work/Playwright/Playwright/components/Table.ts:22:55
-        at Table.addStep (/home/runner/work/Playwright/Playwright/components/BaseComponent.ts:64:27)
-        at Table.clickInEditByKey (/home/runner/work/Playwright/Playwright/components/Table.ts:20:20)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:84:33
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.918" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="0.918">
+<testsuite name="Basic/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.169" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.169">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -1199,8 +484,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="2" failures="2" skipped="0" time="14.706" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="7.191">
+<testsuite name="Basic/menu.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="7.391" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="3.512">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -1213,115 +498,8 @@
 <property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:9:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Basic/menu.spec.ts:9:9 › Normal user › Should returns user menu @Basic › Menu are equal to: "AccountsReceivable,Config" 
-
-    Error: Menu are equal to: "AccountsReceivable,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:22:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu are equal to: "AccountsReceivable,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:22:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="7.515">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.879">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -1334,119 +512,10 @@
 <property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:29:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Basic/menu.spec.ts:29:9 › Admin user › Should returns admin menu @Basic › Menu are equal to: "AccountsReceivable,Security,Config" 
-
-    Error: Menu are equal to: "AccountsReceivable,Security,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 5
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Security",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:42:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu are equal to: "AccountsReceivable,Security,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 5
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Security",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:42:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.733" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.791">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="2" failures="0" skipped="0" time="2.259" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.27">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1464,7 +533,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.942">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="0.989">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -1483,8 +552,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.764" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="3.764">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="2.521" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="2.521">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -1500,8 +569,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.548" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.548">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="0.709" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.709">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -1516,8 +585,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.267" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.267">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="1" time="0.338" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="0.338">
 <properties>
 <property name="skip" value="Geolocation not work in firefox">
 </property>
@@ -1526,8 +595,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.617" errors="0">
-<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.617">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="1.551" errors="0">
+<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.551">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
 </property>
@@ -1536,113 +605,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="4.528" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="4.528">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.412" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="3.412">
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="9.762" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="9.762">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="5.263" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="5.263">
 <properties>
 <property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:24:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [desktop-firefox] › Synthetic/menu.spec.ts:24:9 › Synthetic testing › Should show dashboard @PerfAgents 
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-      45 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      46 |         const menus = ['AccountsReceivable', 'Config'];
-    > 47 |         expect(menusInPage).toEqual(menus);
-         |                             ^
-      48 |     });
-      49 |
-      50 | });
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:47:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-      45 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      46 |         const menus = ['AccountsReceivable', 'Config'];
-    > 47 |         expect(menusInPage).toEqual(menus);
-         |                             ^
-      48 |     });
-      49 |
-      50 | });
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:47:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-firefox" tests="1" failures="1" skipped="0" time="11.194" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="11.194">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-firefox" tests="1" failures="0" skipped="0" time="3.64" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="3.64">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -1669,187 +645,10 @@
 <property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
 </property>
 </properties>
-<failure message="dashboard.spec.ts:9:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [desktop-firefox] › VisualTesting/dashboard.spec.ts:9:9 › Check Dashboard › Should show dashboard @VisualTesting › Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 
-
-    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
-
-    expect(page).toHaveScreenshot(expected)
-
-      Expected an image 1280px by 1358px, received 1280px by 1361px. 
-
-    Expected: /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-firefox-linux.png
-    Received: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/dashboard-actual.png
-        Diff: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/dashboard-diff.png
-
-    Call log:
-      - Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 with timeout 10000ms
-        - verifying given screenshot expectation
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-
-
-       at ../utils/VisualHelper.ts:24
-
-      22 |          
-      23 |         await test.step(stepDescription, async () => {
-    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |                                                      ^
-      25 |                 {
-      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
-      27 |                     timeout: timeout,
-        at /home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:24:54
-        at VisualHelper.checkPageSnapshot (/home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:23:20)
-        at DashboardPage.checkSnapshot (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:54:9)
-        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:21:9
-
-    attachment #3: dashboard-expected.png (image/png) ──────────────────────────────────────────────
-    tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-firefox-linux.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: dashboard-actual.png (image/png) ────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/dashboard-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/dashboard-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/test-failed-2.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #9: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
-
-    expect(page).toHaveScreenshot(expected)
-
-      Expected an image 1280px by 1358px, received 1280px by 1361px. 
-
-    Expected: /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-firefox-linux.png
-    Received: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/dashboard-actual.png
-        Diff: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/dashboard-diff.png
-
-    Call log:
-      - Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 with timeout 10000ms
-        - verifying given screenshot expectation
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-
-
-       at ../utils/VisualHelper.ts:24
-
-      22 |          
-      23 |         await test.step(stepDescription, async () => {
-    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |                                                      ^
-      25 |                 {
-      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
-      27 |                     timeout: timeout,
-        at /home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:24:54
-        at VisualHelper.checkPageSnapshot (/home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:23:20)
-        at DashboardPage.checkSnapshot (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:54:9)
-        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:21:9
-
-    attachment #3: dashboard-expected.png (image/png) ──────────────────────────────────────────────
-    tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-firefox-linux.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: dashboard-actual.png (image/png) ────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/dashboard-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/dashboard-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-firefox-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/dashboard-diff.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/test-failed-2.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/video.webm]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox/trace.zip]]
-
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-firefox-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/dashboard-diff.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-firefox-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="AI/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="3.783" errors="0">
-<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="3.783">
+<testsuite name="AI/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="1" time="0.936" errors="0">
+<testcase name="AI Zero Step › Should show dashboard after login" classname="AI/login.spec.ts" time="0.936">
 <properties>
 <property name="skip" value="Zero Steps only works in chromium">
 </property>
@@ -1858,8 +657,8 @@
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="Api/addToCart.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="20.236" errors="0">
-<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="20.236">
+<testsuite name="Api/addToCart.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="19.341" errors="0">
+<testcase name="WebdriverIO Shop › Should add an item to the cart" classname="Api/addToCart.spec.ts" time="19.341">
 <properties>
 <property name="Go To" value="Go to: &quot;https://shop.webdriver.io&quot;">
 </property>
@@ -1869,7 +668,7 @@
 </property>
 <property name="Select" value="On &quot;Color&quot; select any option">
 </property>
-<property name="Select" value="On &quot;Color&quot; select the option Black">
+<property name="Select" value="On &quot;Color&quot; select the option Navy">
 </property>
 <property name="Step" value="Select any available Size">
 </property>
@@ -1899,8 +698,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Api/servers.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="2" failures="1" skipped="0" time="38.823" errors="0">
-<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="7.454">
+<testsuite name="Api/servers.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="11.509" errors="0">
+<testcase name="Servers › Should add a server" classname="Api/servers.spec.ts" time="5.819">
 <properties>
 <property name="Description" value="An admin user can add a server">
 </property>
@@ -1908,15 +707,15 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
-<property name="Post Condition" value="Delete server with the key: &quot;527034&quot; if exists">
+<property name="Post Condition" value="Delete server with the key: &quot;201746&quot; if exists">
 </property>
 <property name="Button" value="Click: &quot;Add&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;527034&quot;">
+<property name="InputText" value="Fill &quot;Key:&quot; with the value: &quot;201746&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Cartwright Group&quot;">
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;West, Bradtke and Cummerata&quot;">
 </property>
-<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://official-intellect.info&quot;">
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://untrue-term.biz/&quot;">
 </property>
 <property name="Step" value="Save server and return server id from api">
 </property>
@@ -1926,17 +725,17 @@
 </property>
 <property name="Assert" value="Server id should be a number greater than 1">
 </property>
-<property name="Assert" value="Server with the key: &quot;527034&quot; exists in the table">
+<property name="Assert" value="Server with the key: &quot;201746&quot; exists in the table">
 </property>
-<property name="Assert" value="The server name for the key: &quot;527034&quot; is: &quot;Cartwright Group&quot;">
+<property name="Assert" value="The server name for the key: &quot;201746&quot; is: &quot;West, Bradtke and Cummerata&quot;">
 </property>
-<property name="Assert" value="The server url for the key: &quot;527034&quot; is: &quot;https://official-intellect.info&quot;">
+<property name="Assert" value="The server url for the key: &quot;201746&quot; is: &quot;https://untrue-term.biz/&quot;">
 </property>
 <property name="Post Condition" value="Delete the server with API request">
 </property>
 </properties>
 </testcase>
-<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="31.369">
+<testcase name="Servers › Should edit a server" classname="Api/servers.spec.ts" time="5.69">
 <properties>
 <property name="Description" value="An admin user can edit a server">
 </property>
@@ -1948,102 +747,29 @@
 </property>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
+<property name="InputText" value="Fill &quot;key:&quot; with the value: &quot;790146&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Name:&quot; with the value: &quot;Quitzon LLC&quot;">
+</property>
+<property name="InputText" value="Fill &quot;Url:&quot; with the value: &quot;https://spanish-insolence.org&quot;">
+</property>
+<property name="Button" value="Click: &quot;Save&quot;">
+</property>
+<property name="Assert" value="Success message is visible">
+</property>
+<property name="Assert" value="Server with the key: &quot;790146&quot; exists in the table">
+</property>
+<property name="Assert" value="The server name for the key: &quot;790146&quot; is: &quot;Quitzon LLC&quot;">
+</property>
+<property name="Assert" value="The server url for the key: &quot;790146&quot; is: &quot;https://spanish-insolence.org&quot;">
+</property>
+<property name="Post Condition" value="Delete the server with API request">
+</property>
 </properties>
-<failure message="servers.spec.ts:48:9 Should edit a server" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Api/servers.spec.ts:48:9 › Servers › Should edit a server @API ────────────────
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('row', { name: '756835' }).locator('[aria-label="Edit"]')
-
-
-       at ../components/Table.ts:22
-
-      20 |         await this.addStep(`Click in the edit table for the row with the key: "${keyValue}"`, async () => {
-      21 |             const row = this.page.getByRole('row', { name: keyValue.toString() });
-    > 22 |             await row?.locator('[aria-label="Edit"]').click();
-         |                                                       ^
-      23 |         });
-      24 |     }
-      25 |
-        at /home/runner/work/Playwright/Playwright/components/Table.ts:22:55
-        at Table.addStep (/home/runner/work/Playwright/Playwright/components/BaseComponent.ts:64:27)
-        at Table.clickInEditByKey (/home/runner/work/Playwright/Playwright/components/Table.ts:20:20)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:84:33
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: locator.click: Timeout 10000ms exceeded.
-    Call log:
-      - waiting for getByRole('row', { name: '955391' }).locator('[aria-label="Edit"]')
-
-
-       at ../components/Table.ts:22
-
-      20 |         await this.addStep(`Click in the edit table for the row with the key: "${keyValue}"`, async () => {
-      21 |             const row = this.page.getByRole('row', { name: keyValue.toString() });
-    > 22 |             await row?.locator('[aria-label="Edit"]').click();
-         |                                                       ^
-      23 |         });
-      24 |     }
-      25 |
-        at /home/runner/work/Playwright/Playwright/components/Table.ts:22:55
-        at Table.addStep (/home/runner/work/Playwright/Playwright/components/BaseComponent.ts:64:27)
-        at Table.clickInEditByKey (/home/runner/work/Playwright/Playwright/components/Table.ts:20:20)
-        at /home/runner/work/Playwright/Playwright/tests/Api/servers.spec.ts:84:33
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Api-servers-Servers-Should-edit-a-server-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.138" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.138">
+<testsuite name="Basic/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.605" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Basic/login.spec.ts" time="1.605">
 <properties>
 <property name="Description" value="Login with valid user on sauce demo">
 </property>
@@ -2062,8 +788,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Basic/menu.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="2" failures="2" skipped="0" time="43.298" errors="0">
-<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="35.37">
+<testsuite name="Basic/menu.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="8.656" errors="0">
+<testcase name="Normal user › Should returns user menu" classname="Basic/menu.spec.ts" time="4.68">
 <properties>
 <property name="Description" value="Login to effiziente demo with a normal user, the user will see the menu for normal users">
 </property>
@@ -2071,102 +797,13 @@
 </property>
 <property name="Go To" value="Go to: &quot;https://effizientedemo.azurewebsites.net/AccountsReceivable/dashboard&quot;">
 </property>
+<property name="PrimeFacesMenu" value="Get top menus">
+</property>
+<property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Config&quot;">
+</property>
 </properties>
-<failure message="menu.spec.ts:9:9 Should returns user menu" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Basic/menu.spec.ts:9:9 › Normal user › Should returns user menu @Basic ────────
-
-    Error: Menu are equal to: "AccountsReceivable,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:22:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: locator.waitFor: Target page, context or browser has been closed
-    Call log:
-      - waiting for locator('#title') to be visible
-
-
-       at ../pages/Effiziente/dashboardPage.ts:34
-
-      32 |         await this.addStepWithAnnotation(AnnotationType.GoTo, `Go to: "${dashboardPage}"`, async () => {
-      33 |             await this.page.goto(dashboardPage);
-    > 34 |             await this.title.locator.waitFor({ timeout: 30_000 });
-         |                                      ^
-      35 |         });
-      36 |     }
-      37 |
-        at /home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:34:38
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:20)
-        at DashboardPage.goTo (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:32:9)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:19:9
-
-    attachment #3: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Normal-user-Should-returns-user-menu-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
-<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="7.928">
+<testcase name="Admin user › Should returns admin menu" classname="Basic/menu.spec.ts" time="3.976">
 <properties>
 <property name="Description" value="Login to effiziente demo with a admin user, the user will see the menu for admin users">
 </property>
@@ -2179,119 +816,10 @@
 <property name="Assert" value="Menu are equal to: &quot;AccountsReceivable,Security,Config&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:29:9 Should returns admin menu" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Basic/menu.spec.ts:29:9 › Admin user › Should returns admin menu @Basic › Menu are equal to: "AccountsReceivable,Security,Config" 
-
-    Error: Menu are equal to: "AccountsReceivable,Security,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 5
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Security",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:42:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Menu are equal to: "AccountsReceivable,Security,Config"
-
-    expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 5
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Security",
-    -   "Config",
-    - ]
-    + Array []
-
-       at ../pages/basePage.ts:119
-
-      117 |     public async AssertArrayEqual(expected: string[], actual: string[], assertMessage: string) {
-      118 |         await this.addStepWithAnnotation(AnnotationType.Assert, assertMessage, async () => {
-    > 119 |             expect(expected, assertMessage).toEqual(actual);
-          |                                             ^
-      120 |         });
-      121 |     }
-      122 | }
-        at /home/runner/work/Playwright/Playwright/pages/basePage.ts:119:45
-        at DashboardPage.addStepWithAnnotation (/home/runner/work/Playwright/Playwright/pages/basePage.ts:56:31)
-        at DashboardPage.AssertArrayEqual (/home/runner/work/Playwright/Playwright/pages/basePage.ts:118:20)
-        at /home/runner/work/Playwright/Playwright/tests/Basic/menu.spec.ts:42:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Basic-menu-Admin-user-Should-returns-admin-menu-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="Basic/parameterized.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="2.639" errors="0">
-<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.353">
+<testsuite name="Basic/parameterized.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="2" failures="0" skipped="0" time="3.286" errors="0">
+<testcase name="Login with Parameters › Login with &quot;standard_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.418">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -2309,7 +837,7 @@
 </property>
 </properties>
 </testcase>
-<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.286">
+<testcase name="Login with Parameters › Login with &quot;visual_user&quot; from parameters will load inventory page" classname="Basic/parameterized.spec.ts" time="1.868">
 <properties>
 <property name="Description" value="Login with valid user on Sauce Demo">
 </property>
@@ -2328,8 +856,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Excel/exportServers.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="3.359" errors="0">
-<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="3.359">
+<testsuite name="Excel/exportServers.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="3.256" errors="0">
+<testcase name="Servers › Should export servers to excel" classname="Excel/exportServers.spec.ts" time="3.256">
 <properties>
 <property name="Go To" value="Go to the servers page: &quot;https://effizientedemo.azurewebsites.net/Security/servers&apos;&quot;">
 </property>
@@ -2345,8 +873,8 @@
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.7" errors="0">
-<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.7">
+<testsuite name="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="0.771" errors="0">
+<testcase name="Login › Login with valid user load inventory page" classname="Fixture-LambdaTest/loginLambdaTestFixture.spec.ts" time="0.771">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.saucedemo.com&quot;">
 </property>
@@ -2361,8 +889,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="10.6" errors="0">
-<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="10.6">
+<testsuite name="LocaleGeo/bingMaps.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="14.529" errors="0">
+<testcase name="Geo Location Test › The bing maps is located to munich" classname="LocaleGeo/bingMaps.spec.ts" time="14.529">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.bing.com/maps&quot;">
 </property>
@@ -2377,8 +905,8 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="2.224" errors="0">
-<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="2.224">
+<testsuite name="LocaleGeo/searchLocale.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="1.741" errors="0">
+<testcase name="Locale translations › Should display correct translations for specified locale and timezone" classname="LocaleGeo/searchLocale.spec.ts" time="1.741">
 <properties>
 <property name="Go To" value="Go to: &quot;https://www.google.com&quot;">
 </property>
@@ -2387,119 +915,20 @@
 </properties>
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/login.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="7.13" errors="0">
-<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="7.13">
+<testsuite name="Synthetic/login.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="6.357" errors="0">
+<testcase name="Synthetic login testing › Should show dashboard" classname="Synthetic/login.spec.ts" time="6.357">
 </testcase>
 </testsuite>
-<testsuite name="Synthetic/menu.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="11.069" errors="0">
-<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="11.069">
+<testsuite name="Synthetic/menu.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="6.165" errors="0">
+<testcase name="Synthetic testing › Should show dashboard" classname="Synthetic/menu.spec.ts" time="6.165">
 <properties>
 <property name="Navigation" value="Go to: &quot;https://effizientedemo.azurewebsites.net&quot;">
 </property>
 </properties>
-<failure message="menu.spec.ts:24:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [desktop-webkit] › Synthetic/menu.spec.ts:24:9 › Synthetic testing › Should show dashboard @PerfAgents 
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-      45 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      46 |         const menus = ['AccountsReceivable', 'Config'];
-    > 47 |         expect(menusInPage).toEqual(menus);
-         |                             ^
-      48 |     });
-      49 |
-      50 | });
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:47:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/test-failed-2.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toEqual(expected) // deep equality
-
-    - Expected  - 4
-    + Received  + 1
-
-    - Array [
-    -   "AccountsReceivable",
-    -   "Config",
-    - ]
-    + Array []
-
-      45 |         const menusInPage = await page.locator(topMenuLocator).allInnerTexts();
-      46 |         const menus = ['AccountsReceivable', 'Config'];
-    > 47 |         expect(menusInPage).toEqual(menus);
-         |                             ^
-      48 |     });
-      49 |
-      50 | });
-        at /home/runner/work/Playwright/Playwright/tests/Synthetic/menu.spec.ts:47:29
-
-    attachment #3: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/test-failed-2.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/Synthetic-menu-Synthetic-testing-Should-show-dashboard-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
-<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2025-01-27T05:42:13.405Z" hostname="desktop-webkit" tests="1" failures="1" skipped="0" time="14.386" errors="0">
-<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="14.386">
+<testsuite name="VisualTesting/dashboard.spec.ts" timestamp="2025-01-28T05:40:56.208Z" hostname="desktop-webkit" tests="1" failures="0" skipped="0" time="5.067" errors="0">
+<testcase name="Check Dashboard › Should show dashboard" classname="VisualTesting/dashboard.spec.ts" time="5.067">
 <properties>
 <property name="Mock" value="Modify the summary with fixed data">
 </property>
@@ -2526,177 +955,6 @@
 <property name="Step" value="Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1">
 </property>
 </properties>
-<failure message="dashboard.spec.ts:9:9 Should show dashboard" type="FAILURE">
-<![CDATA[  [desktop-webkit] › VisualTesting/dashboard.spec.ts:9:9 › Check Dashboard › Should show dashboard @VisualTesting › Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 
-
-    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
-
-    expect(page).toHaveScreenshot(expected)
-
-      Expected an image 1280px by 1358px, received 1280px by 1361px. 
-
-    Expected: /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-webkit-linux.png
-    Received: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/dashboard-actual.png
-        Diff: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/dashboard-diff.png
-
-    Call log:
-      - Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 with timeout 10000ms
-        - verifying given screenshot expectation
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-
-
-       at ../utils/VisualHelper.ts:24
-
-      22 |          
-      23 |         await test.step(stepDescription, async () => {
-    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |                                                      ^
-      25 |                 {
-      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
-      27 |                     timeout: timeout,
-        at /home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:24:54
-        at VisualHelper.checkPageSnapshot (/home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:23:20)
-        at DashboardPage.checkSnapshot (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:54:9)
-        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:21:9
-
-    attachment #3: dashboard-expected.png (image/png) ──────────────────────────────────────────────
-    tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-webkit-linux.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: dashboard-actual.png (image/png) ────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/dashboard-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/dashboard-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1
-
-    expect(page).toHaveScreenshot(expected)
-
-      Expected an image 1280px by 1358px, received 1280px by 1361px. 
-
-    Expected: /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-webkit-linux.png
-    Received: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/dashboard-actual.png
-        Diff: /home/runner/work/Playwright/Playwright/test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/dashboard-diff.png
-
-    Call log:
-      - Compare snapshot: dashboard.png with maxDiffPixelsRatio: 0.1 with timeout 10000ms
-        - verifying given screenshot expectation
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-      - waiting 100ms before taking screenshot
-      - taking page screenshot
-        - disabled all CSS animations
-      - waiting for fonts to load...
-      - fonts loaded
-      - captured a stable screenshot
-      - Expected an image 1280px by 1358px, received 1280px by 1361px.
-
-
-       at ../utils/VisualHelper.ts:24
-
-      22 |          
-      23 |         await test.step(stepDescription, async () => {
-    > 24 |             await expect(this.page, stepDescription).toHaveScreenshot(snapshotName,
-         |                                                      ^
-      25 |                 {
-      26 |                     maxDiffPixelRatio: maxDiffPixelsRatio,
-      27 |                     timeout: timeout,
-        at /home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:24:54
-        at VisualHelper.checkPageSnapshot (/home/runner/work/Playwright/Playwright/utils/VisualHelper.ts:23:20)
-        at DashboardPage.checkSnapshot (/home/runner/work/Playwright/Playwright/pages/Effiziente/dashboardPage.ts:54:9)
-        at /home/runner/work/Playwright/Playwright/tests/VisualTesting/dashboard.spec.ts:21:9
-
-    attachment #3: dashboard-expected.png (image/png) ──────────────────────────────────────────────
-    tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-webkit-linux.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #4: dashboard-actual.png (image/png) ────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/dashboard-actual.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #5: dashboard-diff.png (image/png) ──────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/dashboard-diff.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #6: screenshot (image/png) ──────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #7: video (video/webm) ──────────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #8: trace (application/zip) ─────────────────────────────────────────────────────────
-    test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/trace.zip
-    Usage:
-
-        npx playwright show-trace test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-webkit-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/dashboard-diff.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/video.webm]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit/trace.zip]]
-
-[[ATTACHMENT|../tests/VisualTesting/dashboard.spec.ts-snapshots/dashboard-desktop-webkit-linux.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/dashboard-actual.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/dashboard-diff.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/test-failed-1.png]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/video.webm]]
-
-[[ATTACHMENT|../test-results/VisualTesting-dashboard-Ch-994a2-board-Should-show-dashboard-desktop-webkit-retry1/trace.zip]]
-]]>
-</system-out>
 </testcase>
 </testsuite>
 </testsuites>
